@@ -1,0 +1,28 @@
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+  padding-top: 1%;
+
+  .name {
+    h2 {
+      color: white;
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .links {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+  }
+}
