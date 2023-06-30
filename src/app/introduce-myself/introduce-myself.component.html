@@ -16,6 +16,9 @@
   </div>
 </div>
 
-<div class="curve">
-  <img src="../../assets/img/curve-background.png" />
+<div [ngClass]="{ curve: true }">
+  <img
+    [ngClass]="{ 'curve-img': true }"
+    src="../../assets/img/curve-background.png"
+  />
 </div>

@@ -35,8 +35,8 @@
 
   button {
     position: absolute;
-    left: 40%;
-    top: 28vh;
+    left: 46%;
+    top: 29vh;
     width: 165px;
     height: 58px;
     border-radius: 10px;
@@ -51,23 +51,36 @@
     width: 38vw;
 
     h1 {
-      font-size: 101px;
+      font-size: 118px;
       margin-bottom: 0px;
     }
     h2 {
       margin-top: 0;
-      font-size: 51px;
+      font-size: 59px;
       color: #4b47ff;
+      margin-inline-start: 7px;
     }
   }
 
   .text-vertical {
-    font-size: 80px;
-    /* font-weight: bolder; */
+    height: 51%;
+    font-size: 92px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: scale(-1);
-    margin-inline-start: 38px;
+    margin-inline-start: 45px;
     margin-block-start: 10px;
   }
+}
+
+.curve {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.curve-img {
+  position: absolute;
+  top: -53vh;
+  width: 99vw;
 }
