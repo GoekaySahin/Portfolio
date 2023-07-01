@@ -1,0 +1,44 @@
+.about-me {
+  position: relative;
+  width: 87.22vw;
+  margin-left: 8.5%;
+  top: 7vh;
+  padding-top: 3vh;
+}
+
+.stripe1 {
+  position: absolute;
+  left: -12vw;
+  top: 4vh;
+  width: 12vw;
+  height: 5px;
+}
+
+.shadow2 {
+  position: absolute;
+  max-width: 19vw;
+  overflow: hidden;
+  right: 0;
+  top: -19vh;
+}
+
+.links {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-me-section {
+  margin-top: 8vh;
+  padding-left: 1vw;
+
+  .leftside {
+    width: 36%;
+
+    h1 {
+      font-size: 100px;
+      font-weight: 600;
+      margin-bottom: 1vh;
+    }
+  }
+}

@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   height: 70vh;
-  justify-content: center;
+  //justify-content: center;
 }
 
 .bg1 {
@@ -20,7 +20,7 @@
 }
 
 .left-section {
-  width: 31vw;
+  width: 44%;
   height: 69vh;
   display: flex;
   justify-content: center;
@@ -30,13 +30,15 @@
   display: flex;
   align-items: center;
   position: relative;
-  height: 32vh;
+  justify-content: end;
+  width: 52.3%;
+  height: 21vh;
   margin-top: 7vh;
 
   button {
     position: absolute;
-    left: 46%;
-    top: 29vh;
+    left: 44%;
+    top: 25vh;
     width: 165px;
     height: 58px;
     border-radius: 10px;
@@ -51,36 +53,38 @@
     width: 38vw;
 
     h1 {
-      font-size: 118px;
+      font-size: 100px;
       margin-bottom: 0px;
+      margin-block-end: -25px;
+      margin-block-start: 97px;
     }
     h2 {
-      margin-top: 0;
-      font-size: 59px;
+      margin-top: 0px;
+      font-size: 58px;
       color: #4b47ff;
-      margin-inline-start: 7px;
+      margin-inline-start: 1px;
     }
   }
 
   .text-vertical {
-    height: 51%;
-    font-size: 92px;
+    height: 72%;
+    font-size: 73px;
+    width: 11%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: scale(-1);
-    margin-inline-start: 45px;
-    margin-block-start: 10px;
+    margin-inline-start: 62px;
+    margin-block-start: 0px;
   }
 }
 
 .curve {
-  position: relative;
   display: flex;
   justify-content: center;
 }
 
 .curve-img {
   position: absolute;
-  top: -53vh;
-  width: 99vw;
+  top: 29vh;
+  width: 100%;
 }
