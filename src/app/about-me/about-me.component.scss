@@ -2,7 +2,7 @@
   position: relative;
   width: 87.22vw;
   margin-left: 8.5%;
-  top: 7vh;
+  top: 8vh;
   padding-top: 3vh;
   height: 54vh;
 }
@@ -19,7 +19,7 @@
   position: absolute;
   max-width: 19vw;
   overflow: hidden;
-  right: 0;
+  right: -73px;
   top: -19vh;
 }
 
@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-block: -36px;
+    margin-block: -40px;
     margin-inline: 1vw;
 
     .upper-part {
@@ -78,7 +78,7 @@
   .rightside {
     display: flex;
     justify-content: center;
-    width: 43vw;
+    width: 34vw;
 
     .about-me-face {
       border-radius: 100%;
@@ -97,8 +97,8 @@
     .stripe2 {
       position: absolute;
       top: 33vh;
-      right: 0;
-      width: 24vw;
+      right: -73px;
+      width: 28vw;
       z-index: 1;
       height: 4px;
     }

@@ -30,10 +30,11 @@
   display: flex;
   align-items: center;
   position: relative;
-  justify-content: end;
-  width: 52.3%;
+  justify-content: stretch;
+  width: 787px;
   height: 21vh;
-  margin-top: 7vh;
+  margin-top: 9vh;
+  margin-inline: 93px;
 
   button {
     position: absolute;
@@ -50,7 +51,10 @@
   }
 
   .name-calling {
-    width: 38vw;
+    width: 36vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
     h1 {
       font-size: 100px;
@@ -85,6 +89,6 @@
 
 .curve-img {
   position: absolute;
-  top: 29vh;
+  top: 27vh;
   width: 100%;
 }
