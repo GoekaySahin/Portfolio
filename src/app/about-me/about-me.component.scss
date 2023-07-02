@@ -40,12 +40,14 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-block: -36px;
+    margin-inline: 1vw;
 
     .upper-part {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 31vh;
+      width: 27vw;
     }
 
     h1 {
@@ -58,9 +60,10 @@
     .blub {
       display: flex;
       justify-content: space-between;
-      width: 30vw;
+      width: 24vw;
       padding-top: 2vh;
       padding-bottom: 2vh;
+      padding-left: 3vw;
 
       span {
         width: 77%;
