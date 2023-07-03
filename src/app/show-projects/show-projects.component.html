@@ -13,8 +13,8 @@
     </div>
   </div>
   <div class="projects">
-    <div class="project" *ngFor="let laptop; in: laptops; let i = index">
-      <img src="assets/img/laptops/{{ laptop }}" />
+    <div class="project" *ngFor="let laptop of laptops; let i = index">
+      <img src="../../assets/img/laptops/{{ laptop }}" />
       <div class="description">
         <div class="headline">{{ headlines[i] }}</div>
         <div class="tech">{{ technologies[i] }}</div>
