@@ -3,6 +3,14 @@
   width: 100%;
   height: 70vh;
   //justify-content: center;
+
+  img {
+    object-fit: cover;
+    height: 69%;
+    width: 40%;
+    position: absolute;
+    top: 13%;
+  }
 }
 
 .bg1 {
@@ -89,6 +97,160 @@
 
 .curve-img {
   position: absolute;
-  top: 27vh;
   width: 100%;
+  height: 125%;
+  bottom: -55%;
+}
+
+@media (max-height: 1075px) {
+  .right-section {
+    margin-inline: 0;
+    position: relative;
+    z-index: 3;
+    margin-inline-start: 5%;
+    gap: 4%;
+
+    .text-vertical {
+      height: 78%;
+      font-size: 68px;
+      width: 6%;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: scale(-1);
+      margin-inline-start: 49px;
+    }
+  }
+}
+
+@media (max-height: 1065px) {
+  .right-section {
+    .text-vertical {
+      margin-inline-start: 55px;
+    }
+  }
+}
+
+@media (max-height: 1000px) {
+  .curve-img {
+    height: 124%;
+  }
+
+  .right-section {
+    .text-vertical {
+      margin-inline-start: 63px;
+    }
+  }
+}
+
+@media (max-height: 960px) {
+  .curve-img {
+    height: 123%;
+  }
+
+  .right-section {
+    .text-vertical {
+      margin-inline-start: 66px;
+    }
+  }
+}
+
+@media (max-height: 945px) {
+}
+
+@media (max-height: 920px) {
+  .right-section {
+    .text-vertical {
+      height: 91%;
+      margin-inline-start: 48px;
+    }
+  }
+  .curve-img {
+    height: 122%;
+  }
+
+  .hello img {
+    object-fit: cover;
+    height: 75%;
+    width: 40%;
+    position: absolute;
+    top: 12%;
+  }
+}
+
+@media (height <= 900px) {
+  .right-section {
+    .text-vertical {
+      margin-inline-start: 52px;
+    }
+  }
+}
+
+@media (height <= 882px) {
+  .curve-img {
+    height: 120%;
+  }
+  .right-section {
+    .text-vertical {
+      margin-inline-start: 7%;
+      height: 93%;
+    }
+  }
+  .hello img {
+    width: 38%;
+    height: 75%;
+    position: absolute;
+    top: 14%;
+  }
+}
+
+@media (height <= 840px) {
+  .curve-img {
+    height: 118%;
+  }
+
+  .right-section button {
+    top: 135%;
+  }
+}
+
+@media (height < 800px) {
+  .hello img {
+    width: 34%;
+    height: 71%;
+    position: absolute;
+    top: 18%;
+  }
+
+  .right-section {
+    .name-calling {
+      h1 {
+        font-size: 95px;
+      }
+      h2 {
+        font-size: 54.5px;
+      }
+    }
+
+    .text-vertical {
+          margin-inline-start: 7%;
+    height: 96%;
+    font-size: 62px;
+    }
+  }
+
+  .right-section button {
+    width: 150px;
+    height: 49px;
+    left: 46%;
+  }
+
+  .curve-img {
+    height: 116%;
+  }
+
+  .right-section {
+    gap: 0;
+  }
+
+  
 }
