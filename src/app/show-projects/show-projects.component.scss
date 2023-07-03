@@ -1,7 +1,7 @@
 .show-projects {
   display: flex;
   justify-content: center;
-  text-align: center;
+  flex-direction: column;
   width: 100%;
   margin-top: 7vh;
 
@@ -37,4 +37,68 @@
     font-weight: 700;
     margin: 0;
   }
+
+  .projects {
+    .project {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 177px;
+    }
+
+    img {
+      position: inherit;
+      height: 400px;
+      width: 400px;
+    }
+
+    .description {
+      width: 26%;
+      letter-spacing: 1.3px;
+    }
+
+    .headline {
+      span {
+        font-size: 30px;
+        font-weight: 700;
+        color: #4b47ff;
+      }
+    }
+
+    .tech {
+      span {
+        font-size: 24px;
+        font-weight: 300;
+        color: #00bee8;
+      }
+    }
+
+    .tech {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 100px;
+      justify-content: center;
+      margin-top: 16px;
+
+      button {
+        width: 165px;
+        height: 58px;
+        border-radius: 10px;
+        background-color: #00bee8;
+        border: none;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 0.6px;
+      }
+    }
+  }
+}
+
+.direction {
+  direction: rtl;
 }

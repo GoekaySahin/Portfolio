@@ -1,7 +1,8 @@
 <div class="skills">
   <div class="leftside">
     <div class="images">
-      <div class="imagebox" *ngFor="let icon of icons; let i = index">
+      <div class="imagebox" 
+      *ngFor="let icon of icons; let i = index">
         <img src="assets/img/icons/{{ icon }}" />
         <span>{{ icons_name[i] }}</span>
       </div>

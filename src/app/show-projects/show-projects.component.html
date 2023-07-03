@@ -13,12 +13,25 @@
     </div>
   </div>
   <div class="projects">
-    <div class="project" *ngFor="let laptop of laptops; let i = index">
+    <div
+      [ngClass]="{ project: true, direction: i % 2 === 0 }"
+      *ngFor="let laptop of laptops; let i = index"
+    >
       <img src="../../assets/img/laptops/{{ laptop }}" />
       <div class="description">
-        <div class="headline">{{ headlines[i] }}</div>
-        <div class="tech">{{ technologies[i] }}</div>
-        <div class="buttons"></div>
+        <div class="headline">
+          <span> {{ headlines[i] }}</span>
+        </div>
+        <div class="tech">
+          <span> {{ technologies[i] }}</span>
+        </div>
+        <div class="description-text">
+          <span> {{ descriptions[i] }}</span>
+        </div>
+        <div class="buttons">
+          <button>Live test</button>
+          <button>Github</button>
+        </div>
       </div>
     </div>
   </div>
