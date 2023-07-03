@@ -13,5 +13,5 @@ export class ShowProjectsComponent {
     'JavaScript | HTML | CSS',
     'Angular | Firebase'
   ];
-  descriptions: string[] = ['Task manager inspired by Kanban System. Creat and organize task using drap and drop function, assing user and categories.', 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe against the Chickens', 'A very simple coustumer relationsship management system working with CRUD functionality'];
+  descriptions: string[] = ['Task manager inspired by Kanban System. Creat and organize task using drap and drop function, assing user and categories.', 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe against the Chickens.', 'A very simple coustumer relationsship management system working with CRUD functionality.'];
 }

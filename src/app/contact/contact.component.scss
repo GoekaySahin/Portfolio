@@ -1,0 +1,91 @@
+.contact {
+  display: flex;
+  position: relative;
+
+  .left-content {
+    display: flex;
+    flex-direction: column;
+
+    .head {
+      display: flex;
+      align-items: center;
+      width: 576px;
+      justify-content: space-between;
+      font-size: 44px;
+
+      h1 {
+        margin: 0;
+      }
+
+      img {
+        width: 117px;
+        height: 5px;
+      }
+    }
+
+    .lower {
+      width: 586px;
+      margin-left: 218px;
+      padding-bottom: 4vh;
+
+      h3 {
+        font-size: 24px;
+      }
+
+      span {
+        font-weight: 200;
+      }
+    }
+  }
+
+  .shadow-contact {
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    left: -63px;
+  }
+
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 871px;
+    height: 43vh;
+    padding-top: 14vh;
+    padding-bottom: 5vh;
+    padding-left: 24px;
+    align-items: center;
+
+    input {
+      width: 100%;
+      border: 2px solid #4b47ff;
+      border-radius: 8px;
+      height: 40px;
+      margin-bottom: 2vh;
+      background-color: transparent;
+      color: white;
+    }
+
+    input::placeholder {
+      position: absolute;
+      top: 14px;
+      left: 24px;
+
+      color: white;
+    }
+
+    .message {
+      height: 16vh;
+    }
+
+    button {
+      width: 215px;
+      height: 55px;
+      border-radius: 12px;
+      background-color: #00bee8;
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}

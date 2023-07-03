@@ -4,6 +4,7 @@
   flex-direction: column;
   width: 100%;
   margin-top: 7vh;
+  position: relative;
 
   .headline {
     width: 100%;
@@ -43,23 +44,24 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 177px;
+      gap: 208px;
     }
 
     img {
       position: inherit;
-      height: 400px;
-      width: 400px;
+      height: 500px;
+      width: 500px;
     }
 
     .description {
-      width: 26%;
-      letter-spacing: 1.3px;
+      width: 40%;
+      letter-spacing: 0.7px;
+      direction: initial;
     }
 
     .headline {
       span {
-        font-size: 30px;
+        font-size: 36px;
         font-weight: 700;
         color: #4b47ff;
       }
@@ -67,7 +69,7 @@
 
     .tech {
       span {
-        font-size: 24px;
+        font-size: 30px;
         font-weight: 300;
         color: #00bee8;
       }
@@ -77,6 +79,12 @@
       display: flex;
       justify-content: center;
       margin-bottom: 8px;
+    }
+
+    .description-text {
+      span {
+        font-size: 20px;
+      }
     }
 
     .buttons {
@@ -99,6 +107,20 @@
   }
 }
 
+.project {
+  padding-top: 8vh;
+}
+
 .direction {
   direction: rtl;
+}
+
+.shadow {
+  img {
+    top: auto;
+    bottom: 0;
+    left: -100px;
+    height: 800px;
+    z-index: -1;
+  }
 }
