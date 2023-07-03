@@ -27,6 +27,15 @@
         text-align: -webkit-center;
       }
     }
+
+    .shadowbox {
+      position: absolute;
+      top: 2vh;
+
+      img {
+        width: 20vw;
+      }
+    }
   }
   .rightside {
     width: 70%;

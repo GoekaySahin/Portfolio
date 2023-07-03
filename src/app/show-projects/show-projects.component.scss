@@ -1,0 +1,40 @@
+.show-projects {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 7vh;
+
+  .headline {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headline-upperpart {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    justify-content: center;
+    position: relative;
+  }
+  img {
+    position: absolute;
+    right: 0;
+    top: 79px;
+    width: 687px;
+    height: 4px;
+  }
+
+  .img-correct {
+    padding-right: 1220px;
+    width: 10vw !important;
+  }
+
+  h1 {
+    font-size: 100px;
+    font-weight: 700;
+    margin: 0;
+  }
+}
