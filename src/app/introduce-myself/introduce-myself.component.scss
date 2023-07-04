@@ -46,7 +46,7 @@
 
   button {
     position: absolute;
-    left: 44%;
+    left: 40%;
     top: 25vh;
     width: 165px;
     height: 58px;
@@ -86,7 +86,7 @@
     text-orientation: mixed;
     transform: scale(-1);
     margin-inline-start: 62px;
-    margin-block-start: 0px;
+    margin-block-start: -18px;
   }
 }
 
@@ -102,6 +102,8 @@
   bottom: -55%;
 }
 
+/* RESPONSIV HEIGHT START */
+
 @media (height <= 1075px) {
   .right-section {
     margin-inline: 0;
@@ -113,6 +115,7 @@
     .text-vertical {
       height: 78%;
       font-size: 68px;
+      margin-block-start: -35px;
       width: 6%;
       writing-mode: vertical-rl;
       text-orientation: mixed;
@@ -308,7 +311,7 @@
   }
 }
 
-@media (height < 700px) {
+@media (height <= 700px) {
   .hello img {
     width: 32%;
     height: 83%;
@@ -337,7 +340,7 @@
   }
 }
 
-@media (height < 650px) {
+@media (height <= 650px) {
   .curve-img {
     height: 102%;
   }
@@ -350,7 +353,7 @@
   }
 }
 
-@media (height < 600px) {
+@media (height <= 600px) {
   .hello img {
     height: 97%;
   }
@@ -368,7 +371,7 @@
   }
 }
 
-@media (height < 550px) {
+@media (height <= 550px) {
   .hello img {
     width: 30%;
     height: 93%;
@@ -376,7 +379,7 @@
   }
 }
 
-@media (height < 520px) {
+@media (height <= 520px) {
   .hello img {
     width: 30%;
     height: 104%;
@@ -392,10 +395,66 @@
   }
 }
 
-@media (height < 450px) {
+@media (height <= 450px) {
   .hello img {
     width: 30%;
     height: 116%;
     top: 28%;
+  }
+}
+/* RESPONSIV HEIGHT END */
+
+/* RESPONSIV WIDTH START */
+
+@media (width < 1920px) {
+  .right-section .name-calling h1 {
+    font-size: 90px;
+  }
+
+  .right-section .name-calling h2 {
+    font-size: 52px;
+  }
+
+  .right-section {
+    margin-inline-start: 9%;
+    padding-right: 4%;
+
+    .name-calling {
+      width: 87%;
+    }
+
+    .text-vertical {
+      width: 0;
+      margin-inline-start: 59px;
+      font-size: 62px;
+    }
+  }
+
+  .right-section button {
+    left: 35%;
+  }
+}
+
+@media (width <= 1740px) {
+  .right-section {
+    margin-inline-start: 8%;
+  }
+}
+
+@media (width <= 1700px) {
+  .curve-img {
+    width: 100.8%;
+  }
+}
+
+@media (width <= 1680px) {
+  .curve-img {
+    width: 102.8%;
+  }
+}
+
+@media (width <= 1650px) {
+  .curve-img {
+    width: 106%;
   }
 }
