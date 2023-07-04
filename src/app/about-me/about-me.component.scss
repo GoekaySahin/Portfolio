@@ -1,10 +1,10 @@
 .about-me {
   position: relative;
-  width: 87.22vw;
+  width: 92%;
   margin-left: 8.5%;
-  top: 8vh;
+  top: 7%;
   padding-top: 3vh;
-  height: 54vh;
+  height: 78%;
 }
 
 .stripe1 {
@@ -19,7 +19,7 @@
   position: absolute;
   max-width: 19vw;
   overflow: hidden;
-  right: -73px;
+  right: 0px;
   top: -19vh;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .about-me-section {
-  margin-top: 8vh;
+  margin-top: 6%;
   padding-left: 1vw;
   display: flex;
 
@@ -76,16 +76,22 @@
   }
 
   .rightside {
+    width: 54%;
+    position: absolute;
+    right: 0;
+    height: 81%;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
-    width: 34vw;
+    align-items: center;
+    margin-block-start: -2%;
 
     .about-me-face {
       border-radius: 100%;
-      max-width: 26vw;
+      border-radius: 100%;
+      max-width: 60%;
+      height: 86%;
       display: flex;
       justify-content: center;
-      height: 44vh;
       border: 4px solid #00bee8;
       overflow: hidden;
       position: relative;
@@ -95,9 +101,6 @@
     }
 
     .stripe2 {
-      position: absolute;
-      top: 33vh;
-      right: -73px;
       width: 28vw;
       z-index: 1;
       height: 4px;
