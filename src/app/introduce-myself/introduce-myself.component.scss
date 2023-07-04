@@ -102,7 +102,7 @@
   bottom: -55%;
 }
 
-@media (max-height: 1075px) {
+@media (height <= 1075px) {
   .right-section {
     margin-inline: 0;
     position: relative;
@@ -122,7 +122,7 @@
   }
 }
 
-@media (max-height: 1065px) {
+@media (height <= 1065px) {
   .right-section {
     .text-vertical {
       margin-inline-start: 55px;
@@ -130,7 +130,7 @@
   }
 }
 
-@media (max-height: 1000px) {
+@media (height <= 1000px) {
   .curve-img {
     height: 124%;
   }
@@ -142,7 +142,7 @@
   }
 }
 
-@media (max-height: 960px) {
+@media (height <= 960px) {
   .curve-img {
     height: 123%;
   }
@@ -154,10 +154,10 @@
   }
 }
 
-@media (max-height: 945px) {
+@media (height <= 945px) {
 }
 
-@media (max-height: 920px) {
+@media (height <= 925px) {
   .right-section {
     .text-vertical {
       height: 91%;
@@ -211,6 +211,12 @@
   .right-section button {
     top: 135%;
   }
+
+  .right-section {
+    .text-vertical {
+      height: 99%;
+    }
+  }
 }
 
 @media (height < 800px) {
@@ -232,9 +238,9 @@
     }
 
     .text-vertical {
-          margin-inline-start: 7%;
-    height: 96%;
-    font-size: 62px;
+      margin-inline-start: 7%;
+      height: 96%;
+      font-size: 62px;
     }
   }
 
@@ -251,6 +257,86 @@
   .right-section {
     gap: 0;
   }
+}
+@media (height <= 770px) {
+  .hello img {
+    width: 34%;
+    height: 75%;
+    position: absolute;
+    top: 18%;
+  }
 
-  
+  .curve-img {
+    height: 114%;
+  }
+
+  .right-section {
+    .text-vertical {
+      height: 100%;
+    }
+  }
+}
+
+@media (height <= 750px) {
+  .hello img {
+    width: 34%;
+    height: 79%;
+  }
+
+  .right-section {
+    .text-vertical {
+      margin-inline-start: 9%;
+      font-size: 64px;
+    }
+  }
+}
+
+@media (height < 700px) {
+  .hello img {
+    width: 32%;
+    height: 83%;
+  }
+
+  .curve-img {
+    height: 109%;
+  }
+
+  .right-section {
+    .text-vertical {
+      margin-inline-start: 0%;
+      height: 216px;
+    }
+  }
+
+  .right-section button {
+    top: 146%;
+    left: 43%;
+  }
+}
+
+@media (height < 650px) {
+  .curve-img {
+    height: 102%;
+  }
+
+  .right-section button {
+    top: 159%;
+  }
+  .hello img {
+    height: 89%;
+  }
+}
+
+@media (height < 600px) {
+  .hello img {
+    height: 97%;
+  }
+
+  .right-section .text-vertical {
+    height: 218px;
+  }
+
+  .curve-img {
+    height: 97%;
+  }
 }
