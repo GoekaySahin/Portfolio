@@ -1,8 +1,7 @@
 <div class="skills">
   <div class="leftside">
     <div class="images">
-      <div class="imagebox" 
-      *ngFor="let icon of icons; let i = index">
+      <div class="imagebox" *ngFor="let icon of icons; let i = index">
         <img src="assets/img/icons/{{ icon }}" />
         <span>{{ icons_name[i] }}</span>
       </div>
@@ -12,12 +11,16 @@
     </div>
   </div>
   <div class="rightside">
-    <h1>My skills</h1>
-    <img src="assets/img/icons/stripe4.png" />
-    <span
-      >I have grown my frontend development skills that have allowed me to creat
-      different real projects.</span
-    >
+    <div class="text-image">
+      <div class="right-text">
+        <h1>My skills</h1>
+        <span
+          >I have grown my frontend development skills that have allowed me to
+          creat different real projects.</span
+        >
+      </div>
+      <img src="assets/img/icons/stripe4.png" />
+    </div>
     <button>Get in touch</button>
   </div>
 </div>
