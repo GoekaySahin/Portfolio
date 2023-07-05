@@ -9,13 +9,15 @@
 }
 
 .bg1 {
-  width: 47%;
-  height: 81%;
   position: absolute;
   z-index: -2;
+  /* 
+  width: 47%;
+  height: 81%;
   top: 15vh;
   margin-inline-start: 19px;
-}
+  */
+} 
 
 .image {
   display: flex;
@@ -28,6 +30,7 @@
   display: flex;
   justify-content: center;
   margin-top: 9%;
+  
 }
 
 .right-section {
@@ -97,7 +100,7 @@
 }
 
 /* RESPONSIV WIDTH START */
-
+/* 
 @media (width < 1920px) {
   .curve-img {
     position: absolute;
@@ -135,7 +138,7 @@
   }
 }
 @media (width <= 1700px) {
-/*   .right-section .name-calling h1 {
+  .right-section .name-calling h1 {
     font-size: 104.5px;
   }
   .right-section .name-calling h2 {
@@ -152,10 +155,11 @@
   }
   .bg1 {
     width: 51%;
-  } */
+  }
 }
 @media (width <= 1500px) {
   .curve-img {
     width: 114.4%;
   }
 }
+ */

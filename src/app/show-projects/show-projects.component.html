@@ -13,14 +13,14 @@
     </div>
   </div>
   <div class="shadow">
-    <img src="../../assets/img/shadows/purple-shadow3.png" />
+    <img src="assets/img/shadows/purple-shadow3.png" />
   </div>
   <div class="projects">
     <div
       [ngClass]="{ project: true, direction: i % 2 === 0 }"
       *ngFor="let laptop of laptops; let i = index"
     >
-      <img src="../../assets/img/laptops/{{ laptop }}" />
+      <img src="assets/img/laptops/{{ laptop }}" />
       <div class="description">
         <div class="headline">
           <span> {{ headlines[i] }}</span>
