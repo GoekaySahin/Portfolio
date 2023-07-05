@@ -23,11 +23,11 @@
 }
 
 .left-section {
-  width: 41%;
+  width: 38.5%;
   height: 91%;
   display: flex;
-  justify-content: center;
   margin-top: 9%;
+  padding-left: 4.5%;
 }
 
 .right-section {
@@ -35,7 +35,7 @@
   align-items: center;
   position: relative;
   height: 21%;
-  margin-top: 15%;
+  margin-top: 300px;
   width: 49.5%;
   text-align: end;
 
@@ -96,7 +96,7 @@
 .curve-img {
   position: absolute;
   width: 100%;
-  height: 125%;
+  height: 124%;
   bottom: -55%;
 }
 
@@ -105,7 +105,7 @@
   .curve-img {
     position: absolute;
     width: 100%;
-    height: 120%;
+    height: 119%;
     bottom: -55%;
   }
 
@@ -113,7 +113,7 @@
     width: 42%;
   }
   .right-section {
-    width: 50.6%;
+    width: 45.9%;
 
     .text-vertical {
       font-size: 74px;
@@ -129,7 +129,7 @@
     width: 44.4%;
   }
   .right-section {
-    width: 48%;
+    width: 43.5%;
 
     /*    .right-section button {
       left: 42%;
@@ -145,14 +145,13 @@
     font-size: 62px;
   }
 
-  /*   .right-section .text-vertical {
-    height: 101%;
-    font-size: 74px;
-  } */
+  .right-section .text-vertical {
+    right: 729px;
+  }
 }
 @media (width <= 1700px) {
   .right-section {
-    width: 51.4% !important;
+    width: 46.6% !important;
     text-align: end;
 
     .name-calling h1 {
@@ -161,38 +160,167 @@
     .name-calling h2 {
       font-size: 60.5px;
     }
-
-    .text-vertical {
-      font-size: 72px;
-      text-align: end;
-      height: 171px;
-      right: 710px;
-    }
   }
 
+  .right-section button {
+    position: absolute;
+    right: 317px;
+  }
   .curve-img {
     width: 106.8%;
   }
   .bg1 {
     width: 59%;
   }
+
+  .right-section .text-vertical {
+    right: 715px;
+  }
 }
 
-@media (width < 1540px) {
+@media (width <= 1550px) {
   .right-section .text-vertical {
     font-size: 73px;
+  }
+
+  .right-section .name-calling {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  .right-section button {
+    position: absolute;
+    right: 284px;
+  }
+
+  .right-section .text-vertical {
+    right: 685px;
+  }
+
+  .left-section[_ngcontent-ng-c3754490405] {
+    width: 42.4%;
+    height: 92%;
   }
 }
 
 @media (width <= 1500px) {
   .right-section {
-    width: 59% !important;
+    width: 50% !important;
     text-align: end;
+  }
+
+  .right-section .text-vertical {
+    font-size: 74px;
+    text-align: end;
+    height: 171px;
+    right: 673px;
+  }
+
+  .left-section {
+    width: 34.5%;
   }
   .curve-img {
     width: 114.4%;
+    height: 119%;
   }
   .bg1 {
     width: 67%;
+  }
+}
+
+@media (width <= 1415px) {
+  /*   .left-section {
+    padding-left: 2%;
+    width: 50%;
+  } */
+
+  .right-section {
+    .name-calling {
+      h1 {
+        font-size: 87.5px;
+      }
+
+      h2 {
+        font-size: 50.5px;
+      }
+    }
+    .text-vertical {
+      font-size: 62px;
+      text-align: end;
+      right: 568px;
+      top: 17px;
+    }
+  }
+
+  .right-section {
+    width: 50% !important;
+    button {
+      right: 228px;
+      bottom: -49%;
+    }
+  }
+}
+
+@media (width < 1350px) {
+  .left-section {
+    width: 42.4% !important;
+    height: 85% !important;
+    margin-top: 13%;
+    padding-left: 1%;
+  }
+
+  .right-section {
+    width: 53.5% !important;
+  }
+}
+
+@media (width < 1250px) {
+  .right-section[_ngcontent-ng-c3754490405] {
+    width: 53.5% !important;
+  }
+
+  .right-section[_ngcontent-ng-c3754490405]
+    .name-calling[_ngcontent-ng-c3754490405]
+    h1[_ngcontent-ng-c3754490405] {
+    font-size: 73.5px;
+  }
+
+  .right-section[_ngcontent-ng-c3754490405]
+    .name-calling[_ngcontent-ng-c3754490405]
+    h2[_ngcontent-ng-c3754490405] {
+    font-size: 42px;
+  }
+
+  .right-section[_ngcontent-ng-c3754490405]
+    .text-vertical[_ngcontent-ng-c3754490405] {
+    font-size: 53px;
+    text-align: end;
+    right: 470px;
+    top: 28px;
+  }
+  .left-section[_ngcontent-ng-c3754490405] {
+    width: 43.4% !important;
+    height: 81% !important;
+    margin-top: 16%;
+    padding-left: 0%;
+  }
+  .bg1[_ngcontent-ng-c3754490405] {
+    width: 82%;
+  }
+  .curve[_ngcontent-ng-c3754490405] {
+    display: flex;
+    justify-content: center;
+    height: 2.5%;
+    overflow-y: hidden;
+  }
+  .curve-img[_ngcontent-ng-c3754490405] {
+    width: 122.4%;
+    height: 119%;
+  }
+  .right-section[_ngcontent-ng-c3754490405] button[_ngcontent-ng-c3754490405] {
+    right: 186px;
+    bottom: -33%;
   }
 }
