@@ -37,7 +37,7 @@
   height: 21%;
   margin-top: 15%;
   width: 47%;
-  margin-inline-start: 5.3%;
+  margin-inline-start: 6.3%;
 
   button {
     position: absolute;
@@ -75,7 +75,7 @@
   }
 
   .text-vertical {
-    height: 103%;
+    height: 100%;
     font-size: 76px;
     width: 13%;
     writing-mode: vertical-rl;
@@ -105,6 +105,9 @@
     height: 120%;
     bottom: -55%;
   }
+  .right-section {
+    margin-inline-start: 5.3%;
+  }
 }
 
 @media (width < 1830px) {
@@ -132,7 +135,7 @@
   }
 }
 @media (width <= 1700px) {
-  .right-section .name-calling h1 {
+/*   .right-section .name-calling h1 {
     font-size: 104.5px;
   }
   .right-section .name-calling h2 {
@@ -145,10 +148,14 @@
   }
 
   .curve-img {
-    position: absolute;
     width: 106.8%;
   }
   .bg1 {
     width: 51%;
+  } */
+}
+@media (width <= 1500px) {
+  .curve-img {
+    width: 114.4%;
   }
 }
