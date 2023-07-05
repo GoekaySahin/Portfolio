@@ -11,13 +11,11 @@
 .bg1 {
   position: absolute;
   z-index: -2;
-  /* 
   width: 47%;
   height: 81%;
   top: 15vh;
   margin-inline-start: 19px;
-  */
-} 
+}
 
 .image {
   display: flex;
@@ -26,11 +24,10 @@
 
 .left-section {
   width: 41%;
-  height: 80%;
+  height: 91%;
   display: flex;
   justify-content: center;
   margin-top: 9%;
-  
 }
 
 .right-section {
@@ -39,12 +36,12 @@
   position: relative;
   height: 21%;
   margin-top: 15%;
-  width: 47%;
-  margin-inline-start: 6.3%;
+  width: 49.5%;
+  text-align: end;
 
   button {
     position: absolute;
-    left: 40%;
+    left: 45%;
     bottom: -55%;
     width: 165px;
     height: 58px;
@@ -79,17 +76,21 @@
 
   .text-vertical {
     height: 100%;
-    font-size: 76px;
+    font-size: 75px;
     width: 13%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: scale(-1);
+    position: absolute;
+    left: 9%;
+    top: 4.5%;
   }
 }
 
 .curve {
   display: flex;
   justify-content: center;
+  height: 2.5%;
 }
 
 .curve-img {
@@ -100,7 +101,6 @@
 }
 
 /* RESPONSIV WIDTH START */
-/* 
 @media (width < 1920px) {
   .curve-img {
     position: absolute;
@@ -108,20 +108,9 @@
     height: 120%;
     bottom: -55%;
   }
-  .right-section {
-    margin-inline-start: 5.3%;
-  }
 }
 
-@media (width < 1830px) {
-  .right-section {
-    margin-inline-start: 4.4%;
-  }
-}
 @media (width <= 1800px) {
-  .right-section {
-    margin-inline-start: 3%;
-  }
 }
 
 @media (width <= 1750px) {
@@ -156,10 +145,24 @@
   .bg1 {
     width: 51%;
   }
+
+  .right-section {
+    width: 50.5%;
+    text-align: end;
+  }
+
+  .left-section {
+    width: 41%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 9%;
+    padding-left: 2%;
+  }
 }
+
 @media (width <= 1500px) {
   .curve-img {
     width: 114.4%;
   }
 }
- */
