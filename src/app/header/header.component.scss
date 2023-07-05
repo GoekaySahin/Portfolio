@@ -2,19 +2,26 @@
   position: relative;
 }
 
+header {
+  width: 100%;
+}
+
 .header-content {
   display: flex;
-  height: 98px;
-  width: 89%;
   justify-content: space-between;
-  align-items: baseline;
-  margin-block-end: 20px;
-  padding-left: 11%;
-  position: sticky;
+  align-items: center;
   top: 0;
   background-color: #151e30;
+  position: fixed;
+  right: 0;
+  left: 0%;
   z-index: 10;
-
+  padding: 1% 10%;/* 
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+ */
   .name {
     h2 {
       color: white;
@@ -22,15 +29,14 @@
       font-weight: 800;
       font-size: 40px;
       font-weight: 800;
-      margin-top: 16px;
+      margin: 0;
     }
   }
 
   .links {
-    width: 26%;
+    width: 400px;
     display: flex;
     justify-content: space-between;
-    padding-right: 12%;
 
     a {
       text-decoration: none;
@@ -39,3 +45,14 @@
     }
   }
 }
+
+/*  RESPONSIV WIDTH START */
+
+/* @media (width < 1690px) {
+  .header-content {
+    padding-left: 12%;
+  }
+  .header-content .links {
+    padding-right: 13.5%;
+  }
+} */

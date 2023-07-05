@@ -1,15 +1,10 @@
 .hello {
   display: flex;
-  width: 100%;
-  height: 70vh;
-  //justify-content: center;
+  width: 99.6%;
+  height: 17%;
 
   img {
     object-fit: cover;
-    height: 69%;
-    width: 40%;
-    position: absolute;
-    top: 13%;
   }
 }
 
@@ -28,26 +23,26 @@
 }
 
 .left-section {
-  width: 44%;
-  height: 69vh;
+  width: 41%;
+  height: 80%;
   display: flex;
   justify-content: center;
+  margin-top: 9%;
 }
 
 .right-section {
   display: flex;
   align-items: center;
   position: relative;
-  justify-content: stretch;
-  width: 787px;
-  height: 21vh;
-  margin-top: 9vh;
-  margin-inline: 93px;
+  height: 21%;
+  margin-top: 15%;
+  width: 47%;
+  margin-inline-start: 5.3%;
 
   button {
     position: absolute;
     left: 40%;
-    top: 25vh;
+    bottom: -55%;
     width: 165px;
     height: 58px;
     border-radius: 10px;
@@ -55,38 +50,37 @@
     border: none;
     font-size: 20px;
     color: white;
-    letter-spacing: 0.6px;
+    letter-spacing: 1px;
+    font-weight: 800;
   }
 
   .name-calling {
-    width: 36vw;
+    width: 96%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    line-height: 1.2;
 
     h1 {
-      font-size: 100px;
+      margin-top: 0;
+      font-size: 110px;
       margin-bottom: 0px;
-      margin-block-end: -25px;
-      margin-block-start: 97px;
     }
     h2 {
       margin-top: 0px;
-      font-size: 58px;
+      font-size: 63px;
       color: #4b47ff;
-      margin-inline-start: 1px;
+
+      margin-bottom: 0;
     }
   }
 
   .text-vertical {
-    height: 72%;
-    font-size: 73px;
-    width: 11%;
+    height: 103%;
+    font-size: 76px;
+    width: 13%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: scale(-1);
-    margin-inline-start: 62px;
-    margin-block-start: -18px;
   }
 }
 
@@ -103,7 +97,7 @@
 }
 
 /* RESPONSIV HEIGHT START */
-
+/* 
 @media (height <= 1075px) {
   .right-section {
     margin-inline: 0;
@@ -401,12 +395,67 @@
     height: 116%;
     top: 28%;
   }
-}
+} */
 /* RESPONSIV HEIGHT END */
 
 /* RESPONSIV WIDTH START */
 
 @media (width < 1920px) {
+  .curve-img {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    bottom: -55%;
+  }
+}
+
+@media (width < 1830px) {
+  .right-section {
+    margin-inline-start: 4.4%;
+  }
+}
+@media (width <= 1800px) {
+  .right-section {
+    margin-inline-start: 3%;
+  }
+}
+
+@media (width <= 1750px) {
+  .right-section .name-calling h1 {
+    font-size: 107px;
+  }
+  .right-section .name-calling h2 {
+    font-size: 62px;
+  }
+
+  .right-section .text-vertical {
+    height: 101%;
+    font-size: 74px;
+  }
+}
+@media (width <= 1700px) {
+  .right-section .name-calling h1 {
+    font-size: 104.5px;
+  }
+  .right-section .name-calling h2 {
+    font-size: 60.5px;
+  }
+
+  .right-section .text-vertical {
+    height: 99%;
+    font-size: 73px;
+  }
+
+  .curve-img {
+    position: absolute;
+    width: 106.8%;
+  }
+  .bg1 {
+    width: 51%;
+  }
+}
+
+/*
   .right-section .name-calling h1 {
     font-size: 90px;
   }
@@ -416,25 +465,24 @@
   }
 
   .right-section {
-    margin-inline-start: 9%;
-    padding-right: 4%;
+    margin-inline-start: 10%;
 
     .name-calling {
-      width: 87%;
+      width: 89%;
     }
 
     .text-vertical {
-      width: 0;
+      width: 10%;
       margin-inline-start: 59px;
       font-size: 62px;
     }
   }
 
   .right-section button {
-    left: 35%;
+    left: 44%;
   }
-}
-
+} */
+/* 
 @media (width <= 1740px) {
   .right-section {
     margin-inline-start: 8%;
@@ -443,18 +491,65 @@
 
 @media (width <= 1700px) {
   .curve-img {
-    width: 100.8%;
+    width: 102.8%;
+  }
+}
+
+@media (width < 1690px) {
+  .right-section {
+    margin-inline-start: 6%;
+  }
+
+  .left-section {
+    padding-left: 2%;
+  }
+
+  .right-section .text-vertical {
+    width: 25px;
+    margin-inline-start: 47px;
+    font-size: 59px;
+  }
+
+  .right-section {
+    margin-inline-start: 2%;
   }
 }
 
 @media (width <= 1680px) {
   .curve-img {
-    width: 102.8%;
+    width: 104.8%;
   }
 }
 
 @media (width <= 1650px) {
   .curve-img {
-    width: 106%;
+    width: 112%;
+  }
+  .right-section {
+    margin-inline-start: 3%;
+  }
+
+  .hello[_ngcontent-ng-c3754490405] {
+    display: flex;
+    width: 90%;
+    margin-inline-start: 7%;
   }
 }
+
+@media (width <= 1550px) {
+  .curve-img {
+    width: 115%;
+  }
+}
+
+@media (width <= 1490px) {
+  .curve-img {
+    width: 120%;
+  }
+}
+@media (width <= 1440px) {
+  .curve-img {
+    width: 122%;
+  }
+}
+ */

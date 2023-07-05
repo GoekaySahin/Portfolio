@@ -1,15 +1,17 @@
-<div class="header-content">
-  <div class="name">
-    <h2>
-      G<span [ngStyle]="{ color: '#00bee8' }">ö</span>ka<span
-        [ngStyle]="{ color: '#4b47ff' }"
-        >y</span
-      >
-    </h2>
+<header>
+  <div class="header-content">
+    <div class="name">
+      <h2>
+        G<span [ngStyle]="{ color: '#00bee8' }">ö</span>ka<span
+          [ngStyle]="{ color: '#4b47ff' }"
+          >y</span
+        >
+      </h2>
+    </div>
+    <div class="links">
+      <a [routerLink]="[]">About me</a>
+      <a [routerLink]="[]">Skills</a>
+      <a [routerLink]="[]">Imprint</a>
+    </div>
   </div>
-  <div class="links">
-    <a [routerLink]="[]">About me</a>
-    <a [routerLink]="[]">Skills</a>
-    <a [routerLink]="[]">Imprint</a>
-  </div>
-</div>
+</header>
