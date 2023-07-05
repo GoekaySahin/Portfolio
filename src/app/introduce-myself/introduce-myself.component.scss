@@ -41,7 +41,7 @@
 
   button {
     position: absolute;
-    left: 45%;
+    right: 333px;
     bottom: -55%;
     width: 165px;
     height: 58px;
@@ -82,7 +82,7 @@
     text-orientation: mixed;
     transform: scale(-1);
     position: absolute;
-    left: 9%;
+    right: 736px;
     top: 4.5%;
   }
 }
@@ -108,9 +108,33 @@
     height: 120%;
     bottom: -55%;
   }
+
+  .left-section {
+    width: 42%;
+  }
+  .right-section {
+    width: 50.6%;
+
+    .text-vertical {
+      font-size: 74px;
+      text-align: end;
+      height: 174px;
+      right: 744px;
+    }
+  }
 }
 
 @media (width <= 1800px) {
+  .left-section {
+    width: 44.4%;
+  }
+  .right-section {
+    width: 48%;
+
+    /*    .right-section button {
+      left: 42%;
+    } */
+  }
 }
 
 @media (width <= 1750px) {
@@ -121,48 +145,54 @@
     font-size: 62px;
   }
 
-  .right-section .text-vertical {
+  /*   .right-section .text-vertical {
     height: 101%;
     font-size: 74px;
-  }
+  } */
 }
 @media (width <= 1700px) {
-  .right-section .name-calling h1 {
-    font-size: 104.5px;
-  }
-  .right-section .name-calling h2 {
-    font-size: 60.5px;
-  }
+  .right-section {
+    width: 51.4% !important;
+    text-align: end;
 
-  .right-section .text-vertical {
-    height: 99%;
-    font-size: 73px;
+    .name-calling h1 {
+      font-size: 104.5px;
+    }
+    .name-calling h2 {
+      font-size: 60.5px;
+    }
+
+    .text-vertical {
+      font-size: 72px;
+      text-align: end;
+      height: 171px;
+      right: 710px;
+    }
   }
 
   .curve-img {
     width: 106.8%;
   }
   .bg1 {
-    width: 51%;
+    width: 59%;
   }
+}
 
-  .right-section {
-    width: 50.5%;
-    text-align: end;
-  }
-
-  .left-section {
-    width: 41%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    margin-top: 9%;
-    padding-left: 2%;
+@media (width < 1540px) {
+  .right-section .text-vertical {
+    font-size: 73px;
   }
 }
 
 @media (width <= 1500px) {
+  .right-section {
+    width: 59% !important;
+    text-align: end;
+  }
   .curve-img {
     width: 114.4%;
+  }
+  .bg1 {
+    width: 67%;
   }
 }
