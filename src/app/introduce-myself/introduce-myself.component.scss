@@ -12,8 +12,8 @@
   position: absolute;
   z-index: -2;
   width: 47%;
-  height: 81%;
-  top: 15vh;
+  height: 765px;
+  top: 157px;
   margin-inline-start: 19px;
 }
 
@@ -42,7 +42,7 @@
   button {
     position: absolute;
     right: 333px;
-    bottom: -55%;
+    top: 200px;
     width: 165px;
     height: 58px;
     border-radius: 10px;
@@ -199,7 +199,7 @@
     right: 685px;
   }
 
-  .left-section[_ngcontent-ng-c3754490405] {
+  .left-section {
     width: 42.4%;
     height: 92%;
   }
@@ -226,11 +226,11 @@
     height: 119%;
   }
   .bg1 {
-    width: 67%;
+    width: 56%;
   }
 }
 
-@media (width <= 1415px) {
+@media (width <= 1440px) {
   /*   .left-section {
     padding-left: 2%;
     width: 50%;
@@ -277,50 +277,232 @@
 }
 
 @media (width < 1250px) {
-  .right-section[_ngcontent-ng-c3754490405] {
+  .right-section {
     width: 53.5% !important;
   }
 
-  .right-section[_ngcontent-ng-c3754490405]
-    .name-calling[_ngcontent-ng-c3754490405]
-    h1[_ngcontent-ng-c3754490405] {
+  .right-section .name-calling h1 {
     font-size: 73.5px;
   }
 
-  .right-section[_ngcontent-ng-c3754490405]
-    .name-calling[_ngcontent-ng-c3754490405]
-    h2[_ngcontent-ng-c3754490405] {
+  .right-section .name-calling h2 {
     font-size: 42px;
   }
 
-  .right-section[_ngcontent-ng-c3754490405]
-    .text-vertical[_ngcontent-ng-c3754490405] {
+  .right-section .text-vertical {
     font-size: 53px;
     text-align: end;
     right: 470px;
     top: 28px;
   }
-  .left-section[_ngcontent-ng-c3754490405] {
+  .left-section {
     width: 43.4% !important;
     height: 81% !important;
     margin-top: 16%;
     padding-left: 0%;
   }
-  .bg1[_ngcontent-ng-c3754490405] {
+  .bg1 {
     width: 82%;
   }
-  .curve[_ngcontent-ng-c3754490405] {
+  .curve {
     display: flex;
     justify-content: center;
     height: 2.5%;
     overflow-y: hidden;
   }
-  .curve-img[_ngcontent-ng-c3754490405] {
+  .curve-img {
     width: 122.4%;
     height: 119%;
   }
-  .right-section[_ngcontent-ng-c3754490405] button[_ngcontent-ng-c3754490405] {
+  .right-section button {
     right: 186px;
     bottom: -33%;
+  }
+}
+
+@media (height < 980px) {
+  .curve-img {
+    width: 100%;
+    top: 368px;
+  }
+}
+
+@media (height < 850px) {
+  .curve-img {
+    top: 380px;
+  }
+}
+@media (height < 720px) {
+  .curve-img {
+    top: 340px;
+  }
+  .left-section {
+    width: 40.4%;
+    height: 85%;
+    padding-left: 0;
+    margin-top: 109px;
+  }
+
+  .right-section {
+    margin-top: 215px;
+  }
+  .right-section button {
+    top: 175px;
+  }
+
+  .right-section .text-vertical {
+    font-size: 62px;
+    text-align: end;
+    right: 564px;
+    top: 12px;
+  }
+}
+@media (height < 700px) {
+  .curve-img {
+    top: 390px;
+  }
+}
+@media (height < 630px) {
+  .curve-img {
+    top: 400px;
+  }
+}
+
+@media (width < 1920px) and (height <= 720px) {
+  .left-section {
+    width: 44.4%;
+    height: 85%;
+    padding-left: 2%;
+  }
+
+  .right-section .text-vertical {
+    font-size: 77px;
+    text-align: end;
+    right: 734px;
+    top: -4px;
+  }
+  .right-section button {
+    top: 199px;
+  }
+}
+@media (width < 1800px) and (height <= 719px) {
+  .right-section {
+    width: 44% !important;
+
+    .name-calling {
+      width: 100%;
+    }
+
+    .text-vertical {
+      right: 717px;
+    }
+  }
+}
+@media (width < 1700px) and (height <= 719px) {
+  .right-section .text-vertical {
+    right: 688px;
+    font-size: 74px;
+  }
+  .bg1 {
+    position: absolute;
+    z-index: -2;
+    width: 43%;
+    height: 893px;
+    top: 72px;
+    object-fit: unset !important;
+  }
+}
+
+@media (width < 1550px) and (height < 720px) {
+  .right-section .name-calling h1 {
+    font-size: 89.5px;
+  }
+  .right-section .name-calling h2 {
+    font-size: 51.5px;
+  }
+  .right-section .text-vertical {
+    right: 583px;
+    font-size: 63px;
+    top: 11px;
+  }
+
+  .left-section {
+    width: 44.4%;
+  }
+
+  .right-section button {
+    top: 175px;
+    right: 222px;
+  }
+}
+
+@media (width < 1400px) and (height <= 719px) {
+  .curve {
+    overflow-y: hidden;
+  }
+  .curve-img {
+    width: 101%;
+  }
+
+  .left-section {
+    width: 45% !important;
+  }
+}
+
+@media (width < 1325px) and (height <= 719px) {
+  .right-section {
+    .name-calling {
+      h1 {
+        font-size: 71.5px;
+      }
+      h2 {
+        font-size: 41.2px;
+      }
+    }
+
+    .text-vertical {
+      right: 468px;
+      font-size: 52px;
+      top: 20px;
+    }
+
+    button {
+      top: 160px;
+      right: 175px;
+    }
+  }
+
+  .left-section {
+    width: 47% !important;
+    padding-left: 0;
+    margin-top: 121px;
+  }
+}
+@media (width <= 1136px) and (height < 720px) {
+  .right-section[_ngcontent-ng-c3754490405]
+    .name-calling[_ngcontent-ng-c3754490405]
+    h1[_ngcontent-ng-c3754490405] {
+    font-size: 67.5px;
+  }
+  .right-section[_ngcontent-ng-c3754490405]
+    .name-calling[_ngcontent-ng-c3754490405]
+    h2[_ngcontent-ng-c3754490405] {
+    font-size: 39px;
+  }
+
+  .right-section[_ngcontent-ng-c3754490405]
+    .text-vertical[_ngcontent-ng-c3754490405] {
+    right: 448px;
+    font-size: 48px;
+    top: 25px;
+  }
+  .right-section[_ngcontent-ng-c3754490405] button[_ngcontent-ng-c3754490405] {
+    top: 157px;
+    right: 159px;
+  }
+
+  .left-section {
+    width: 50% !important;
+    margin-inline-start: -36px;
   }
 }
