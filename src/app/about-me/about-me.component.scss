@@ -107,10 +107,16 @@
     }
   }
 }
-/* 
-@media (width <= 1700px) {
+
+@media (width <= 1440px) /* and (height <= 719px) */ {
   .about-me {
-    top: 5%;
+    position: relative;
+    width: 92%;
+    margin-left: 8.5%;
+    top: 1%;
+    padding-top: 3vh;
+    height: 78%;
   }
+
+  
 }
- */
