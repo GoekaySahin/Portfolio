@@ -89,12 +89,14 @@
   }
 }
 
+@media (width < 1920px) {
+  .contact .left-content .lower {
+    margin-left: 0;
+  }
+}
+
 @media (width < 1400px) {
-  .contact[_ngcontent-ng-c3508745188]
-    .left-content[_ngcontent-ng-c3508745188]
-    .lower[_ngcontent-ng-c3508745188] {
-    width: 36%;
-    margin-left: 218px;
+  .contact .left-content .lower {
     padding-bottom: 4vh;
   }
 }
