@@ -28,9 +28,7 @@
 
 .right-section {
   display: flex;
-  align-items: center;
   position: relative;
-  height: 21%;
   margin-top: 300px;
   width: 47.5%;
   text-align: end;
@@ -71,7 +69,6 @@
   }
 
   .text-vertical {
-    height: 100%;
     font-size: 75px;
     width: 13%;
     writing-mode: vertical-rl;
@@ -114,8 +111,8 @@
     .text-vertical {
       font-size: 75px;
       text-align: end;
-      height: 174px;
       right: 720px;
+      top: 22px;
     }
   }
 }
@@ -178,9 +175,6 @@
   .right-section {
     width: 50% !important;
 
-    .text-vertical {
-    }
-
     .name-calling {
       width: 100%;
       display: flex;
@@ -213,7 +207,6 @@
     .text-vertical {
       right: 559px;
       font-size: 60px;
-      top: 21px;
     }
 
     .name-calling {
@@ -227,7 +220,6 @@
       .text-vertical {
         font-size: 74px;
         text-align: end;
-        height: 171px;
         right: 673px;
       }
     }
@@ -278,14 +270,15 @@
     .text-vertical {
       font-size: 53px;
       text-align: end;
-      right: 465px;
-      top: 22px;
+      right: 548px;
+      top: 14px;
+      width: 0%;
     }
   }
   .left-section {
     width: 40.3% !important;
-    height: 81% !important;
-    margin-top: 18%;
+    height: 88% !important;
+    margin-top: 12%;
     padding-left: 0%;
   }
   .bg1 {
@@ -306,39 +299,6 @@
     top: 169px;
   }
 }
-/* 
-@media (width > 1440px) and (height <= 875px) {
-  .left-section {
-    width: 38.5%;
-    height: 91%;
-    display: flex;
-    margin-top: 6%;
-    padding-left: 1.5%;
-  }
-
-  .right-section {
-    margin-top: 250px;
-    scale: 0.97;
-    width: 51.2% !important;
-
-    button {
-      position: absolute;
-      right: 295px;
-      top: 193px;
-    }
-
-       .text-vertical {
-      font-size: 75px;
-      text-align: end;
-      height: 174px;
-      right: 709px;
-      top: -1px;
-    } 
-  }
-  .curve-img[_ngcontent-ng-c2948082484] {
-    top: 360px;
-  }
-} */
 
 @media (width <= 1440px) and (height <= 1000px) {
   .hello {
@@ -350,7 +310,7 @@
   }
 }
 
-@media (width <= 1440px) and (height <= 719px) {
+@media (width <= 1440px) and (height <= 900px) {
   .hello {
     display: flex;
     width: 99.6%;
@@ -363,10 +323,6 @@
       right: 221px;
       bottom: -49%;
       top: 168px;
-    }
-
-    .text-vertical {
-      top: -3px;
     }
   }
 
@@ -434,5 +390,14 @@
   .left-section {
     padding-left: 0;
     width: 40.4%;
+  }
+}
+
+@media (width < 1250px) and (height < 920px) {
+  .left-section {
+    width: 45.3% !important;
+    height: 88% !important;
+    margin-inline-start: -5%;
+    margin-top: 14%;
   }
 }
