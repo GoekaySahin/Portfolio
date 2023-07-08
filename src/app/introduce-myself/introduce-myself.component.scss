@@ -261,9 +261,10 @@
   }
 }
 
-@media (width < 1350px) {
+@media (width < 1350px) and (height < 1000px) {
   .right-section {
-    width: 50% !important;
+    margin-top: 333px;
+    width: 47.5%;
 
     .name-calling {
       h1 {
@@ -277,14 +278,14 @@
     .text-vertical {
       font-size: 53px;
       text-align: end;
-      right: 470px;
-      top: 26px;
+      right: 465px;
+      top: 22px;
     }
   }
   .left-section {
-    width: 50% !important;
+    width: 40.3% !important;
     height: 81% !important;
-    margin-top: 16%;
+    margin-top: 18%;
     padding-left: 0%;
   }
   .bg1 {
@@ -294,12 +295,11 @@
   .curve {
     display: flex;
     justify-content: center;
-    height: 2.5%;
-    overflow-y: hidden;
+    height: 89px;
   }
   .curve-img {
     width: 100%;
-    height: 119%;
+    height: 1016px;
   }
   .right-section button {
     right: 186px;
@@ -381,5 +381,58 @@
     width: 40.5%;
     height: 99%;
     padding-left: 0%;
+  }
+}
+
+@media (width <= 1280px) and (height > 1000px) {
+  .curve-img {
+    height: 1256px;
+  }
+
+  .right-section {
+    margin-top: 347px;
+    width: 47.5%;
+
+    .name-calling {
+      h1 {
+        font-size: 73.5px;
+      }
+      h2 {
+        font-size: 42px;
+      }
+    }
+
+    .text-vertical {
+      font-size: 53px;
+      text-align: end;
+      right: 465px;
+      top: 29px;
+    }
+  }
+  .left-section {
+    width: 40.3% !important;
+    height: 81% !important;
+    margin-top: 18%;
+    padding-left: 0%;
+  }
+  .bg1 {
+    width: 60%;
+    margin-inline-start: -13px;
+  }
+  .curve {
+    display: flex;
+    justify-content: center;
+    height: 89px;
+  }
+
+  .right-section button {
+    right: 186px;
+    top: 169px;
+  }
+}
+@media (width <= 1440px) and (height > 719px) {
+  .left-section {
+    padding-left: 0;
+    width: 40.4%;
   }
 }
