@@ -110,7 +110,7 @@
 
 @media (width <= 1440px) and (height <= 1000px) {
   .about-me-section {
-    margin-top: 102px;
+    margin-top: 144px;
   }
   .social-links {
     display: flex;
@@ -131,5 +131,32 @@
     top: 1%;
     padding-top: 3vh;
     height: 78%;
+
+    .about-me-section .leftside h1 {
+      font-size: 73.5px;
+    }
+  }
+  .about-me-section .rightside {
+    width: 58%;
+    position: absolute;
+    right: 0;
+    height: 79%;
+  }
+
+  .about-me-section .leftside .upper-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 31vh;
+    width: 27vw;
+    font-size: 14px;
+  }
+
+  .about-me-section .rightside .stripe2 {
+    width: 23vw;
+  }
+
+  .about-me-section .rightside .about-me-face {
+    height: 98%;
   }
 }
