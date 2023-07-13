@@ -104,25 +104,26 @@
 
   .hello {
     height: 15%;
+  }
 
-    .left-section {
-      width: 42%;
-      height: 96%;
+  .left-section {
+    width: 42%;
+    height: 96%;
+    margin-top: 154px;
+  }
+  .right-section {
+    width: 44.3%;
+
+    .text-vertical {
+      font-size: 75px;
+      text-align: end;
+      right: 717px;
+      top: 30px;
     }
-    .right-section {
-      width: 44.3%;
 
-      .text-vertical {
-        font-size: 75px;
-        text-align: end;
-        right: 717px;
-        top: 30px;
-      }
-
-      button {
-        right: 319px;
-        top: 234px;
-      }
+    button {
+      right: 319px;
+      top: 234px;
     }
   }
 }
@@ -134,7 +135,10 @@
   .right-section {
     width: 42%;
   }
-}
+  .right-section .text-vertical {
+    right: 724px;
+  }
+} /* 
 
 @media (width <= 1750px) {
   .right-section .name-calling h1 {
@@ -148,7 +152,7 @@
     font-size: 74px;
     right: 720px;
   }
-}
+} */
 @media (width <= 1700px) {
   .right-section {
     width: 45% !important;
@@ -162,13 +166,14 @@
     }
     .text-vertical {
       right: 686px;
-      font-size: 72px;
+      font-size: 71px;
     }
     button {
       position: absolute;
       right: 317px;
     }
   }
+
   .bg1 {
     width: 54%;
     height: 765px;
@@ -328,11 +333,10 @@
     margin-block-start: -2%;
   }
   .right-section {
-    margin-top: 236px;
+    margin-top: 222px;
     button {
       bottom: -49%;
       top: 180px;
-      left: 273px;
     }
   }
 
@@ -347,6 +351,13 @@
     width: 40.5%;
     height: 99%;
     padding-left: 0%;
+    margin-top: 125px;
+  }
+
+  .right-section .text-vertical {
+    right: 559px;
+    font-size: 62px;
+    top: 21px;
   }
 }
 
