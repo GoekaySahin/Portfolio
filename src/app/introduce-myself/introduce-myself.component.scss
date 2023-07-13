@@ -22,7 +22,7 @@
   width: 38.5%;
   height: 91%;
   display: flex;
-  margin-top: 9%;
+  margin-top: 186px;
   padding-left: 4.5%;
 }
 
@@ -109,7 +109,8 @@
   .left-section {
     width: 42%;
     height: 96%;
-    margin-top: 154px;
+    margin-top: 186px;
+    padding-left: 2%;
   }
   .right-section {
     width: 44.3%;
@@ -138,22 +139,9 @@
   .right-section .text-vertical {
     right: 724px;
   }
-} /* 
+}
 
-@media (width <= 1750px) {
-  .right-section .name-calling h1 {
-    font-size: 107px;
-  }
-  .right-section .name-calling h2 {
-    font-size: 62px;
-  }
-
-  .right-section .text-vertical {
-    font-size: 74px;
-    right: 720px;
-  }
-} */
-@media (width <= 1700px) {
+@media (width <= 1705px) {
   .right-section {
     width: 45% !important;
     text-align: end;
@@ -170,7 +158,8 @@
     }
     button {
       position: absolute;
-      right: 317px;
+      right: 292px;
+      top: 223px;
     }
   }
 
@@ -182,7 +171,7 @@
   }
 
   .left-section {
-    width: 41.4%;
+    width: 43.4%;
   }
 }
 
@@ -197,19 +186,14 @@
       line-height: 1.2;
     }
 
-    button {
-      position: absolute;
-      right: 284px;
-    }
-
     .text-vertical {
       right: 680px;
-      font-size: 73px;
+      font-size: 71px;
     }
   }
 
   .left-section {
-    width: 36.4%;
+    width: 38.4%;
     height: 92%;
   }
 }
@@ -218,6 +202,11 @@
   .right-section {
     width: 52% !important;
     text-align: end;
+
+    button {
+      right: 228px;
+      top: 185px;
+    }
 
     .text-vertical {
       right: 559px;
@@ -285,16 +274,14 @@
     .text-vertical {
       font-size: 53px;
       text-align: end;
-      right: 548px;
-      top: 14px;
+      right: 559px !important;
       width: 0%;
+      font-size: 53px !important;
+      top: 15px !important;
     }
   }
   .left-section {
-    width: 40.3% !important;
-    height: 88% !important;
-    margin-top: 12%;
-    padding-left: 0%;
+    margin-top: 116px;
   }
   .bg1 {
     width: 60%;
@@ -417,8 +404,6 @@
 @media (width < 1250px) and (height < 920px) {
   .left-section {
     width: 45.3% !important;
-    height: 88% !important;
     margin-inline-start: -5%;
-    margin-top: 14%;
   }
 }
