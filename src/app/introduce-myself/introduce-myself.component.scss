@@ -110,25 +110,44 @@
   }
 
   .left-section {
-    width: 42%;
+    width: 38%;
     height: 96%;
     margin-top: 124px;
     padding-left: 2%;
   }
   .right-section {
-    width: 44.3%;
+    width: 50.3%;
+    top: 288px;
 
     .text-vertical {
-      font-size: 75px;
+      font-size: 79px;
       text-align: end;
       right: 717px;
-      top: 30px;
+      top: 35px;
     }
 
     button {
       right: 319px;
       top: 234px;
     }
+
+    .name-calling {
+      h1 {
+        font-size: 110px;
+      }
+
+      h2 {
+        font-size: 63px;
+      }
+    }
+  }
+
+  .bg1 {
+    position: absolute;
+    z-index: -2;
+    width: 47%;
+    height: 765px;
+    top: 177px;
   }
 }
 
@@ -137,7 +156,7 @@
     width: 44.4%;
   }
   .right-section {
-    width: 42%;
+    width: 44%;
   }
   .right-section .text-vertical {
     right: 724px;
@@ -157,12 +176,15 @@
     }
     .text-vertical {
       right: 686px;
-      font-size: 71px;
+      font-size: 74px;
+      top: 40px;
     }
     button {
       position: absolute;
       right: 292px;
-      top: 223px;
+      top: 240px;
+      width: 170px;
+      height: 57px;
     }
   }
 
@@ -180,7 +202,7 @@
 
 @media (width <= 1550px) {
   .right-section {
-    width: 50% !important;
+    width: 45% !important;
 
     .name-calling {
       width: 100%;
@@ -188,20 +210,14 @@
       flex-direction: column;
       line-height: 1.2;
     }
-
-    .text-vertical {
-      right: 680px;
-      font-size: 71px;
-    }
   }
 
   .left-section {
-    width: 38.4%;
     height: 92%;
   }
 }
 
-@media (width <= 1500px) {
+@media (width <= 1520px) {
   .right-section {
     width: 52% !important;
     text-align: end;
@@ -212,8 +228,9 @@
     }
 
     .text-vertical {
-      right: 559px;
-      font-size: 60px;
+      right: 568px;
+      font-size: 62px;
+      top: 53px;
     }
 
     .name-calling {
@@ -252,102 +269,17 @@
   }
 
   .right-section {
-    width: 50% !important;
+    width: 45% !important;
     button {
       right: 228px;
       bottom: -49%;
+      top: 218px;
     }
   }
 }
-
-@media (width < 1350px) and (height < 1000px) {
-  .right-section {
-    margin-top: 333px;
-    width: 47.5%;
-
-    .name-calling {
-      h1 {
-        font-size: 73.5px;
-      }
-      h2 {
-        font-size: 42px;
-      }
-    }
-
-    .text-vertical {
-      font-size: 53px;
-      text-align: end;
-      right: 559px !important;
-      width: 0%;
-      font-size: 53px !important;
-      top: 15px !important;
-    }
-  }
-  .left-section {
-    margin-top: 116px;
-  }
-  .bg1 {
-    width: 60%;
-    margin-inline-start: -13px;
-  }
-  .curve {
-    display: flex;
-    justify-content: center;
-    height: 89px;
-  }
-  .curve-img {
-    width: 100%;
-    height: 1016px;
-  }
-  .right-section button {
-    right: 186px;
-    top: 169px;
-  }
-}
-
-@media (width <= 1440px) and (height <= 1000px) {
-  .hello {
-    height: 723px;
-  }
-
-  .about-me-section {
-    margin-top: 102px;
-  }
-}
-
-@media (width <= 1440px) and (height <= 900px) {
-  .hello {
-    display: flex;
-    width: 99.6%;
-    height: 544px;
-    margin-block-start: -2%;
-  }
-  .right-section {
-    margin-top: 222px;
-    button {
-      bottom: -49%;
-      top: 180px;
-    }
-  }
-
-  .curve-img {
-    position: absolute;
-    width: 100%;
-    height: 741px;
-    top: 300px;
-  }
-
-  .left-section {
-    width: 40.5%;
-    height: 99%;
-    padding-left: 0%;
-    margin-top: 125px;
-  }
-
+@media (width <= 1440px) {
   .right-section .text-vertical {
-    right: 559px;
-    font-size: 62px;
-    top: 21px;
+    right: 579px;
   }
 }
 
@@ -400,7 +332,11 @@
 @media (width <= 1440px) and (height > 719px) {
   .left-section {
     padding-left: 0;
-    width: 40.4%;
+    width: 48%;
+  }
+
+  .right-section {
+    width: 42.5% !important;
   }
 }
 

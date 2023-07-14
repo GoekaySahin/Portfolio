@@ -4,3 +4,9 @@ app-about-me {
   justify-content: center;
   height: 17%;
 }
+
+@media (width < 1920px) {
+  app-about-me {
+    padding-top: 0.5%;
+  }
+}

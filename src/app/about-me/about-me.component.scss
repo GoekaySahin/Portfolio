@@ -109,6 +109,14 @@
 }
 
 @media (width < 1920px) {
+  app-about-me {
+    padding-top: 1%;
+  }
+
+  .about-me-section {
+    margin-top: 13%;
+  }
+
   .about-me-section .rightside .about-me-face {
     border-radius: 100%;
     border-radius: 100%;
@@ -119,10 +127,6 @@
   .about-me-section .rightside {
     margin-block-start: -1%;
     overflow: inherit;
-  }
-
-  .about-me-section {
-    margin-top: 13%;
   }
 }
 
@@ -143,12 +147,12 @@
 
 @media (width <= 1440px) /* and (height <= 719px) */ {
   .about-me {
-    position: relative;
+    /*     position: relative;
     width: 92%;
     margin-left: 8.5%;
     top: 1%;
     padding-top: 3vh;
-    height: 78%;
+    height: 78%; */
 
     .about-me-section .leftside h1 {
       font-size: 73.5px;
