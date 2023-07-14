@@ -33,6 +33,7 @@
   margin-top: 17%;
   padding-left: 1vw;
   display: flex;
+  align-items: center;
 
   .leftside {
     width: 36%;
@@ -76,19 +77,18 @@
   }
 
   .rightside {
-    width: 54%;
+    width: 1000px;
     position: absolute;
     right: 0;
-    height: 81%;
+    height: 559px;
     overflow: hidden;
     display: flex;
     align-items: center;
-    margin-block-start: -2%;
 
     .about-me-face {
       border-radius: 100%;
       border-radius: 100%;
-      width: 100%;
+      width: 650px;
       height: 98%;
       display: flex;
       justify-content: center;
@@ -130,7 +130,7 @@
   }
 }
 
-@media (width <= 1440px) and (height <= 1000px) {
+@media (width <= 1550px) and (height <= 1000px) {
   .about-me-section {
     margin-top: 144px;
   }
@@ -145,7 +145,7 @@
   }
 }
 
-@media (width <= 1440px) /* and (height <= 719px) */ {
+@media (width <= 1550px) /* and (height <= 719px) */ {
   .about-me {
     /*     position: relative;
     width: 92%;
@@ -179,6 +179,7 @@
   }
 
   .about-me-section .rightside .about-me-face {
-    height: 98%;
+    height: 457px;
+    width: 570px;
   }
 }
