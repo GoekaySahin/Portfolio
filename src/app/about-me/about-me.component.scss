@@ -36,7 +36,7 @@
   align-items: center;
 
   .leftside {
-    width: 36%;
+    width: 48%;
     display: flex;
     height: 682px;
     flex-direction: column;
@@ -101,7 +101,7 @@
     }
 
     .stripe2 {
-      width: 14vw;
+      width: 20vw;
       z-index: 1;
       height: 4px;
     }
@@ -123,15 +123,28 @@
   }
 
   .about-me-section .rightside {
-    margin-block-start: -1%;
     overflow: inherit;
+    margin-block-start: 2%;
+  }
+  .about-me-section .rightside .stripe2 {
+    width: 9vw;
+    z-index: 1;
+    height: 4px;
+  }
+  .about-me-section .leftside .blub span {
+    min-width: 300px;
+  }
+
+  .skills .leftside .images {
+    padding-left: 100px;
   }
 }
 
 @media (width <= 1550px) and (height <= 1000px) {
   .about-me-section {
-    margin-top: 144px;
+    margin-top: 288px;
   }
+
   .social-links {
     display: flex;
     justify-content: flex-start;
@@ -146,56 +159,20 @@
   .about-me-section {
     margin-top: 108px;
   }
-
-  .about-me-section .rightside {
-    margin-block-start: -5%;
-  }
 }
-
-/* @media (width <= 1550px) {
-  .about-me {
-
-
-    .about-me-section .leftside h1 {
-      font-size: 73.5px;
-    }
-  }
-  .about-me-section .rightside {
-    width: 58%;
-    position: absolute;
-    right: 0;
-    height: 79%;
-  }
-
-  .about-me-section .leftside .upper-part {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 31vh;
-    width: 27vw;
-    font-size: 14px;
-  }
-
-  .about-me-section .rightside .stripe2 {
-    width: 23vw;
-  }
-
-  .about-me-section .rightside .about-me-face {
-    height: 457px;
-    width: 570px;
-  }
-}
- */
-
-@media (width < 1550px) {
+@media (width <= 1550px) {
   .about-me-section .leftside h1 {
     font-size: 87.5px;
   }
   .about-me-section .leftside .upper-part {
     font-size: 14px;
+    width: 441px;
   }
   .about-me-section .rightside .about-me-face {
     height: 74%;
     width: 500px;
+  }
+  .about-me-section .rightside {
+    margin-block-start: -9%;
   }
 }

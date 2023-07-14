@@ -141,14 +141,25 @@
     position: absolute;
     right: 0;
     top: 79px;
-    width: 31.5%;
+    width: 32%;
   }
 }
 
-@media (width < 1400px) {
-  .show-projects[_ngcontent-ng-c143686258]
-    .projects[_ngcontent-ng-c143686258]
-    .project[_ngcontent-ng-c143686258] {
+@media (width <= 1550px) {
+  .show-projects h1 {
+    font-size: 87.5px;
+    line-height: 150px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .show-projects .headline-bottom {
+    font-size: 15px;
+  }
+}
+
+@media (width <= 1400px) {
+  .show-projects .projects .project {
     display: flex;
     align-items: center;
     justify-content: center;
