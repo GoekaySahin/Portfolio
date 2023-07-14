@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   width: 100%;
-  height: 10%;
+  height: 9%;
   margin-top: 20%;
   .leftside {
     width: 100%;
@@ -16,6 +16,7 @@
       justify-content: center;
       align-items: center;
       padding-left: 14%;
+      font-size: 18px;
 
       .imagebox {
         width: 84px;
@@ -24,6 +25,10 @@
         align-items: center;
         justify-content: space-between;
         text-align: -webkit-center;
+
+        span {
+          padding-top: 16px;
+        }
       }
     }
 
@@ -43,6 +48,7 @@
     align-items: center;
     text-align: center;
     height: 87%;
+    padding-top: 81px;
 
     .right-text {
       display: flex;
@@ -58,11 +64,12 @@
 
     span {
       width: 57%;
+      font-size: 18px;
     }
 
     button {
       position: absolute;
-      top: 56%;
+      top: 325px;
       width: 165px;
       height: 58px;
       border-radius: 10px;
@@ -76,7 +83,7 @@
     img {
       position: absolute;
       right: 0;
-      top: 19%;
+      top: 161px;
       width: 113px;
       height: 4px;
     }
