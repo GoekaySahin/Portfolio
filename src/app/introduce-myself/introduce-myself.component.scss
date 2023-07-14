@@ -22,16 +22,18 @@
   width: 38.5%;
   height: 91%;
   display: flex;
-  margin-top: 186px;
+  margin-top: 136px;
   padding-left: 4.5%;
 }
 
 .right-section {
   display: flex;
   position: relative;
-  margin-top: 300px;
+  height: 200px;
+  top: 300px;
   width: 47.5%;
   text-align: end;
+  align-items: center;
 
   button {
     position: absolute;
@@ -76,14 +78,13 @@
     transform: scale(-1);
     position: absolute;
     right: 709px;
-    top: 6%;
+    top: 26px;
   }
 }
 
 .curve {
   display: flex;
   justify-content: center;
-  height: 2.5%;
 }
 
 .curve-img {
@@ -109,7 +110,7 @@
   .left-section {
     width: 42%;
     height: 96%;
-    margin-top: 186px;
+    margin-top: 124px;
     padding-left: 2%;
   }
   .right-section {
