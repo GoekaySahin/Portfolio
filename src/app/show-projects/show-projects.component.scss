@@ -3,7 +3,7 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 7vh;
+  margin-top: 15%;
   position: relative;
 
   .headline {
@@ -24,7 +24,7 @@
     position: absolute;
     right: 0;
     top: 79px;
-    width: 10%;
+    width: 36%;
     height: 4px;
   }
 
@@ -125,7 +125,7 @@
   }
 }
 
-@media (width < 1400px){
+@media (width < 1400px) {
   .show-projects[_ngcontent-ng-c143686258]
     .projects[_ngcontent-ng-c143686258]
     .project[_ngcontent-ng-c143686258] {
