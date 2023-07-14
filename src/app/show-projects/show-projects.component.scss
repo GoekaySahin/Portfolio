@@ -108,7 +108,7 @@
 }
 
 .project {
-  padding-top: 8vh;
+  padding-top: 9vh;
 }
 
 .direction {
@@ -122,6 +122,19 @@
     left: -100px;
     height: 800px;
     z-index: -1;
+  }
+}
+
+@media (width < 1920px) {
+  .show-projects .img-correct {
+    padding-right: 1094px;
+  }
+
+  .show-projects img {
+    position: absolute;
+    right: 0;
+    top: 79px;
+    width: 31.5%;
   }
 }
 
