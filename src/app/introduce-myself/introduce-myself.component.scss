@@ -340,9 +340,42 @@
   }
 }
 
-@media (width < 1250px) and (height < 920px) {
+@media (width < 1300px) {
+  .right-section .name-calling h1 {
+    font-size: 63.5px;
+  }
+
+  .right-section .name-calling h2 {
+    font-size: 35.5px;
+  }
+
   .left-section {
-    width: 45.3% !important;
-    margin-inline-start: -5%;
+    padding-left: 54px;
+    width: 43%;
+    height: 80%;
+  }
+
+  .right-section .text-vertical {
+    right: 424px;
+    font-size: 43px;
+    top: 69px;
+  }
+
+  .curve-img {
+    top: 310px;
+  }
+
+  .right-section {
+    top: 224px;
+    width: 42% !important;
+  }
+
+  .right-section button {
+    right: 169px;
+    bottom: -49%;
+    top: 192px;
+    width: 129px;
+    height: 50px;
+    font-size: 18px;
   }
 }

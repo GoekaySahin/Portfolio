@@ -3,7 +3,8 @@
   position: relative;
   width: 100%;
   height: 9%;
-  margin-top: 20%;
+  margin-top: 22%;
+
   .leftside {
     width: 75%;
 
@@ -15,7 +16,7 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      padding-left: 9%;
+      padding-left: 17%;
       font-size: 18px;
 
       .imagebox {
@@ -131,11 +132,5 @@
     right: 0;
     width: 43%;
     width: 689px;
-  }
-}
-
-@media (width <= 1440px) and (height <= 730px) {
-  .skills {
-    margin-top: 11%;
   }
 }

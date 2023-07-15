@@ -84,6 +84,7 @@
     height: 652px;
     display: flex;
     align-items: center;
+    padding-top: 2%;
 
     .about-me-face {
       border-radius: 100%;
@@ -97,7 +98,6 @@
       position: relative;
       z-index: 2;
       background-color: black;
-      margin-block-start: -4vh;
     }
 
     .stripe2 {
@@ -111,10 +111,6 @@
 @media (width < 1920px) {
   app-about-me {
     padding-top: 1%;
-  }
-
-  .about-me-section {
-    margin-top: 13%;
   }
 
   .about-me-section .rightside .about-me-face {
@@ -174,5 +170,36 @@
   }
   .about-me-section .rightside {
     margin-block-start: -9%;
+  }
+}
+
+@media (width <= 1300px) {
+  .about-me-section {
+    margin-top: 20%;
+  }
+
+  .about-me-section .leftside h1 {
+    font-size: 63.5px;
+  }
+
+  .about-me-section .rightside {
+    padding-bottom: 21%;
+    width: 59%;
+    height: 89%;
+    margin-block-start: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: end;
+  }
+
+  .about-me-section .leftside .upper-part {
+    width: 337px;
+  }
+
+  .about-me-section .leftside .blub {
+    width: 362px;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    padding-left: 0vw;
   }
 }
