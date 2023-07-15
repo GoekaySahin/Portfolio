@@ -185,3 +185,24 @@
   }
 }
 
+@media (width <= 1300px) {
+  .show-projects {
+    margin-top: 27%;
+  }
+
+  .show-projects .headline-upperpart h1 {
+    font-size: 63.5px;
+  }
+  .show-projects .projects img {
+    height: 350px;
+  }
+
+  .show-projects .projects .project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+
+
+}

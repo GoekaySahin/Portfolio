@@ -134,3 +134,25 @@
     width: 689px;
   }
 }
+
+@media (width < 1300px) {
+  .skills .rightside h1 {
+    margin: 0;
+    font-size: 63.5px;
+  }
+
+  .skills .rightside {
+    width: 51%;
+  }
+
+  .skills .rightside img {
+    top: 134px;
+  }
+
+  .skills .rightside button {
+    width: 129px;
+    height: 50px;
+    font-size: 18px;
+    top: 305px;
+  }
+}
