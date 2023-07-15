@@ -96,6 +96,10 @@
   bottom: -55%;
 }
 
+.mobile {
+  display: none;
+}
+
 /* RESPONSIV WIDTH START */
 @media (width < 1920px) {
   .curve-img {
@@ -377,5 +381,41 @@
     width: 129px;
     height: 50px;
     font-size: 18px;
+  }
+}
+
+@media (width <= 1024px) {
+  .hello {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .curve-img {
+    display: none;
+  }
+
+  .mobile {
+    display: inherit;
+    width: 100%;
+    position: absolute;
+    top: 451px;
+  }
+
+  .right-section {
+    position: relative;
+    z-index: 100;
+    top: 0;
+    width: 100% !important;
+  }
+
+  .left-section {
+    padding-left: 0;
+    width: 100%;
+    height: 60%;
+    margin-top: 85px;
+  }
+
+  .right-section .name-calling {
+    align-items: center;
   }
 }

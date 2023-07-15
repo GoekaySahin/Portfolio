@@ -1,3 +1,7 @@
+.dnone {
+  display: none !important;
+}
+
 .about-me {
   position: relative;
   width: 92%;
@@ -166,7 +170,7 @@
   }
   .about-me-section .rightside .about-me-face {
     height: 74%;
-    width: 500px;
+    width: 440px;
   }
   .about-me-section .rightside {
     margin-block-start: -9%;
@@ -183,7 +187,7 @@
   }
 
   .about-me-section .rightside {
-    padding-bottom: 21%;
+    padding-bottom: 19%;
     width: 59%;
     height: 89%;
     margin-block-start: 0;
@@ -201,5 +205,9 @@
     padding-top: 1vh;
     padding-bottom: 2vh;
     padding-left: 0vw;
+  }
+  .about-me-section .rightside .about-me-face {
+    height: 74%;
+    width: 400px;
   }
 }

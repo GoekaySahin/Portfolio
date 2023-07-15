@@ -9,17 +9,19 @@
     </div>
   </div>
   <div class="right-section">
-    <span [ngClass]="{ 'text-vertical': true }">I am</span>
-
     <div class="name-calling">
-      <h1>Gökay Sahin</h1>
-      <h2>FRONTEND DEVELOPER</h2>
+      <span [ngClass]="{ 'text-vertical': true }">I am</span>
+      <div class="namebox">
+        <h1>Gökay Sahin</h1>
+        <h2>FRONTEND DEVELOPER</h2>
+      </div>
     </div>
     <button>Lets talk!</button>
   </div>
 </div>
 
 <div [ngClass]="{ curve: true }">
+  <img src="assets/img/icons/mobile-curve.png" [ngClass]="{ mobile: true }" />
   <img
     [ngClass]="{ 'curve-img': true }"
     src="assets/img/curve-background.png"

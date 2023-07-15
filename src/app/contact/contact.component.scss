@@ -2,6 +2,7 @@
   display: flex;
   position: relative;
   margin-top: 13%;
+  padding-bottom: 8%;
 
   .left-content {
     display: flex;
@@ -40,6 +41,14 @@
         font-size: 18px;
       }
     }
+  }
+
+  .to-top {
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    top: 650px;
+    right: 11%;
   }
 
   .shadow-contact {
