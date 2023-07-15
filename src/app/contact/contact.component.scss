@@ -134,53 +134,25 @@
 }
 
 @media (width <= 1800px) {
-  .contact[_ngcontent-ng-c3508745188] .left-content[_ngcontent-ng-c3508745188] .head[_ngcontent-ng-c3508745188] h1[_ngcontent-ng-c3508745188] {
+  .contact .left-content .head h1 {
     padding-left: 43%;
-}
+  }
 }
 @media (width <= 1700px) {
-  .contact[_ngcontent-ng-c3508745188] .left-content[_ngcontent-ng-c3508745188] .head[_ngcontent-ng-c3508745188] h1[_ngcontent-ng-c3508745188] {
+  .contact .left-content .head h1 {
     padding-left: 42%;
-}
+  }
 }
 
 @media (width < 1550px) {
-  .contact[_ngcontent-ng-c3508745188]
-    .left-content[_ngcontent-ng-c3508745188]
-    .head[_ngcontent-ng-c3508745188]
-    h1[_ngcontent-ng-c3508745188] {
-    margin: 0;
-    letter-spacing: 1px;
-    font-size: 87.5px;
+  .contact .left-content .head h1 {
+    padding-left: 40%;
   }
+}
 
-  .contact .left-content .head {
-    display: flex;
-    align-items: center;
-    width: 71%;
-    justify-content: end;
-  }
-
-  .contact .left-content .head img {
-    width: 48px;
-    height: 4px;
-    position: absolute;
-    left: 0;
-  }
-
-  .contact .right-content {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 80%;
-    padding-left: 8%;
-    padding-right: 165px;
-  }
-
-  .contact .left-content .lower {
-    margin-left: 0;
-    padding-left: 21%;
-    width: 44%;
+@media (width < 1450px) {
+  .contact .left-content .head h1 {
+    padding-left: 39%;
   }
 }
 
