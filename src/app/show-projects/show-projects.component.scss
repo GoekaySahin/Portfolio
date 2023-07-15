@@ -184,3 +184,13 @@
     gap: 0px;
   }
 }
+
+@media (height <= 730px) {
+  .show-projects {
+    margin-top: 19%;
+  }
+
+  .project {
+    padding-top: 0vh;
+  }
+}

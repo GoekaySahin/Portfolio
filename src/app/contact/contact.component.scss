@@ -159,5 +159,7 @@
 @media (width < 1400px) {
   .contact .left-content .lower {
     padding-bottom: 4vh;
+    position: relative;
+    z-index: 100;
   }
 }
