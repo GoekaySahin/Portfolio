@@ -41,3 +41,9 @@ footer {
     }
   }
 }
+
+@media (width < 1920px) {
+  footer .name {
+    padding-left: 10%;
+  }
+}

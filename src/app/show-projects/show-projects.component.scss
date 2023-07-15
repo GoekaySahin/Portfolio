@@ -143,6 +143,24 @@
     top: 79px;
     width: 32%;
   }
+
+  .show-projects .projects .project {
+    gap: 5%;
+    width: 100%;
+  }
+
+  .show-projects .projects img {
+    position: inherit;
+    height: 500px;
+    width: 34%;
+  }
+}
+
+@media (width <= 1750px) {
+  .show-projects .projects .project {
+    gap: 5%;
+    width: 100%;
+  }
 }
 
 @media (width <= 1550px) {

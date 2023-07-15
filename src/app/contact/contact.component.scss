@@ -6,11 +6,12 @@
   .left-content {
     display: flex;
     flex-direction: column;
+    width: 42%;
 
     .head {
       display: flex;
       align-items: center;
-      width: 72.5%;
+      width: 65.5%;
       justify-content: space-between;
       font-size: 44px;
 
@@ -26,7 +27,7 @@
     }
 
     .lower {
-      width: 586px;
+      width: 50%;
       margin-left: 218px;
       padding-bottom: 4vh;
 
@@ -98,10 +99,11 @@
 @media (width < 1920px) {
   .contact .left-content .lower {
     margin-left: 0;
-    padding-left: 32%;
+    padding-left: 29%;
   }
   .contact .left-content .head {
-    width: 95%;
+    width: inherit;
+    justify-content: inherit;
   }
 
   .contact .right-content {
@@ -113,8 +115,33 @@
     padding-top: 16vh;
     padding-bottom: 5vh;
     padding-left: 18.5%;
-    padding-right: 189px;
+    padding-right: 11%;
   }
+
+  .contact .left-content {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+  }
+
+  .contact .left-content .head h1 {
+    padding-left: 46%;
+  }
+
+  .contact .left-content .lower {
+    width: 80%;
+  }
+}
+
+@media (width <= 1800px) {
+  .contact[_ngcontent-ng-c3508745188] .left-content[_ngcontent-ng-c3508745188] .head[_ngcontent-ng-c3508745188] h1[_ngcontent-ng-c3508745188] {
+    padding-left: 43%;
+}
+}
+@media (width <= 1700px) {
+  .contact[_ngcontent-ng-c3508745188] .left-content[_ngcontent-ng-c3508745188] .head[_ngcontent-ng-c3508745188] h1[_ngcontent-ng-c3508745188] {
+    padding-left: 42%;
+}
 }
 
 @media (width < 1550px) {
@@ -145,7 +172,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
- width: 80%;
+    width: 80%;
     padding-left: 8%;
     padding-right: 165px;
   }

@@ -94,8 +94,7 @@
   .skills .rightside {
     position: absolute;
     right: 0;
-    width: 43%;
-    width: 816px;
+    width: 810px;
   }
 
   .skills .leftside {
@@ -106,9 +105,10 @@
   }
 
   .skills .leftside .images {
-    padding-left: 170px;
+    padding-left: 20%;
   }
 }
+
 @media (width <= 1550px) {
   .skills .rightside h1 {
     margin: 0;
