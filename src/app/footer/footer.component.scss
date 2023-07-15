@@ -47,3 +47,21 @@ footer {
     padding-left: 10%;
   }
 }
+
+@media (width <= 1300px) {
+  footer {
+    padding: 0 11%;
+  }
+  footer .name {
+    padding-left: 0;
+  }
+
+  footer .sozial {
+    padding-right: 00px;
+  }
+
+  footer .stripe-footer {
+    padding: unset;
+    left: 0;
+  }
+}
