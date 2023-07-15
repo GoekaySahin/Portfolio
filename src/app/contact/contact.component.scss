@@ -64,7 +64,7 @@
       border: 2px solid #4b47ff;
       border-radius: 8px;
       height: 40px;
-      margin-bottom: 2vh;
+      margin-bottom: 3vh;
       background-color: transparent;
       color: white;
       font-size: 18px;
@@ -110,9 +110,50 @@
     position: relative;
     width: 40%;
     height: 43vh;
-    padding-top: 14vh;
+    padding-top: 16vh;
     padding-bottom: 5vh;
     padding-left: 18.5%;
+    padding-right: 189px;
+  }
+}
+
+@media (width < 1550px) {
+  .contact[_ngcontent-ng-c3508745188]
+    .left-content[_ngcontent-ng-c3508745188]
+    .head[_ngcontent-ng-c3508745188]
+    h1[_ngcontent-ng-c3508745188] {
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 87.5px;
+  }
+
+  .contact .left-content .head {
+    display: flex;
+    align-items: center;
+    width: 71%;
+    justify-content: end;
+  }
+
+  .contact .left-content .head img {
+    width: 48px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+  }
+
+  .contact .right-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+ width: 80%;
+    padding-left: 8%;
+    padding-right: 165px;
+  }
+
+  .contact .left-content .lower {
+    margin-left: 0;
+    padding-left: 21%;
+    width: 44%;
   }
 }
 
