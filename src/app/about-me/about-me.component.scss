@@ -234,7 +234,6 @@
     margin-block-start: -27px;
     width: 100%;
     margin: 0;
-    height: 942px;
   }
 
   .stripe1 {
@@ -254,6 +253,8 @@
 
   .about-me-section .leftside {
     width: 100%;
+    align-items: center;
+    height: inherit;
   }
 
   .about-me-section {
@@ -269,5 +270,20 @@
   }
   .about-me-section .leftside .upper-part {
     font-size: 16px;
+    width: 85vw;
+  }
+
+  .about-me-section .leftside h1 {
+    font-size: 80px;
+    width: 86vw;
+  }
+
+  .about-me-section .leftside .blub span {
+    min-width: inherit;
+    width: 67%;
+  }
+
+  .about-me-section .leftside .blub {
+    width: 82vw;
   }
 }

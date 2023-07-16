@@ -10,3 +10,9 @@ app-about-me {
     padding-top: 0.5%;
   }
 }
+
+@media (width <= 1024px) {
+  app-about-me {
+    height: 12%;
+  }
+}

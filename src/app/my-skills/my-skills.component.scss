@@ -160,6 +160,8 @@
 @media (width <= 1024px) {
   .skills {
     flex-direction: column-reverse;
+    height: 10%;
+    margin-top: 0;
   }
 
   .skills .leftside {
@@ -176,6 +178,7 @@
   .skills .rightside {
     position: inherit;
     width: 100%;
+    height: 47%;
   }
 
   .skills .leftside .shadowbox {
@@ -183,5 +186,23 @@
     position: absolute;
     top: 2vh;
     left: 0;
+  }
+
+  .skills .rightside .right-text {
+    align-items: end;
+    margin-right: 60px;
+  }
+
+  .skills .rightside span {
+    width: 64%;
+    font-size: 18px;
+    text-align: end;
+  }
+
+  .skills .rightside img {
+    width: 50px;
+  }
+  .skills .rightside button {
+    display: none;
   }
 }

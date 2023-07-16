@@ -212,9 +212,54 @@
 @media (width <= 1024px) {
   .show-projects .projects .project {
     flex-direction: column;
+    gap: 0;
+  }
+
+  .show-projects .headline-bottom {
+    font-size: 18px;
+    width: 77%;
+    text-align: center;
   }
 
   .show-projects {
-    margin-top: 50%;
+    margin-top: 17%;
+  }
+
+  .show-projects .projects .description {
+    width: 61%;
+    letter-spacing: 1.2px;
+    direction: initial;
+  }
+
+  .show-projects img {
+    width: 23%;
+  }
+  .shadow img {
+    width: 25%;
+  }
+
+  .show-projects .img-correct {
+    margin-right: 78%;
+  }
+
+  .show-projects .projects img {
+    height: 350px;
+    width: 48%;
+    object-fit: contain;
+  }
+
+  .show-projects .projects .buttons {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .description-text {
+    text-align: center;
+  }
+
+  .project {
+    padding-top: 15vh;
   }
 }
