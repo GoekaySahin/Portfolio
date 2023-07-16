@@ -159,7 +159,7 @@
 
 @media (width <= 1024px) {
   .skills {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .skills .leftside {
