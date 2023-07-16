@@ -86,7 +86,7 @@
 .curve {
   display: flex;
   justify-content: center;
-  height: 1%;
+  height: 0%;
 }
 
 .curve-img {
@@ -145,7 +145,6 @@
       position: absolute;
       top: 46%;
       right: 319px;
-      top: 247px;
     }
 
     .name-calling {
@@ -195,27 +194,22 @@
   }
   .right-section button {
     right: 297px;
-    top: 241px;
   }
 }
 
 @media (width <= 1550px) {
   .right-section {
-    width: 47% !important;
+    width: 50% !important;
     margin-right: 0;
 
     .name-calling {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      line-height: 1.2;
-      height: 231px;
-      justify-content: center;
+      height: 94.5%;
     }
   }
 
   .right-section .name-calling h1 {
-    font-size: 90px;
+    font-size: 89.5px;
   }
 
   .right-section .name-calling h2 {
@@ -226,16 +220,15 @@
     padding-left: 80px;
   }
   .right-section .text-vertical {
-    right: 596px;
-    font-size: 63px;
-    top: 48px;
+    font-size: 60px;
   }
 
   .right-section button {
     right: 255px;
-    top: 226px;
+    top: 37%;
     width: 180px;
     height: 50px;
+    font-size: 23px;
   }
 }
 
@@ -329,7 +322,7 @@
 
 @media (width < 1334px) {
   .right-section .name-calling h1 {
-    font-size: 63.5px;
+    font-size: 63px;
   }
 
   .right-section .name-calling h2 {
@@ -353,16 +346,20 @@
   }
 
   .right-section {
-    top: 224px;
-    width: 42% !important;
+    top: 282px;
+    width: 47% !important;
+    justify-content: inherit;
+    position: relative;
+    z-index: 300;
+    margin-inline-start: -5%;
   }
 
   .right-section button {
     right: 169px;
     bottom: -49%;
-    top: 192px;
-    width: 129px;
-    height: 50px;
+    top: 113px;
+    width: 123px;
+    height: 44px;
     font-size: 18px;
   }
 }
