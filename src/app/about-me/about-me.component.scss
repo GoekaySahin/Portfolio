@@ -14,9 +14,16 @@
 .stripe1 {
   position: absolute;
   left: -12vw;
-  top: 4vh;
   width: 12vw;
   height: 5px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  height: 4%;
 }
 
 .shadow2 {
@@ -225,5 +232,38 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-block-start: -27px;
+    width: 100%;
+    margin: 0;
+    height: 942px;
+  }
+
+  .stripe1 {
+    left: 0;
+  }
+
+  .links {
+    width: 78.5%;
+    margin-left: 11vw;
+  }
+
+  .links img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+
+  .about-me-section .leftside {
+    width: 100%;
+    align-items: center;
+  }
+
+  .about-me-section {
+    margin-top: 14%;
+  }
+
+  .social-links {
+    margin-block-start: -235px;
+    width: 100%;
   }
 }
