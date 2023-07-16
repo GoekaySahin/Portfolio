@@ -156,3 +156,32 @@
     top: 305px;
   }
 }
+
+@media (width <= 1024px) {
+  .skills {
+    flex-direction: column;
+  }
+
+  .skills .leftside {
+    position: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .images {
+      padding-left: 0;
+    }
+  }
+
+  .skills .rightside {
+    position: inherit;
+    width: 100%;
+  }
+
+  .skills .leftside .shadowbox {
+    z-index: -1;
+    position: absolute;
+    top: 2vh;
+    left: 0;
+  }
+}

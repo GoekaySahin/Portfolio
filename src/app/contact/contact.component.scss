@@ -213,3 +213,16 @@
     padding-left: 37px;
   }
 }
+
+@media (width < 1024px) {
+  .contact {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  footer {
+    padding: 6% 0%;
+    flex-direction: column;
+  }
+}

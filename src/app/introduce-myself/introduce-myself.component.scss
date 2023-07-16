@@ -19,7 +19,7 @@
 }
 
 .left-section {
-  width: 43%;
+  width: 43.2%;
   height: 91%;
   display: flex;
   margin-top: 165px;
@@ -27,19 +27,21 @@
   justify-content: center;
 }
 
+.i-am {
+  width: 100%;
+}
+
 .right-section {
   display: flex;
   position: relative;
-  height: 232px;
-  top: 334px;
+  height: 432px;
+  top: 321px;
   width: 47.5%;
   text-align: end;
   align-items: center;
+  flex-direction: column;
 
   button {
-    position: absolute;
-    right: 390px;
-    top: 277px;
     width: 220px;
     height: 70px;
     border-radius: 10px;
@@ -49,13 +51,14 @@
     color: white;
     letter-spacing: 1px;
     font-weight: 800;
+    margin-top: 3%;
   }
 
   .name-calling {
     width: 100%;
     display: flex;
-    flex-direction: column;
     line-height: 1.2;
+    height: 94%;
 
     h1 {
       margin-top: 0;
@@ -72,14 +75,11 @@
   }
 
   .text-vertical {
-    font-size: 94px;
-    width: 13%;
+    font-size: 91px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: scale(-1);
-    position: absolute;
-    right: 897px;
-    top: 18px;
+    text-align: left;
   }
 }
 
@@ -100,6 +100,14 @@
   display: none;
 }
 
+.content-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* RESPONSIV WIDTH START */
 @media (width < 1920px) {
   .curve-img {
@@ -114,28 +122,37 @@
   }
 
   .left-section {
-    width: 38%;
+    width: 35%;
     height: 96%;
     margin-top: 124px;
-    padding-left: 2%;
+    padding-left: 68px;
   }
   .right-section {
-    width: 50.3%;
+    width: 52%;
     top: 288px;
+    display: flex;
+    align-items: end;
 
     .text-vertical {
-      font-size: 79px;
-      text-align: end;
+      font-size: 77px;
       right: 717px;
       top: 30px;
     }
 
     button {
+      margin-inline-start: 11%;
+      margin-right: 1vw;
+      position: absolute;
+      top: 46%;
       right: 319px;
-      top: 234px;
+      top: 247px;
     }
 
     .name-calling {
+      height: 94.5%;
+      width: 100%;
+      display: flex;
+      justify-content: end;
       h1 {
         font-size: 110px;
       }
@@ -155,23 +172,8 @@
   }
 }
 
-@media (width <= 1800px) {
-  .left-section {
-    width: 44.4%;
-  }
-  .right-section {
-    width: 44%;
-  }
-  .right-section .text-vertical {
-    right: 724px;
-  }
-}
-
 @media (width <= 1705px) {
   .right-section {
-    width: 45% !important;
-    text-align: end;
-
     .name-calling h1 {
       font-size: 104.5px;
     }
@@ -179,16 +181,9 @@
       font-size: 59.5px;
     }
     .text-vertical {
-      right: 703px;
+      right: 687px;
       font-size: 72px;
       top: 40px;
-    }
-    button {
-      position: absolute;
-      right: 292px;
-      top: 240px;
-      width: 170px;
-      height: 57px;
     }
   }
 
@@ -198,59 +193,55 @@
     top: 157px;
     margin-inline-start: -26px;
   }
-
-  .left-section {
-    width: 43.4%;
+  .right-section button {
+    right: 297px;
+    top: 241px;
   }
 }
 
 @media (width <= 1550px) {
   .right-section {
-    width: 45% !important;
+    width: 47% !important;
+    margin-right: 0;
 
     .name-calling {
       width: 100%;
       display: flex;
       flex-direction: column;
       line-height: 1.2;
+      height: 231px;
+      justify-content: center;
     }
   }
 
+  .right-section .name-calling h1 {
+    font-size: 90px;
+  }
+
+  .right-section .name-calling h2 {
+    font-size: 50.5px;
+  }
+
   .left-section {
-    height: 92%;
+    padding-left: 80px;
+  }
+  .right-section .text-vertical {
+    right: 596px;
+    font-size: 63px;
+    top: 48px;
+  }
+
+  .right-section button {
+    right: 255px;
+    top: 226px;
+    width: 180px;
+    height: 50px;
   }
 }
 
 @media (width <= 1540px) {
   .right-section {
-    width: 52% !important;
     text-align: end;
-
-    button {
-      right: 228px;
-      top: 185px;
-    }
-
-    .text-vertical {
-      right: 588px;
-      font-size: 60px;
-      top: 53px;
-    }
-
-    .name-calling {
-      h1 {
-        font-size: 87.5px;
-      }
-
-      h2 {
-        font-size: 49.5px;
-      }
-      .text-vertical {
-        font-size: 74px;
-        text-align: end;
-        right: 673px;
-      }
-    }
 
     .left-section {
       width: 34.5%;
@@ -262,25 +253,17 @@
       width: 56%;
     }
   }
+}
 
-  @media (width <= 1440px) {
-    .text-vertical {
-      font-size: 62px;
-      text-align: end;
-      right: 568px;
-      top: 17px;
-    }
-  }
-
-  .right-section {
-    width: 45% !important;
-    button {
-      right: 228px;
-      bottom: -49%;
-      top: 218px;
-    }
+@media (width <= 1440px) {
+  .text-vertical {
+    font-size: 62px;
+    text-align: end;
+    right: 568px;
+    top: 17px;
   }
 }
+
 @media (width <= 1440px) {
   .right-section .text-vertical {
     right: 590px;
@@ -334,17 +317,17 @@
   }
 }
 @media (width <= 1440px) and (height > 719px) {
-  .left-section {
+  /*   .left-section {
     padding-left: 28px;
     width: 43%;
   }
 
   .right-section {
     width: 45.6% !important;
-  }
+  } */
 }
 
-@media (width < 1300px) {
+@media (width < 1334px) {
   .right-section .name-calling h1 {
     font-size: 63.5px;
   }
@@ -399,6 +382,7 @@
     width: 100%;
     position: absolute;
     top: 451px;
+    height: 500px;
   }
 
   .right-section {
@@ -406,16 +390,48 @@
     z-index: 100;
     top: 0;
     width: 100% !important;
+    justify-content: center;
   }
 
   .left-section {
     padding-left: 0;
     width: 100%;
-    height: 60%;
+    height: 70%;
     margin-top: 85px;
   }
 
-  .right-section .name-calling {
+  .namebox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
+  }
+
+  .right-section .name-calling {
+    width: 97vw;
+    height: 225px;
+    align-items: center;
+    flex-direction: inherit;
+  }
+
+  .right-section .name-calling h1 {
+    font-size: 13vw;
+  }
+  .right-section .name-calling h2 {
+    font-size: 7.3vw;
+  }
+
+  .right-section .text-vertical {
+    font-size: 9vw;
+    position: inherit;
+    margin-top: 15px;
+  }
+
+  .right-section button {
+    right: 38%;
+    top: 210px;
+    width: 160px;
+    height: 61px;
+    font-size: 20px;
   }
 }

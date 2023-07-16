@@ -7,7 +7,7 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 15%;
+  margin-top: 285px;
   position: relative;
 
   .headline {
@@ -212,5 +212,9 @@
 @media (width <= 1024px) {
   .show-projects .projects .project {
     flex-direction: column;
+  }
+
+  .show-projects {
+    margin-top: 50%;
   }
 }
