@@ -193,6 +193,12 @@
   }
 }
 
+@media (width <= 1334px) {
+  .about-me {
+    margin-block-start: -86px;
+  }
+}
+
 @media (width <= 1300px) {
   .about-me-section {
     margin-top: 20%;
@@ -232,10 +238,10 @@
   .about-me {
     display: flex;
     flex-direction: column;
-    margin-block-start: -27px;
     width: 100%;
     margin: 0;
     height: 739px;
+    margin-block-start: -99px;
   }
 
   .stripe1 {
