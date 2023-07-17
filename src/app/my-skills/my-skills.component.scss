@@ -160,7 +160,7 @@
 @media (width <= 1024px) {
   .skills {
     flex-direction: column-reverse;
-    height: 10%;
+    height: 851px;
     margin-top: 0;
   }
 
@@ -172,6 +172,8 @@
 
     .images {
       padding-left: 0;
+      width: 59%;
+      margin-top: 100px;
     }
   }
 
