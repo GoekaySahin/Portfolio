@@ -99,17 +99,22 @@
       display: flex;
       gap: 100px;
       justify-content: center;
-      margin-top: 16px;
+      margin-top: 24px;
 
       button {
         width: 165px;
         height: 58px;
         border-radius: 10px;
-        background-color: #00bee8;
+        background-color: #4b47ff;
         border: none;
         font-size: 20px;
         color: white;
         letter-spacing: 0.6px;
+      }
+
+      .git-btn {
+        background-color: #141d2f !important;
+        border: 1px solid #00bee8 !important;
       }
     }
   }
@@ -261,5 +266,62 @@
 
   .project {
     padding-top: 15vh;
+  }
+}
+@media (width <= 621px) {
+  .show-projects .img-correct {
+    margin-right: 83%;
+  }
+
+  .show-projects img {
+    width: 17%;
+  }
+
+  .show-projects .headline-upperpart h1 {
+    font-size: 13vw;
+  }
+
+  .show-projects .headline-bottom {
+    font-size: 3vw;
+  }
+
+  .show-projects .projects .description-text span {
+    font-size: 3vw;
+  }
+}
+
+@media (width <= 560px) {
+  .show-projects .projects .description {
+    width: 85%;
+  }
+
+  .show-projects .img-correct {
+    display: none;
+  }
+
+  .show-projects img {
+    width: 14vw;
+  }
+
+  .show-projects .projects .buttons {
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .show-projects .projects img {
+    height: 228px;
+  }
+
+  .show-projects .projects .buttons button {
+    width: 38vw;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #00bee8;
+    border: none;
+    font-size: 24px;
+    color: white;
+    letter-spacing: 0.6px;
+    font-weight: 760;
   }
 }

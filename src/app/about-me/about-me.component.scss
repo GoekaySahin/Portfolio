@@ -295,3 +295,21 @@
     width: 82vw;
   }
 }
+
+@media (width <= 621px) {
+  .about-me-section .leftside h1 {
+    font-size: 13vw;
+  }
+
+  .about-me-section .leftside .upper-part {
+    font-size: 3vw;
+  }
+
+  .about-me {
+    margin-block-start: -79px;
+  }
+
+  .about-me-section {
+    margin-top: 116px;
+  }
+}

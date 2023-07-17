@@ -70,7 +70,7 @@
 
     button {
       position: absolute;
-      top: 325px;
+      top: 351px;
       width: 165px;
       height: 58px;
       border-radius: 10px;
@@ -206,5 +206,25 @@
   }
   .skills .rightside button {
     display: none;
+  }
+}
+
+@media (width <= 621px) {
+  .skills {
+    flex-direction: column-reverse;
+    height: 24%;
+    margin-top: 0;
+  }
+
+  .skills .rightside {
+    height: 13%;
+  }
+
+  .skills .rightside h1 {
+    font-size: 13vw;
+  }
+
+  .skills .rightside span {
+    font-size: 3vw;
   }
 }

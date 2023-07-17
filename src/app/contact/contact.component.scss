@@ -255,3 +255,31 @@
     margin-bottom: 5vh;
   }
 }
+
+@media (width <= 640px) {
+  .contact .left-content .lower {
+    text-align: inherit;
+    margin-left: 16%;
+    margin-block-start: -18px px;
+    padding: 0;
+    width: 60%;
+  }
+}
+
+@media (width <= 621px) {
+  .contact .left-content .head h1 {
+    font-size: 13vw;
+  }
+
+  .contact .left-content .lower h3 {
+    font-size: 5vw;
+  }
+
+  .contact .left-content .lower span {
+    font-size: 3vw;
+  }
+
+  .contact .right-content input {
+    font-size: 3vw;
+  }
+}

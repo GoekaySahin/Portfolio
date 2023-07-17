@@ -81,6 +81,7 @@
     text-orientation: mixed;
     transform: scale(-1);
     text-align: left;
+    width: 12%;
   }
 }
 
@@ -373,6 +374,12 @@
 }
 
 @media (width <= 1024px) {
+  .bg1 {
+    width: 100%;
+    height: 499px;
+    top: 157px;
+    margin-inline-start: -26px;
+  }
   .hello {
     flex-direction: column;
     align-items: center;
@@ -452,5 +459,40 @@
     height: 61px;
     font-size: 20px;
     margin-block-start: -20px;
+  }
+}
+
+@media (width <= 621px) {
+  
+  .right-section .name-calling h1 {
+    font-size: 13vw;
+  }
+
+  .right-section .name-calling h2 {
+    font-size: 7.3vw;
+  }
+
+  .right-section .text-vertical {
+    font-size: 9vw;
+    position: inherit;
+    margin-top: 6px;
+  }
+
+  .namebox {
+    width: 88vw;
+  }
+
+  .i-am {
+    height: 58%;
+  }
+
+  .right-section button {
+    margin-block-start: 16px;
+  }
+
+
+
+  .mobile {
+    top: 419px;
   }
 }
