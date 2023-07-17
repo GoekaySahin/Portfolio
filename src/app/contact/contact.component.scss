@@ -225,4 +225,33 @@
     padding: 6% 0%;
     flex-direction: column;
   }
+
+  .contact .left-content {
+    width: 100%;
+  }
+
+  .contact .left-content .head img {
+    width: 45px;
+  }
+
+  .contact .left-content .head h1 {
+    padding-left: 28px;
+  }
+
+  .contact .left-content .lower {
+    text-align: inherit;
+    margin-left: 80px;
+    margin-block-start: -18px;
+    padding: 0;
+  }
+
+  .contact .right-content {
+    padding: 0;
+    padding-top: 38px;
+  }
+
+  .contact .right-content .message {
+    height: 13vh;
+    margin-bottom: 5vh;
+  }
 }
