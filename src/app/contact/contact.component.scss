@@ -69,6 +69,13 @@
     padding-left: 7.5%;
     align-items: center;
 
+    span {
+      padding-bottom: 8px;
+    }
+    textarea {
+      padding-bottom: 8px;
+    }
+
     input {
       font-family: Poppins, sans-serif;
       letter-spacing: 1px;
@@ -329,6 +336,7 @@
     padding: 0;
     padding-top: 38px;
     width: 79vw;
+    height: 41vh;
   }
 
   .contact .to-top {
