@@ -20,7 +20,7 @@
 
 .left-section {
   width: 43.2%;
-  height: 79%;
+  height: 80%;
   display: flex;
   margin-top: 139px;
   padding-left: 0%;
@@ -35,7 +35,7 @@
   display: flex;
   position: relative;
   height: 432px;
-  top: 267px;
+  top: 260px;
   width: 47.5%;
   text-align: end;
   align-items: center;
@@ -313,7 +313,6 @@
   }
 } */
 
-
 @media (width < 1334px) {
   .left-section {
     padding-left: 7%;
@@ -427,6 +426,7 @@
     align-items: center;
     flex-direction: inherit;
     justify-content: center;
+    width: 600px;
   }
 
   .right-section .name-calling h1 {
@@ -454,7 +454,14 @@
 }
 
 @media (width <= 621px) {
-  
+  .right-section {
+    margin-block-start: 0px;
+    height: 170px;
+  }
+  .right-section .name-calling {
+    width: inherit;
+    height: 150px;
+  }
   .right-section .name-calling h1 {
     font-size: 13vw;
   }
@@ -478,12 +485,32 @@
   }
 
   .right-section button {
-    margin-block-start: 16px;
+    margin-block-start: 5.5%;
   }
-
-
 
   .mobile {
     top: 419px;
+  }
+
+  .content-overlay {
+    height: 199px;
+  }
+}
+
+@media (width<= 500px) {
+  .left-section {
+    margin-top: 114px;
+  }
+  .image {
+    img {
+      object-fit: inherit;
+      width: 100vw;
+      height: 421px;
+    }
+  }
+
+  .hello {
+    height: 715px;
+    margin-bottom: 27%;
   }
 }
