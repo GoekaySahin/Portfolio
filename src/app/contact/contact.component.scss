@@ -89,6 +89,7 @@
       color: white;
       font-size: 18px;
       padding: 5px;
+      background-color: #141d2f;
     }
 
     input::placeholder {
@@ -112,6 +113,9 @@
       color: white;
       font-size: 18px;
       padding: 5px;
+      position: relative;
+      z-index: 2;
+      background-color: #141d2f;
     }
 
     textarea::placeholder {
@@ -312,6 +316,7 @@
   .contact .right-content .message {
     height: 13vh;
     margin-bottom: 5vh;
+    padding-top: 16px;
   }
 }
 
@@ -335,12 +340,12 @@
   .contact .right-content {
     padding: 0;
     padding-top: 38px;
-    width: 79vw;
-    height: 41vh;
+    width: 83vw;
+    height: 55vh;
   }
 
   .contact .to-top {
-    top: 694px;
+    top: 780px;
     right: 9%;
   }
 }
@@ -363,11 +368,14 @@
     font-size: 3vw;
     padding: 0;
     padding-left: 16px;
+    width: 95%;
+    height: 56px;
   }
   .contact .right-content textarea {
     font-size: 3vw;
     padding: 0;
     padding-left: 16px;
+    width: 95%;
   }
 
   .contact .left-content .head img {
