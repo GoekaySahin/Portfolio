@@ -70,6 +70,9 @@
     align-items: center;
 
     input {
+      font-family: Poppins, sans-serif;
+      letter-spacing: 1px;
+      color: white;
       width: 100%;
       border: 2px solid #4b47ff;
       border-radius: 8px;
@@ -82,6 +85,29 @@
     }
 
     input::placeholder {
+      position: absolute;
+      top: 14px;
+      left: 24px;
+
+      color: white;
+    }
+
+    textarea {
+      font-family: Poppins, sans-serif;
+      letter-spacing: 1px;
+      color: white;
+      width: 100%;
+      border: 2px solid #4b47ff;
+      border-radius: 8px;
+      height: 40px;
+      margin-bottom: 3vh;
+      background-color: transparent;
+      color: white;
+      font-size: 18px;
+      padding: 5px;
+    }
+
+    textarea::placeholder {
       position: absolute;
       top: 14px;
       left: 24px;
@@ -103,6 +129,32 @@
       font-size: 18px;
     }
   }
+}
+
+::-webkit-input-placeholder {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+:-ms-input-placeholder {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 @media (width < 1920px) {
@@ -264,6 +316,26 @@
     padding: 0;
     width: 60%;
   }
+
+  .contact {
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .contact .right-content button {
+    position: relative;
+    z-index: 2;
+  }
+  .contact .right-content {
+    padding: 0;
+    padding-top: 38px;
+    width: 66vw;
+  }
+
+  .contact .to-top {
+    top: 795px;
+    right: 5%;
+  }
 }
 
 @media (width <= 621px) {
@@ -281,5 +353,12 @@
 
   .contact .right-content input {
     font-size: 3vw;
+    padding: 0;
+    padding-left: 16px;
+  }
+  .contact .right-content textarea {
+    font-size: 3vw;
+    padding: 0;
+    padding-left: 16px;
   }
 }

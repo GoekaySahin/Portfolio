@@ -324,4 +324,10 @@
     letter-spacing: 0.6px;
     font-weight: 760;
   }
+
+  .show-projects .projects .project {
+    flex-direction: column;
+    gap: 0;
+    padding-top: 29px;
+  }
 }
