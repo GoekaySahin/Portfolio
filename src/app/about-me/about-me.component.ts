@@ -20,7 +20,7 @@ export class AboutMeComponent {
   }
 
   checkSize(size: any) {
-    if (size <= 1023) {
+    if (size <= 1024) {
       this.mobileView = true;
     } else if (size > 1024) {
       this.mobileView = false;
