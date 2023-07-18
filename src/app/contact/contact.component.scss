@@ -311,10 +311,9 @@
 @media (width <= 640px) {
   .contact .left-content .lower {
     text-align: inherit;
-    margin-left: 16%;
-    margin-block-start: -18px px;
+    margin-left: 8.5%;
     padding: 0;
-    width: 60%;
+    width: 78%;
   }
 
   .contact {
@@ -329,18 +328,19 @@
   .contact .right-content {
     padding: 0;
     padding-top: 38px;
-    width: 66vw;
+    width: 79vw;
   }
 
   .contact .to-top {
-    top: 795px;
-    right: 5%;
+    top: 694px;
+    right: 9%;
   }
 }
 
 @media (width <= 621px) {
   .contact .left-content .head h1 {
     font-size: 13vw;
+    padding-left: 18px;
   }
 
   .contact .left-content .lower h3 {
@@ -360,5 +360,9 @@
     font-size: 3vw;
     padding: 0;
     padding-left: 16px;
+  }
+
+  .contact .left-content .head img {
+    width: 11px;
   }
 }
