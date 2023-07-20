@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { * } as e from '/src'
 
 @Component({
   selector: 'app-about-me',
@@ -6,7 +7,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./about-me.component.scss'],
 })
 export class AboutMeComponent {
-  mobileView = false;
+  /*   mobileView = false;
   actualSize = window.innerWidth;
 
   constructor() {
@@ -26,5 +27,8 @@ export class AboutMeComponent {
       this.mobileView = false;
     }
     return this.mobileView;
-  }
+  } */
+
+  size = window.innerWidth;
+  actualSize = CheckSize.checkSize(this.size);
 }
