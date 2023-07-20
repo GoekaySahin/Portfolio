@@ -1,5 +1,7 @@
 import { Component, HostListener } from '@angular/core';
-import { * } as e from '/src'
+
+
+
 
 @Component({
   selector: 'app-about-me',
@@ -7,7 +9,7 @@ import { * } as e from '/src'
   styleUrls: ['./about-me.component.scss'],
 })
 export class AboutMeComponent {
-  /*   mobileView = false;
+  mobileView: any;
   actualSize = window.innerWidth;
 
   constructor() {
@@ -16,7 +18,13 @@ export class AboutMeComponent {
 
   @HostListener('window:resize', ['$event'])
   onResize(event: { target: { innerWidth: any } }) {
-    const size = screen.availWidth;
+    let size: number;
+    if(window.innerWidth > screen.availWidth){
+      size = screen.availWidth;  
+    } else {
+      size = window.innerWidth;
+
+    }
     this.checkSize(size);
   }
 
@@ -26,9 +34,6 @@ export class AboutMeComponent {
     } else if (size > 1024) {
       this.mobileView = false;
     }
-    return this.mobileView;
-  } */
-
-  size = window.innerWidth;
-  actualSize = CheckSize.checkSize(this.size);
+  } 
+  
 }

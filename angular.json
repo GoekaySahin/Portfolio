@@ -80,7 +80,7 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": ["src/app/shared_functions/checkSize.js"]
+            "scripts": ["src/app/checkSize.js"]
           }
         }
       }
