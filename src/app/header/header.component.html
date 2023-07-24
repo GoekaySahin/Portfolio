@@ -10,7 +10,7 @@
     </div>
 
     <div class="burgermenu">
-      <img src="assets/img/burger-menu.png" class="burger-menu" />
+      <img src="assets/img/burger-menu.png" class="burger-menu d-none" (click)="showMenu()"/>
     </div>
     <div [ngClass]="{ 'links':true, 'd-none':mobileView}">
       <a [routerLink]="[]">About me</a>
@@ -18,4 +18,6 @@
       <a [routerLink]="[]">Imprint</a>
     </div>
   </div>
+
+  <div class="menu-overview d-none"></div>
 </header>
