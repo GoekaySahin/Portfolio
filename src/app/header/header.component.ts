@@ -6,10 +6,8 @@ import { AboutMeComponent } from '../about-me/about-me.component';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+export class HeaderComponent  {
+
 
   mobileView: any;
   aboutMe: AboutMeComponent;
