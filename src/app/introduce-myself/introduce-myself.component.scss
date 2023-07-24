@@ -200,9 +200,9 @@
   }
 }
 
-@media (width <= 1550px) {
+@media (width <= 1600px) {
   .right-section {
-    width: 50% !important;
+    width: 48% !important;
     margin-right: 0;
 
     .name-calling {
@@ -227,11 +227,13 @@
   }
 
   .right-section button {
-    right: 255px;
-    top: 37%;
     width: 180px;
     height: 50px;
     font-size: 23px;
+    position: absolute;
+    top: 170px;
+    margin-right: 0;
+    right: 260px;
   }
 }
 
@@ -258,62 +260,12 @@
     right: 568px;
     top: 17px;
   }
-}
-
-@media (width <= 1440px) {
   .right-section .text-vertical {
     right: 590px;
   }
 }
-/* 
-@media (width <= 1280px) and (height > 1100px) {
-  .curve-img {
-    height: 1256px;
-  }
 
-  .right-section {
-    margin-top: 347px;
-    width: 47.5%;
-
-    .name-calling {
-      h1 {
-        font-size: 73.5px;
-      }
-      h2 {
-        font-size: 42px;
-      }
-    }
-
-    .text-vertical {
-      font-size: 53px;
-      text-align: end;
-      right: 465px;
-      top: 29px;
-    }
-  }
-  .left-section {
-    width: 40.3% !important;
-    height: 81% !important;
-    margin-top: 18%;
-    padding-left: 0%;
-  }
-  .bg1 {
-    width: 60%;
-    margin-inline-start: -13px;
-  }
-  .curve {
-    display: flex;
-    justify-content: center;
-    height: 89px;
-  }
-
-  .right-section button {
-    right: 186px;
-    top: 169px;
-  }
-} */
-
-@media (width < 1334px) {
+@media (width < 1400px) {
   .left-section {
     padding-left: 7%;
   }
@@ -322,11 +274,11 @@
   }
 
   .right-section .name-calling h1 {
-    font-size: 6vw;
+    font-size: 62px;
   }
 
   .right-section .name-calling h2 {
-    font-size: 3.4vw;
+    font-size: 34.7px;
   }
 
   .left-section {
@@ -335,9 +287,12 @@
   }
 
   .right-section .text-vertical {
-    right: 424px;
-    font-size: 43px;
-    top: 69px;
+    right: 412px;
+    font-size: 42px;
+    top: 11px;
+    position: absolute;
+    width: 59px;
+
   }
 
   .curve-img {
@@ -354,12 +309,11 @@
   }
 
   .right-section button {
-    right: 169px;
-    bottom: -49%;
+    right: 174px;
     top: 113px;
     width: 123px;
     height: 44px;
-    font-size: 18px;
+    font-size: 18px
   }
 }
 
@@ -385,6 +339,7 @@
     position: absolute;
     top: 430px;
     height: 500px;
+    object-fit: cover;
   }
 
   .right-section {
@@ -463,11 +418,11 @@
     height: 150px;
   }
   .right-section .name-calling h1 {
-    font-size: 13vw;
+    font-size: 12vw;
   }
 
   .right-section .name-calling h2 {
-    font-size: 7.3vw;
+    font-size: 6.7vw;
   }
 
   .right-section .text-vertical {
@@ -477,7 +432,7 @@
   }
 
   .namebox {
-    width: 88vw;
+    width: 85%;
   }
 
   .i-am {
@@ -514,4 +469,8 @@
     height: 715px;
     margin-bottom: 27%;
   }
+
+  .right-section .text-vertical {
+    width: 48px;
+}
 }

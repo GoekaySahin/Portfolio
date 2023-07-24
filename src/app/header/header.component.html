@@ -12,7 +12,7 @@
     <div class="burgermenu">
       <img src="assets/img/burger-menu.png" class="burger-menu" />
     </div>
-    <div class="links">
+    <div [ngClass]="{ 'links':true, 'd-none':mobileView}">
       <a [routerLink]="[]">About me</a>
       <a [routerLink]="[]">Skills</a>
       <a [routerLink]="[]">Imprint</a>

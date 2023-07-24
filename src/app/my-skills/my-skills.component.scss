@@ -264,3 +264,15 @@
     margin-top: 70px;
   }
 }
+
+
+@media (width <= 355px) {
+  .skills {
+    height: 1823px;
+ }
+}
+@media (width <= 332px) {
+  .skills {
+    height: 1738px;
+ }
+}
