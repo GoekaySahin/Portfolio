@@ -267,6 +267,12 @@
   .project {
     padding-top: 15vh;
   }
+
+  .show-projects .projects .tech span {
+    font-size: 22px;
+    font-weight: 300;
+    color: #00bee8;
+  }
 }
 @media (width <= 621px) {
   .show-projects .img-correct {
