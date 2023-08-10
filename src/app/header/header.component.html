@@ -45,12 +45,12 @@
     'slide-menu': !openend,
     'd-none': openend,
     dflex: !openend,
-    'scale-out-bl': close
+    'scale-out-tr': close
   }"
 >
   <div [ngClass]="{ 'menu-inner': true }">
-    <a [routerLink]="[]">About me</a>
-    <a [routerLink]="[]">Skills</a>
-    <a [routerLink]="[]">Imprint</a>
+    <a (click)="scrollToAboutMe()">Über mich</a>
+    <a (click)="scrollToSkills()">Skills</a>
+    <a (click)="scrollToProjects()">Projekte</a>
   </div>
 </div>

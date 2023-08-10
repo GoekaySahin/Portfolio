@@ -75,4 +75,24 @@ export class HeaderComponent {
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
+
+  scrollToAboutMe() {
+    window.scrollTo({ top: 800, behavior: "smooth" });
+    this.setButton();
+  }
+
+  scrollToSkills() {
+    window.scrollTo({ top: 1400, behavior: "smooth" });
+    this.setButton();
+  }
+
+  scrollToProjects() {
+    window.scrollTo({ top: 2300, behavior: "smooth" });
+    this.setButton();
+  }
+
+  scrollToContact() {
+    window.scrollTo({ top: 4850, behavior: "smooth" });
+    this.setButton();
+  }
 }
