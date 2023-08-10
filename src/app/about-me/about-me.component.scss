@@ -9,7 +9,7 @@
   top: 5%;
   padding-top: 3vh;
   height: 78%;
-  margin-block-start: -47px;
+  margin-block-start: 127px;
 }
 
 .stripe1 {
@@ -47,7 +47,7 @@
 }
 
 .about-me-section {
-  margin-top: 17%;
+  margin-top: 9%;
   padding-left: 1vw;
   display: flex;
   align-items: center;
@@ -125,7 +125,13 @@
   }
 }
 
-@media (width < 1920px) {
+@media (width <= 2500px) {
+  .about-me {
+    margin-block-start: 144px;
+  }
+}
+
+@media (width <= 1920px) {
   app-about-me {
     padding-top: 1%;
   }
@@ -155,7 +161,7 @@
 
   .links {
     width: 385px;
- }
+  }
 }
 
 @media (width <= 1550px) and (height <= 1000px) {
@@ -329,4 +335,8 @@
   .about-me {
     height: 600px;
   }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  /* Hier dein CSS einfügen */
 }
