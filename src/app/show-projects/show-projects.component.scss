@@ -165,6 +165,12 @@
   }
 }
 
+@media (width <= 1800px) {
+  .show-projects {
+    margin-top: 185px;
+  }
+}
+
 @media (width <= 1750px) {
   .show-projects .projects .project {
     gap: 5%;

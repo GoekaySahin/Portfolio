@@ -110,6 +110,12 @@
   }
 }
 
+@media (width <= 1800px) {
+  .skills {
+    margin-top: 8%;
+  }
+}
+
 @media (width <= 1550px) {
   .skills .rightside h1 {
     margin: 0;
