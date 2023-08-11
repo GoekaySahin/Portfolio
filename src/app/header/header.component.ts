@@ -76,23 +76,59 @@ export class HeaderComponent {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  scrollToAboutMe() {
-    window.scrollTo({ top: 800, behavior: "smooth" });
+  scrollToAboutMeMobile() {
+    this.scrollToAboutMe();
     this.setButton();
   }
 
-  scrollToSkills() {
-    window.scrollTo({ top: 1400, behavior: "smooth" });
+  scrollToSkillsMobile() {
+    this.scrollToSkills();
     this.setButton();
+  }
+
+  scrollToProjectsMobile() {
+    this.scrollToSkills();
+    this.setButton();
+  }
+
+  scrollToContactMobile() {
+    this.scrollToSkills();
+    this.setButton();
+  }
+
+  scrollToAboutMe() {
+    if (window.innerWidth > 2000) {
+      window.scrollTo({ top: 1000, behavior: "smooth" });
+    } else if (window.innerWidth > 1800) {
+      window.scrollTo({ top: 900, behavior: "smooth" });
+    } else if (window.innerWidth > 1550) {
+      window.scrollTo({ top: 700, behavior: "smooth" });
+    } else if (window.innerWidth > 1300) {
+      window.scrollTo({ top: 650, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 800, behavior: "smooth" });
+    }
+  }
+
+  scrollToSkills() {
+    if (window.innerWidth > 2000) {
+      window.scrollTo({ top: 2000, behavior: "smooth" });
+    } else if (window.innerWidth > 1800) {
+      window.scrollTo({ top: 1800, behavior: "smooth" });
+    } else if (window.innerWidth > 1300) {
+      window.scrollTo({ top: 1600, behavior: "smooth" });
+    } else if (window.innerWidth > 1024) {
+      window.scrollTo({ top: 1500, behavior: "smooth" });
+    } else if (window.innerWidth > 400) {
+      window.scrollTo({ top: 1400, behavior: "smooth" });
+    }
   }
 
   scrollToProjects() {
     window.scrollTo({ top: 2300, behavior: "smooth" });
-    this.setButton();
   }
 
   scrollToContact() {
     window.scrollTo({ top: 4850, behavior: "smooth" });
-    this.setButton();
   }
 }

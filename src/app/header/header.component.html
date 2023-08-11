@@ -30,9 +30,9 @@
     </div>
 
     <div [ngClass]="{ links: true, 'd-none': mobileView }">
-      <a [routerLink]="[]">About me</a>
-      <a [routerLink]="[]">Skills</a>
-      <a [routerLink]="[]">Imprint</a>
+      <a (click)="scrollToAboutMe()">About me</a>
+      <a (click)="scrollToSkills()">Skills</a>
+      <a (click)="scrollToProjects()">Projekte</a>
     </div>
   </div>
 
@@ -49,8 +49,8 @@
   }"
 >
   <div [ngClass]="{ 'menu-inner': true }">
-    <a (click)="scrollToAboutMe()">Über mich</a>
-    <a (click)="scrollToSkills()">Skills</a>
-    <a (click)="scrollToProjects()">Projekte</a>
+    <a (click)="scrollToAboutMeMobile()">Über mich</a>
+    <a (click)="scrollToSkillsMobile()">Skills</a>
+    <a (click)="scrollToProjectsMobile()">Projekte</a>
   </div>
 </div>

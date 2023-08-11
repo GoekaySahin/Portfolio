@@ -1,4 +1,4 @@
-export function sendEmail() {
+/* export function sendEmail() {
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: "username",
@@ -9,3 +9,4 @@ export function sendEmail() {
     Body: "And this is the body",
   }).then((message) => alert(message));
 }
+ */

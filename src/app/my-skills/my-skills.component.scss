@@ -91,6 +91,12 @@
   }
 }
 
+@media (width < 2000px) {
+  .skills {
+    margin-top: 17%;
+  }
+}
+
 @media (width < 1920px) {
   .skills .rightside {
     position: absolute;
@@ -138,6 +144,10 @@
     right: 0;
     width: 43%;
     width: 689px;
+  }
+
+  .skills {
+    height: 13%;
   }
 }
 
