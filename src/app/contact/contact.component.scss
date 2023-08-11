@@ -364,27 +364,27 @@
 
 @media (width <= 621px) {
   .contact .left-content .head h1 {
-    font-size: 13vw;
+    font-size: 60px;
     padding-left: 18px;
   }
 
   .contact .left-content .lower h3 {
-    font-size: 5vw;
+    font-size: 20px;
   }
 
   .contact .left-content .lower span {
-    font-size: 3vw;
+    font-size: 15px;
   }
 
   .contact .right-content input {
-    font-size: 3vw;
+    font-size: 15px;
     padding: 0;
     padding-left: 16px;
     width: 95%;
     height: 56px;
   }
   .contact .right-content textarea {
-    font-size: 3vw;
+    font-size: 15px;
     padding: 0;
     padding-left: 16px;
     width: 95%;
@@ -392,5 +392,26 @@
 
   .contact .left-content .head img {
     width: 11px;
+  }
+}
+
+@media (width <= 400px) {
+  .contact .left-content .head h1 {
+    font-size: 40px;
+  }
+
+  .contact .left-content .lower h3 {
+    font-size: 15px;
+  }
+
+  .contact .left-content .lower span {
+    font-size: 12px;
+  }
+
+  .contact .right-content input {
+    font-size: 12px;
+  }
+  .contact .right-content textarea {
+    font-size: 12px;
   }
 }

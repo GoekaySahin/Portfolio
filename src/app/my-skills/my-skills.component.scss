@@ -162,7 +162,8 @@
   }
 
   .skills .rightside img {
-    top: 134px;
+    top: 146px;
+    width: 7vw;
   }
 
   .skills .rightside button {
@@ -176,8 +177,7 @@
 @media (width <= 1024px) {
   .skills {
     flex-direction: column-reverse;
-    height: 809px;
-    margin-top: 0;
+
     font-size: 80px;
   }
 
@@ -228,22 +228,15 @@
 
 @media (width <= 885px) {
   .skills {
-    height: 1009px;
-  }
-}
-
-@media (width <= 650px) {
-  .skills {
-    height: 1009px;
+    height: initial;
+    margin-top: 200px;
   }
 }
 
 @media (width <= 625px) {
   .skills {
     flex-direction: column-reverse;
-    margin-top: 0;
     padding-top: 0;
-    height: 944px;
   }
 
   .skills .rightside {
@@ -251,49 +244,52 @@
   }
 
   .skills .rightside h1 {
-    font-size: 13vw;
+    font-size: 60px;
   }
 
   .skills .rightside span {
-    font-size: 3vw;
+    font-size: 15px;
   }
 
   .skills .leftside .images {
     width: calc(100% - 36px);
   }
-}
-
-@media (width <= 500px) {
-  .skills {
-    height: 836px;
+  .skills .leftside .images .imagebox span {
+    padding-top: 16px;
+    font-size: 15px;
   }
 }
 
 @media (width <= 470px) {
-  .skills {
-    height: 1126px;
-  }
   .skills .leftside .images {
-    width: calc(65% - 36px);
+    width: calc(44% - 36px);
   }
 }
 @media (width <= 400px) {
-  .skills {
-    height: 958px;
-  }
-
   .skills .leftside .images {
     margin-top: 70px;
   }
-}
 
-@media (width <= 355px) {
+  .skills .leftside .images .imagebox span {
+    font-size: 12px;
+  }
+
+  .skills .rightside h1 {
+    font-size: 40px;
+  }
+
+  .skills .rightside span {
+    font-size: 12px;
+  }
+
   .skills {
-    height: 1823px;
+    height: initial;
+    margin-top: 0;
   }
 }
+
 @media (width <= 332px) {
   .skills {
-    height: 1738px;
+    height: 1838px;
   }
 }

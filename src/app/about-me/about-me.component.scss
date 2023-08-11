@@ -249,8 +249,8 @@
     padding-left: 0vw;
   }
   .about-me-section .rightside .about-me-face {
-    height: 74%;
-    width: 400px;
+    height: 80%;
+    width: 74%;
   }
 }
 
@@ -261,7 +261,6 @@
     width: 100%;
     margin: 0;
     height: 500px;
-    margin-block-start: -93px;
   }
 
   .stripe1 {
@@ -313,17 +312,17 @@
   }
 
   .about-me-section .leftside .blub {
-    width: 72vw;
+    width: initial;
   }
 }
 
 @media (width <= 621px) {
   .about-me-section .leftside h1 {
-    font-size: 13vw;
+    font-size: 60px;
   }
 
   .about-me-section .leftside .upper-part {
-    font-size: 3vw;
+    font-size: 15px;
     height: 460px;
   }
 
@@ -343,7 +342,17 @@
   }
 
   .about-me {
-    height: 600px;
+    height: inherit;
+    margin-bottom: 150px;
+    margin-block-start: 0;
+  }
+
+  .about-me-section .leftside h1 {
+    font-size: 40px;
+  }
+
+  .about-me-section .leftside .upper-part {
+    font-size: 12px;
   }
 }
 

@@ -290,15 +290,15 @@
   }
 
   .show-projects .headline-upperpart h1 {
-    font-size: 13vw;
+    font-size: 60px;
   }
 
   .show-projects .headline-bottom {
-    font-size: 3vw;
+    font-size: 15px;
   }
 
   .show-projects .projects .description-text span {
-    font-size: 3vw;
+    font-size: 15px;
   }
 }
 
@@ -341,5 +341,19 @@
     flex-direction: column;
     gap: 0;
     padding-top: 29px;
+  }
+}
+
+@media (width <= 400px) {
+  .show-projects .headline-upperpart h1 {
+    font-size: 40px;
+  }
+
+  .show-projects .headline-bottom {
+    font-size: 12px;
+  }
+
+  .show-projects .projects .description-text span {
+    font-size: 12px;
   }
 }
