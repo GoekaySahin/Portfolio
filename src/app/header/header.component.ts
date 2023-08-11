@@ -14,7 +14,7 @@ export class HeaderComponent {
 
   @HostListener("window:resize", ["$event"])
   onResize(event: { target: { innerWidth: any } }) {
-    if (window.innerWidth < 1024) {
+    if (window.innerWidth <= 1024) {
       this.mobileView = true;
     } else {
       this.mobileView = false;
@@ -87,12 +87,12 @@ export class HeaderComponent {
   }
 
   scrollToProjectsMobile() {
-    this.scrollToSkills();
+    this.scrollToProjects();
     this.setButton();
   }
 
   scrollToContactMobile() {
-    this.scrollToSkills();
+    this.scrollToContact();
     this.setButton();
   }
 
@@ -125,7 +125,17 @@ export class HeaderComponent {
   }
 
   scrollToProjects() {
-    window.scrollTo({ top: 2300, behavior: "smooth" });
+    if (window.innerWidth > 2300) {
+      window.scrollTo({ top: 3000, behavior: "smooth" });
+    } else if (window.innerWidth > 1800) {
+      window.scrollTo({ top: 2900, behavior: "smooth" });
+    } else if (window.innerWidth > 1024) {
+      window.scrollTo({ top: 2500, behavior: "smooth" });
+    } else if (window.innerWidth > 560) {
+      window.scrollTo({ top: 2400, behavior: "smooth" });
+    } else if (window.innerWidth > 0) {
+      window.scrollTo({ top: 3100, behavior: "smooth" });
+    }
   }
 
   scrollToContact() {
