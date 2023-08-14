@@ -11,6 +11,7 @@ export class HeaderComponent {
   aboutMe: AboutMeComponent;
   openend = true;
   close = false;
+  hoverClassAdded = false;
 
   @HostListener("window:resize", ["$event"])
   onResize(event: { target: { innerWidth: any } }) {
@@ -140,5 +141,13 @@ export class HeaderComponent {
 
   scrollToContact() {
     window.scrollTo({ top: 4850, behavior: "smooth" });
+  }
+
+  addHoverClass() {
+    this.hoverClassAdded = true;
+  }
+
+  removeHoverClass() {
+    this.hoverClassAdded = false;
   }
 }
