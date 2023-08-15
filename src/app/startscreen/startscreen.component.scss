@@ -11,6 +11,12 @@ app-about-me {
   }
 }
 
+@media (width <= 1550px) {
+  app-about-me {
+    height: 15%;
+  }
+}
+
 @media (width <= 1024px) {
   app-about-me {
     height: inherit;

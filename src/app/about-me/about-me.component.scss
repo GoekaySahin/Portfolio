@@ -114,7 +114,13 @@
       overflow: hidden;
       position: relative;
       z-index: 2;
-      background-color: black;
+      background-color: #6f90ff00;
+
+      img {
+        width: 500px;
+        height: 699px;
+        object-fit: cover;
+      }
     }
 
     .stripe2 {
@@ -249,8 +255,12 @@
     padding-left: 0vw;
   }
   .about-me-section .rightside .about-me-face {
-    height: 80%;
-    width: 74%;
+    height: 435px;
+    width: 440px;
+  }
+
+  .about-me-section .rightside .about-me-face img {
+    height: 608px;
   }
 }
 
@@ -331,12 +341,12 @@
   }
 }
 
-@media (width <= 500px) {
+@media (width <= 560px) {
   .about-me-section .leftside .upper-part {
     height: 380px;
   }
 }
-@media (width <= 400px) {
+@media (width <= 460px) {
   .about-me-section .leftside .upper-part {
     height: 260px;
   }

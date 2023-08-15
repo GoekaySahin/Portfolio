@@ -217,7 +217,7 @@
   }
 
   .contact {
-    margin-top: 12%;
+    margin-top: 200px;
     padding-bottom: 0;
   }
 }
@@ -341,8 +341,8 @@
   }
 
   .contact {
-    margin-top: 100px;
-    height: 84vh;
+    margin-top: 150px;
+    height: 100vh;
   }
 
   .contact .right-content button {
@@ -396,7 +396,7 @@
   }
 }
 
-@media (width <= 400px) {
+@media (width <= 460px) {
   .contact .left-content .head h1 {
     font-size: 40px;
   }
@@ -414,5 +414,12 @@
   }
   .contact .right-content textarea {
     font-size: 12px;
+  }
+}
+
+@media (width <= 420px) {
+  .contact[_ngcontent-ng-c492407953] {
+    margin-top: 100px;
+    height: 110vh;
   }
 }
