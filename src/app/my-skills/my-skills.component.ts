@@ -7,9 +7,9 @@ import { HeaderComponent } from "../header/header.component";
   styleUrls: ["./my-skills.component.scss"],
 })
 export class MySkillsComponent {
-  scrollToContact() {
-    throw new Error("Method not implemented.");
-  }
+  header = new HeaderComponent();
+  toContact = this.header.scrollToContact;
+
   icons: string[] = [
     "angular.png",
     "ts.png",

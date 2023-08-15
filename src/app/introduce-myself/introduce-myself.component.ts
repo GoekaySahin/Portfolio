@@ -1,4 +1,4 @@
-import { Component, ViewChild } from "@angular/core";
+import { Component } from "@angular/core";
 import { HeaderComponent } from "../header/header.component";
 
 @Component({
@@ -7,9 +7,6 @@ import { HeaderComponent } from "../header/header.component";
   styleUrls: ["./introduce-myself.component.scss"],
 })
 export class IntroduceMyselfComponent {
-  @ViewChild(HeaderComponent) headerComponent: HeaderComponent;
-
-  scrollToContact() {
-    this.headerComponent.scrollToContact();
-  }
+  headerComponent = new HeaderComponent();
+  toContact = this.headerComponent.scrollToContact;
 }

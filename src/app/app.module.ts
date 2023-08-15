@@ -35,6 +35,7 @@ const routes: Routes = [
     ContactComponent,
     FooterComponent,
     ImpressumComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +45,6 @@ const routes: Routes = [
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [RouterModule],
+  exports: [RouterModule, HeaderComponent],
 })
 export class AppModule {}
