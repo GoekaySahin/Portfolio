@@ -12,6 +12,16 @@ import { ShowProjectsComponent } from "./show-projects/show-projects.component";
 import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "./footer/footer.component";
 import { ReactiveFormsModule } from "@angular/forms";
+import { ImpressumComponent } from "./impressum/impressum.component";
+import { RouterModule, Routes } from "@angular/router";
+
+const routes: Routes = [
+  // Andere Routen hier...
+  {
+    path: "src/app/impressum/impressum.component.html",
+    component: ImpressumComponent,
+  },
+];
 
 @NgModule({
   declarations: [
@@ -24,9 +34,16 @@ import { ReactiveFormsModule } from "@angular/forms";
     ShowProjectsComponent,
     ContactComponent,
     FooterComponent,
+    ImpressumComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(routes),
+  ],
   providers: [],
   bootstrap: [AppComponent],
+  exports: [RouterModule],
 })
 export class AppModule {}
