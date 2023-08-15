@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from "@angular/core";
 import { AboutMeComponent } from "../about-me/about-me.component";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-header",
@@ -12,6 +13,7 @@ export class HeaderComponent {
   openend = true;
   close = false;
   hoverClassAdded = false;
+  inImprint = false;
 
   @HostListener("window:resize", ["$event"])
   onResize(event: { target: { innerWidth: any } }) {
@@ -149,5 +151,13 @@ export class HeaderComponent {
 
   removeHoverClass() {
     this.hoverClassAdded = false;
+  }
+
+  checkLink() {
+    if (window.location.href.includes("imp")) {
+      this.inImprint = true;
+    } else {
+      this.inImprint = false;
+    }
   }
 }

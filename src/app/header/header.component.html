@@ -1,12 +1,14 @@
-<header>
+<header onload="checkLink()">
   <div class="header-content">
     <div class="name">
-      <h2>
-        G<span [ngStyle]="{ color: '#00bee8' }">ö</span>ka<span
-          [ngStyle]="{ color: '#4b47ff' }"
-          >y</span
-        >
-      </h2>
+      <a href="https://gökay-sahin.de" target="_blank">
+        <h2>
+          G<span [ngStyle]="{ color: '#00bee8' }">ö</span>ka<span
+            [ngStyle]="{ color: '#4b47ff' }"
+            >y</span
+          >
+        </h2>
+      </a>
     </div>
 
     <div
@@ -30,9 +32,14 @@
     </div>
 
     <div [ngClass]="{ links: true, 'd-none': mobileView }">
-      <a (click)="scrollToAboutMe()">About me</a>
-      <a (click)="scrollToSkills()">Skills</a>
-      <a (click)="scrollToProjects()">Projekte</a>
+      <div [ngClass]="{ 'd-none': !inImprint }">
+        <a (click)="scrollToAboutMe()">About me</a>
+        <a (click)="scrollToSkills()">Skills</a>
+        <a (click)="scrollToProjects()">Projekte</a>
+      </div>
+      <a href="https://gökay-sahin.de" [ngClass]="{ 'd-none': inImprint }"
+        >Home</a
+      >
     </div>
   </div>
 
@@ -48,7 +55,7 @@
     'scale-out-tr': close
   }"
 >
-  <div [ngClass]="{ 'menu-inner': true }">
+  <div [ngClass]="{ 'menu-inner': true, 'd-none': inImprint }">
     <a
       class="scale-up-center"
       (mouseenter)="addHoverClass()"
