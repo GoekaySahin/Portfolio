@@ -56,14 +56,14 @@
   }"
 >
   <div [ngClass]="{ 'menu-inner': true, 'd-none': inImprint }">
-    <a
+    <!--     <a
       class="scale-up-center"
       (mouseenter)="addHoverClass()"
       (mouseleave)="removeHoverClass()"
       (click)="scrollToAboutMe()"
       >About me</a
-    >
-    <a>(click)="scrollToAboutMeMobile()">Über mich</a>
+    > -->
+    <a (click)="scrollToAboutMeMobile()">Über mich</a>
     <a (click)="scrollToSkillsMobile()">Skills</a>
     <a (click)="scrollToProjectsMobile()">Projekte</a>
   </div>

@@ -74,11 +74,12 @@ header {
 .menu-inner {
   width: 300px;
   height: 200px;
-  margin-block-end: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 22px;
+  position: absolute;
+  top: 170px;
 
   a {
     text-decoration: none;
