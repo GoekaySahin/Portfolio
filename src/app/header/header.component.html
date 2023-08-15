@@ -1,4 +1,4 @@
-<header onload="checkLink()">
+<header>
   <div class="header-content">
     <div class="name">
       <a href="https://gökay-sahin.de" target="_blank">
@@ -31,13 +31,13 @@
       </button>
     </div>
 
-    <div [ngClass]="{ links: true, 'd-none': mobileView }">
-      <div [ngClass]="{ 'd-none': !inImprint }">
+    <div [ngClass]="{ links: true, 'd-none': mobileView, jce: inImprint }">
+      <div [ngClass]="{ links: !inImprint, 'd-none': inImprint }">
         <a (click)="scrollToAboutMe()">About me</a>
         <a (click)="scrollToSkills()">Skills</a>
         <a (click)="scrollToProjects()">Projekte</a>
       </div>
-      <a href="https://gökay-sahin.de" [ngClass]="{ 'd-none': inImprint }"
+      <a href="https://gökay-sahin.de" [ngClass]="{ 'd-none': !inImprint }"
         >Home</a
       >
     </div>

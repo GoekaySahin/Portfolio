@@ -29,6 +29,10 @@ export class HeaderComponent {
     this.mobileView = this.aboutMe.mobileView;
   }
 
+  ngOnInit(): void {
+    this.checkLink();
+  }
+
   setButton(): void {
     const buttonElement = document.getElementById(
       "myButton"
