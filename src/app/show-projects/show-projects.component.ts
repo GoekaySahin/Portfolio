@@ -33,6 +33,18 @@ export class ShowProjectsComponent {
     }
   }
 
+  openProject(i: string | number) {
+    const links = [this.openProjectJoin()];
+
+    if (links[i]) {
+      links[i]();
+    }
+  }
+
+  openProjectJoin() {
+    window.open("https://join.gökay-sahin.de", "blank");
+  }
+
   openGitHubLocco() {
     window.open("https://github.com/HydraCoding/El-Pollio-Loco-", "_blank");
   }

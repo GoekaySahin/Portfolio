@@ -17,14 +17,14 @@
     </div>
   </div>
 
-  <form action="javascript:void(0)" (submit)="send()">
+  <form (ngSubmit)="send()" [formGroup]="form">
     <div class="right-content" [formGroup]="form">
       <span>Ihr Name</span>
       <!-- placeholder="Ihr Name" -->
       <input type="text" id="name" required formControlName="form_name" />
       <span>Ihre Email</span>
       <!--  placeholder="Ihre Email" -->
-      <input type="text" id="email" required formControlName="email" />
+      <input type="email" id="email" required formControlName="email" />
       <span>Ihre Nachricht</span>
       <!-- placeholder="Ihre Nachricht" -->
       <textarea
@@ -38,6 +38,17 @@
       ></textarea>
 
       <button type="submit">Senden</button>
+
+      <div
+        [ngClass]="{
+          'send-message': !invisible,
+          'd-none': invisible,
+          'scale-in-ver-center': !invisible
+        }"
+        id="message-div"
+      >
+        <span class="send">Nachricht gesendet.</span>
+      </div>
     </div>
   </form>
   <img class="shadow-contact" src="assets/img/shadows/footer.png" alt="" />
