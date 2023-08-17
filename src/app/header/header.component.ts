@@ -114,7 +114,7 @@ export class HeaderComponent implements OnInit {
     } else if (window.innerWidth > 1550) {
       window.scrollTo({ top: 700, behavior: "smooth" });
     } else if (window.innerWidth > 1300) {
-      window.scrollTo({ top: 650, behavior: "smooth" });
+      window.scrollTo({ top: 700, behavior: "smooth" });
     } else {
       window.scrollTo({ top: 800, behavior: "smooth" });
     }

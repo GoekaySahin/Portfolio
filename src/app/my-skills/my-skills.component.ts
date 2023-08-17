@@ -7,8 +7,31 @@ import { HeaderComponent } from "../header/header.component";
   styleUrls: ["./my-skills.component.scss"],
 })
 export class MySkillsComponent {
-  header = new HeaderComponent();
-  toContact = this.header.scrollToContact;
+  /*   header = new HeaderComponent();
+  toContact = this.header.scrollToContact; */
+
+  windowSize = window.innerWidth;
+
+  toContact() {
+    this.refreshWindowSize();
+    if (this.windowSize > 2400) {
+      window.scrollTo({ top: 5200, behavior: "smooth" });
+    } else if (this.windowSize > 1800) {
+      window.scrollTo({ top: 5100, behavior: "smooth" });
+    } else if (this.windowSize <= 1800 && this.windowSize > 1550) {
+      window.scrollTo({ top: 4600, behavior: "smooth" });
+    } else if (this.windowSize <= 1550 && this.windowSize > 1300) {
+      window.scrollTo({ top: 4800, behavior: "smooth" });
+    } else if (this.windowSize <= 1300 && this.windowSize > 1024) {
+      window.scrollTo({ top: 4000, behavior: "smooth" });
+    } else if (this.windowSize <= 1024 && this.windowSize > 600) {
+      window.scrollTo({ top: 4000, behavior: "smooth" });
+    }
+  }
+
+  refreshWindowSize() {
+    this.windowSize = window.innerWidth;
+  }
 
   icons: string[] = [
     "angular.png",

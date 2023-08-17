@@ -15,9 +15,9 @@ export class ShowProjectsComponent {
     "Angular | Firebase",
   ];
   descriptions: string[] = [
-    "Task manager inspired by Kanban System. Creat and organize task using drap and drop function, assing user and categories.",
-    "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe against the Chickens.",
-    "A very simple coustumer relationsship management system working with CRUD functionality.",
+    "Aufgabenverwaltung, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Hilfe der Drap-and-Drop-Funktion und ordnen Sie Benutzer und Kategorien zu.",
+    "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert.",
+    "Ein sehr einfaches Spiel mit Firestore Echtzeit-Datensynchronisierung zwischen verschiedenen Clients und lokales Caching.",
   ];
 
   openLink(index: number) {
@@ -34,7 +34,11 @@ export class ShowProjectsComponent {
   }
 
   openProject(i: string | number) {
-    const links = [this.openProjectJoin()];
+    const links = [
+      this.openProjectJoin,
+      this.openProjectloco,
+      this.openProjectFire,
+    ];
 
     if (links[i]) {
       links[i]();
@@ -42,7 +46,13 @@ export class ShowProjectsComponent {
   }
 
   openProjectJoin() {
-    window.open("https://join.gökay-sahin.de", "blank");
+    window.open("https://join.gökay-sahin.de/login", "blank");
+  }
+  openProjectloco() {
+    window.open("https://el-pollo-loco.gökay-sahin.de", "blank");
+  }
+  openProjectFire() {
+    window.open("https://ring-of-fire.gökay-sahin.de", "blank");
   }
 
   openGitHubLocco() {
