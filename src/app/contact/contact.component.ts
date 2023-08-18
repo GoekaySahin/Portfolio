@@ -15,6 +15,9 @@ export class ContactComponent {
   });
 
   invisible = true;
+  signalName = false;
+  signalEmail = false;
+  signalMessage = false;
 
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
@@ -34,7 +37,76 @@ export class ContactComponent {
       });
       this.sendMessage();
       this.form.reset();
+    } else {
+      this.showEmptyField();
     }
+  }
+
+  showEmptyField() {
+    this.checkInp();
+  }
+
+  checkInp() {
+    if (this.form.get("form_name").value === "") {
+      this.nameBlink();
+    } else {
+      this.setNameFalse();
+    }
+    if (
+      this.form.get("email").value === "" ||
+      !this.form.get("email").value.includes("@") ||
+      !this.form.get("email").value.includes(".")
+    ) {
+      this.emailBlink();
+    } else {
+      this.setEmailFalse();
+    }
+    if (this.form.get("message").value === "") {
+      this.messageBlink();
+    } else {
+      this.messageFalse();
+    }
+  }
+
+  messageBlink() {
+    this.messageTrue();
+    setTimeout(() => this.messageFalse(), 1500);
+  }
+
+  messageTrue() {
+    this.signalMessage = true;
+  }
+
+  messageFalse() {
+    this.signalMessage = false;
+  }
+
+  emailBlink() {
+    this.setEmailTrue();
+    setTimeout(() => this.setEmailFalse(), 1500);
+  }
+
+  setEmailTrue() {
+    this.signalEmail = true;
+  }
+
+  setEmailFalse() {
+    this.signalEmail = false;
+  }
+
+  nameBlink() {
+    this.setNameTrue();
+    setTimeout(() => this.setNameFalse(), 1500);
+    /*     setTimeout(this.setNameTrue, 2430);
+    setTimeout(this.setNameFalse, 3645); */
+  }
+
+  setNameTrue() {
+    this.signalName = true;
+  }
+
+  setNameFalse() {
+    this.signalName = false;
   }
 
   sendMessage() {

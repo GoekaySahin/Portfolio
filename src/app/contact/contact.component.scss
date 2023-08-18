@@ -55,6 +55,7 @@
     position: absolute;
     bottom: 88px;
     right: 11%;
+    cursor: pointer;
   }
 
   .shadow-contact {
@@ -100,6 +101,15 @@
       font-size: 18px;
       padding: 5px;
       background-color: #141d2f;
+      transition: background-color 0.5s ease-in;
+    }
+
+    .empty-color {
+      background-color: #aa902bed;
+    }
+
+    .standart-color {
+      background-color: rgb(170 144 43 / 0%) !important;
     }
 
     input::placeholder {
@@ -126,6 +136,7 @@
       position: relative;
       z-index: 2;
       background-color: #141d2f;
+      transition: background-color 0.5s ease-in;
     }
 
     textarea::placeholder {
@@ -148,6 +159,13 @@
       color: white;
       font-weight: 700;
       font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.5s ease-out;
+
+      &:hover {
+        background-color: #41c551;
+        transition: background-color 0.5s ease-in-out;
+      }
     }
   }
 }

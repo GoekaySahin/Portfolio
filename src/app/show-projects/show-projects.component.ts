@@ -7,7 +7,7 @@ import { HostListener } from "@angular/core";
   styleUrls: ["./show-projects.component.scss"],
 })
 export class ShowProjectsComponent {
-  laptops: string[] = ["join.png", "loco.png", "crm.png"];
+  laptops: string[] = ["join.png", "loco.png", "firebase.png"];
   headlines: string[] = ["Join", "El Pollo Loco", "Ring of fire"];
   technologies: string[] = [
     "JavaSctipt | HTML | CSS",

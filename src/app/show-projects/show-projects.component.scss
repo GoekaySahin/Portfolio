@@ -112,11 +112,31 @@
         color: white;
         letter-spacing: 0.6px;
         cursor: pointer;
+        padding: 1px;
+        border: 1px solid transparent; /* Standard-Border, transparent für Übergangseffekt */
+        transition: border 0.3s ease-out;
+        transition: background-color 0.5s ease-out;
+
+        &:hover {
+          background-color: #1814e3;
+          border: 1px solid white;
+          transition: background-color 0.5s ease-in-out;
+          transition: border 0.3s ease-in-out;
+        }
       }
 
       .git-btn {
         background-color: #141d2f !important;
         border: 1px solid #00bee8 !important;
+        transition: border 0.3s ease-out;
+        transition: background-color 0.5s ease-out;
+
+        &:hover {
+          background-color: #0a6b91 !important;
+          border: 1px solid white !important;
+          transition: background-color 0.5s ease-in-out;
+          transition: border 0.3s ease-in-out;
+        }
       }
     }
   }

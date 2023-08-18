@@ -80,8 +80,13 @@
       color: white;
       letter-spacing: 0.6px;
       cursor: pointer;
-    }
+      transition: background-color 0.5s ease-out;
 
+      &:hover {
+        background-color: #41c551;
+        transition: background-color 0.5s ease-in-out;
+      }
+    }
     img {
       position: absolute;
       right: 0;

@@ -21,20 +21,39 @@
     <div class="right-content" [formGroup]="form">
       <span>Ihr Name</span>
       <!-- placeholder="Ihr Name" -->
-      <input type="text" id="name" required formControlName="form_name" />
+      <input
+        type="text"
+        id="name"
+        required
+        formControlName="form_name"
+        [ngClass]="{ 'empty-color': signalName, 'standart-color': !signalName }"
+        [ngClass]="{ 'empty-color': signalName, 'standart-color': !signalName }"
+      />
       <span>Ihre Email</span>
       <!--  placeholder="Ihre Email" -->
-      <input type="email" id="email" required formControlName="email" />
+      <input
+        type="email"
+        id="email"
+        required
+        formControlName="email"
+        [ngClass]="{
+          'empty-color': signalEmail,
+          'standart-color': !signalEmail
+        }"
+      />
+
       <span>Ihre Nachricht</span>
       <!-- placeholder="Ihre Nachricht" -->
       <textarea
-        name=""
-        id=""
         cols="50"
         rows="40"
         class="message"
         required
         formControlName="message"
+        [ngClass]="{
+          'empty-color': signalMessage,
+          'standart-color': !signalMessage
+        }"
       ></textarea>
 
       <button type="submit">Senden</button>

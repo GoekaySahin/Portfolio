@@ -43,9 +43,11 @@ header {
       color: white;
       font-size: 27px;
       cursor: pointer;
+      // transition: color 0.7s ease;
 
       &:hover {
-        color: red;
+        color: #26788a;
+        transition: color 0.8s ease-in-out;
       }
     }
   }
