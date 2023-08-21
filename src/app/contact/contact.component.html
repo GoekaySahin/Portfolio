@@ -61,9 +61,10 @@
 
         <div
           [ngClass]="{
-            'send-message': !invisible,
             'd-none': invisible,
-            'scale-in-ver-center': !invisible
+            'send-message': true,
+            'scale-in-ver-center': !invisible,
+            'scale-out-center': invisible
           }"
           id="message-div"
         >

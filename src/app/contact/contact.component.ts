@@ -115,19 +115,36 @@ export class ContactComponent {
 
   setInvisibleFalse() {
     this.invisible = false;
-    setTimeout(this.changeCLasses, 3000);
-    setTimeout(this.setInvisibleTrue, 3500);
-  }
-
-  changeCLasses() {
-    let div = document.getElementById("message-div");
-
-    div.classList.toggle("scale-in-ver-center");
-    div.classList.toggle("scale-out-center");
+    this.showCLasses();
+    setTimeout(() => {
+      this.setInvisibleTrue();
+    }, 2000);
+    setTimeout(() => {
+      this.removeCLasses();
+    }, 1500);
   }
 
   setInvisibleTrue() {
     this.invisible = true;
+  }
+  showCLasses() {
+    let div = document.getElementById("message-div");
+
+    div.classList.remove("scale-in-ver-center");
+    div.classList.add("scale-out-center");
+  }
+
+  removeCLasses() {
+    let div = document.getElementById("message-div");
+
+    div.classList.add("scale-in-ver-center");
+    div.classList.remove("  ");
+  }
+
+  setFalse() {
+    let div = document.getElementById("message-div");
+
+    this.removeCLasses();
   }
 
   scrollToTop() {
