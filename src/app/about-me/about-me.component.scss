@@ -130,12 +130,6 @@
   }
 }
 
-@media (width <= 2500px) {
-  .about-me {
-    margin-block-start: 144px;
-  }
-}
-
 @media (width <= 1920px) {
   app-about-me {
     padding-top: 1%;
@@ -171,7 +165,7 @@
 
 @media (width <= 1800px) {
   .about-me {
-    margin-block-start: -86px;
+    margin-block-start: 13px;
   }
 }
 

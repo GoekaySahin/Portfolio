@@ -2,7 +2,11 @@
   <div class="leftside">
     <div class="images">
       <div class="imagebox" *ngFor="let icon of icons; let i = index">
-        <img src="assets/img/icons/{{ icon }}" />
+        <img
+          [attr.id]="'image-' + i"
+          [ngClass]="['icon-skill', 'slide-bottom', icons_name[i]]"
+          src="assets/img/icons/{{ icon }}"
+        />
         <span>{{ icons_name[i] }}</span>
       </div>
     </div>

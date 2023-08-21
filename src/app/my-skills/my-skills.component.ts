@@ -10,6 +10,7 @@ export class MySkillsComponent {
   /*   header = new HeaderComponent();
   toContact = this.header.scrollToContact; */
 
+  angularIsHovered = false;
   windowSize = window.innerWidth;
 
   toContact() {
@@ -56,6 +57,6 @@ export class MySkillsComponent {
     "CSS",
     "Rest-API",
     "Scrum",
-    "Material design",
+    "Material-design",
   ];
 }

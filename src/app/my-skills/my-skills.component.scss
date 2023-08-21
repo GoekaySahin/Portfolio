@@ -39,6 +39,8 @@
 
       img {
         width: 20vw;
+        position: absolute;
+        z-index: -1;
       }
     }
   }
@@ -97,6 +99,78 @@
   }
 }
 
+.icon-skill {
+  cursor: pointer;
+}
+
+.TypeScript,
+.Angular,
+.JavaScript,
+.HTML,
+.Firebase,
+.Git,
+.CSS,
+.Rest-API,
+.Scrum,
+.Material-design {
+  &:hover {
+    -webkit-animation: icons-skills 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: icons-skills 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @-webkit-keyframes icons-skills {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-20px);
+    }
+  }
+  @keyframes icons-skills {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  }
+}
+
+/**
+* ----------------------------------------
+* animation slide-bottom
+* ----------------------------------------
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+ */
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+    transform: translateY(20px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
 @media (width < 2000px) {
   .skills {
     margin-top: 233px;
@@ -106,6 +180,7 @@
     }
   }
 }
+
 /* 
 @media (width < 1920px) {
   .skills .rightside {
@@ -266,7 +341,7 @@
   }
 
   .skills .leftside .images {
-    width: calc(100% - 36px);
+    width: calc(72% - 36px);
   }
   .skills .leftside .images .imagebox span {
     padding-top: 16px;

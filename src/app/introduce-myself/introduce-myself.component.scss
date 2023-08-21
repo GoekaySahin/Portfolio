@@ -1,13 +1,13 @@
 app-introduce-myself {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: initial;
 }
 
 .hello {
   display: flex;
   width: 99.6%;
-  height: 100vh;
+  height: initial;
 }
 
 .bg1 {
@@ -26,7 +26,7 @@ app-introduce-myself {
 
 .left-section {
   width: 43.2%;
-  height: 72%;
+  height: 1000px;
   display: flex;
   margin-top: 139px;
   padding-left: 0%;
@@ -137,7 +137,7 @@ app-introduce-myself {
 
 @media (width < 2500px) {
   .left-section {
-    height: 70%;
+    height: 900px;
   }
 
   .right-section {
@@ -176,14 +176,13 @@ app-introduce-myself {
   }
 
   .hello {
-    height: 715px;
+    height: 900px;
     width: 100%;
-    margin-bottom: 146px;
   }
 
   .left-section {
     width: 35%;
-    height: 96%;
+    height: 700px;
     margin-top: 124px;
     padding-left: 68px;
   }
@@ -257,9 +256,6 @@ app-introduce-myself {
   }
   .right-section button {
     right: 297px;
-  }
-  .curve-img {
-    top: 365px;
   }
 
   .about-me {
@@ -350,7 +346,7 @@ app-introduce-myself {
 
   .left-section {
     width: 39%;
-    height: 85%;
+    height: 600px;
   }
 
   .right-section .text-vertical {
@@ -394,6 +390,12 @@ app-introduce-myself {
   }
 }
 
+@media (width <= 1300px) {
+  .left-section {
+    height: 600px;
+  }
+}
+
 @media (width <= 1024px) {
   .bg1 {
     width: 100%;
@@ -414,7 +416,7 @@ app-introduce-myself {
     display: inherit;
     width: 100%;
     position: absolute;
-    top: 416px;
+    top: 487px;
     height: 590px;
     object-fit: cover;
   }
@@ -432,7 +434,7 @@ app-introduce-myself {
   .left-section {
     padding-left: 0;
     width: 100%;
-    height: 58%;
+    height: 500px;
     margin-top: 122px;
   }
 
@@ -538,7 +540,7 @@ app-introduce-myself {
   }
 }
 
-@media (width<= 560px) {
+@media (width<= 650px) {
   .left-section {
     margin-top: 126px;
   }

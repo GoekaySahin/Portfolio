@@ -56,17 +56,19 @@
         }"
       ></textarea>
 
-      <button type="submit">Senden</button>
+      <div class="buttons-conatct">
+        <button type="submit">Senden</button>
 
-      <div
-        [ngClass]="{
-          'send-message': !invisible,
-          'd-none': invisible,
-          'scale-in-ver-center': !invisible
-        }"
-        id="message-div"
-      >
-        <span class="send">Nachricht gesendet.</span>
+        <div
+          [ngClass]="{
+            'send-message': !invisible,
+            'd-none': invisible,
+            'scale-in-ver-center': !invisible
+          }"
+          id="message-div"
+        >
+          <span class="send">Nachricht gesendet.</span>
+        </div>
       </div>
     </div>
   </form>
