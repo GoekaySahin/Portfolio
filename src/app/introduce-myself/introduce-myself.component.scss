@@ -7,7 +7,7 @@ app-introduce-myself {
 .hello {
   display: flex;
   width: 99.6%;
-  height: initial;
+  height: 100vh;
 }
 
 .bg1 {
@@ -65,11 +65,13 @@ app-introduce-myself {
     top: 237px;
     z-index: 10;
     cursor: pointer;
-    transition: background-color 0.5s ease-out;
+    transition: background-color 0.2s ease-out;
 
     &:hover {
-      background-color: #41c551;
-      transition: background-color 0.5s ease-in-out;
+      -webkit-animation: scale-up-center 0.07s
+        cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      animation: scale-up-center 0.17s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      background-color: #4b47ff;
     }
   }
 
@@ -133,6 +135,33 @@ app-introduce-myself {
   width: 100%;
 }
 
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
 /* RESPONSIV WIDTH START */
 
 @media (width < 2500px) {
@@ -176,7 +205,7 @@ app-introduce-myself {
   }
 
   .hello {
-    height: 900px;
+    height: 100vh;
     width: 100%;
   }
 
@@ -492,6 +521,12 @@ app-introduce-myself {
   }
 }
 
+@media (width <= 650px) {
+  .text-vertical {
+    width: 12%;
+  }
+}
+
 @media (width <= 621px) {
   .right-section {
     margin-block-start: 27px;
@@ -530,10 +565,6 @@ app-introduce-myself {
     height: 45px;
   }
 
-  .mobile {
-    top: 419px;
-  }
-
   .content-overlay {
     height: 216px;
     margin-top: 21px;
@@ -542,7 +573,7 @@ app-introduce-myself {
 
 @media (width<= 650px) {
   .left-section {
-    margin-top: 126px;
+    margin-top: 183px;
   }
   .image {
     img {
@@ -556,9 +587,11 @@ app-introduce-myself {
     height: 715px;
     margin-bottom: 27%;
   }
+}
 
+@media (width <= 500px) {
   .right-section .text-vertical {
-    width: 8%;
+    width: 9%;
   }
 }
 

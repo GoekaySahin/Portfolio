@@ -17,14 +17,24 @@ app-introduce-myself {
   }
 }
 
-@media (width <= 1550px) {
-  app-about-me {
-    height: 15%;
-  }
-}
-
 @media (width <= 1024px) {
   app-about-me {
     height: inherit;
+    padding-top: 106px;
+  }
+}
+@media (width <= 650px) {
+  app-about-me {
+    padding-top: 0px;
+  }
+}
+@media (width <= 575px) {
+  app-about-me {
+    padding-top: 20px;
+  }
+}
+@media (width <= 575px) {
+  app-about-me {
+    padding-top: 40px;
   }
 }

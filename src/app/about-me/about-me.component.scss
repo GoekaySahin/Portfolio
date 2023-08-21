@@ -7,8 +7,8 @@
   width: 92%;
   margin-left: 8.5%;
   top: 5%;
-  padding-top: 3vh;
   height: 78%;
+  margin-block-start: -155px;
 }
 
 .stripe1 {
@@ -130,6 +130,12 @@
   }
 }
 
+@media (width <= 2000px) {
+  .about-me {
+    margin-block-start: -340px;
+  }
+}
+
 @media (width <= 1920px) {
   app-about-me {
     padding-top: 1%;
@@ -160,12 +166,6 @@
 
   .links {
     width: 385px;
-  }
-}
-
-@media (width <= 1800px) {
-  .about-me {
-    margin-block-start: 13px;
   }
 }
 
@@ -212,9 +212,10 @@
   }
 }
 
-@media (width <= 1334px) {
+@media (width <= 1400px) {
   .about-me {
-    margin-block-start: -86px;
+    padding-top: 0vh;
+    margin-block-start: -445px;
   }
 }
 
@@ -262,8 +263,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 0;
     height: 500px;
+    margin-block-start: -345px;
+    margin-left: 0;
   }
 
   .stripe1 {
@@ -316,6 +318,12 @@
 
   .about-me-section .leftside .blub {
     width: initial;
+  }
+}
+
+@media (width <= 650px) {
+  .about-me {
+    margin-block-start: 55px;
   }
 }
 

@@ -164,17 +164,40 @@
       font-weight: 700;
       font-size: 18px;
       cursor: pointer;
-      transition: background-color 0.5s ease-out;
+      transition: background-color 0.2s ease-out;
 
       &:hover {
-        background-color: #41c551;
-        transition: background-color 0.5s ease-in-out;
+        -webkit-animation: scale-up-center 0.07s
+          cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: scale-up-center 0.17s cubic-bezier(0.39, 0.575, 0.565, 1)
+          both;
+        background-color: #4b47ff;
       }
     }
   }
 }
 
-::-webkit-input-placeholder {
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+s ::-webkit-input-placeholder {
   display: flex;
   text-align: center;
   justify-content: center;

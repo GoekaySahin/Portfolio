@@ -82,11 +82,14 @@
       color: white;
       letter-spacing: 0.6px;
       cursor: pointer;
-      transition: background-color 0.5s ease-out;
+      transition: background-color 0.2s ease-out;
 
       &:hover {
-        background-color: #41c551;
-        transition: background-color 0.5s ease-in-out;
+        -webkit-animation: scale-up-center 0.07s
+          cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: scale-up-center 0.17s cubic-bezier(0.39, 0.575, 0.565, 1)
+          both;
+        background-color: #4b47ff;
       }
     }
     img {
@@ -178,6 +181,33 @@
     .leftside {
       width: 53%;
     }
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 
@@ -341,7 +371,7 @@
   }
 
   .skills .leftside .images {
-    width: calc(72% - 36px);
+    width: calc(245px - 36px);
   }
   .skills .leftside .images .imagebox span {
     padding-top: 16px;
@@ -353,11 +383,6 @@
   }
 }
 
-@media (width <= 470px) {
-  .skills .leftside .images {
-    width: calc(44% - 36px);
-  }
-}
 @media (width <= 460px) {
   .skills .leftside .images {
     margin-top: 70px;
@@ -387,7 +412,7 @@
 
 @media (width <= 335px) {
   .skills {
-    height: 1838px;
+    height: 1138px;
     .rightside h1 {
       font-size: 32px;
     }

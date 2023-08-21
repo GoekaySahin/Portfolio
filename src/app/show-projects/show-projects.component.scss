@@ -100,7 +100,6 @@
       gap: 100px;
       justify-content: center;
       margin-top: 24px;
-      cursor: pointer;
 
       button {
         width: 165px;
@@ -118,8 +117,7 @@
         transition: background-color 0.5s ease-out;
 
         &:hover {
-          background-color: #1814e3;
-          border: 1px solid white;
+          background-color: #04d2ff;
           transition: background-color 0.5s ease-in-out;
           transition: border 0.3s ease-in-out;
         }
@@ -132,9 +130,7 @@
         transition: background-color 0.5s ease-out;
 
         &:hover {
-          background-color: #0a6b91 !important;
-          border: 1px solid white !important;
-          transition: background-color 0.5s ease-in-out;
+          background-color: #04d2ff !important;
           transition: border 0.3s ease-in-out;
         }
       }
