@@ -176,6 +176,9 @@
     }
   }
 }
+.buttons-conatct {
+  position: relative;
+}
 
 @-webkit-keyframes scale-up-center {
   0% {
@@ -225,7 +228,7 @@ s ::-webkit-input-placeholder {
 
 .send-message {
   position: absolute;
-  bottom: 246px;
+  bottom: 159px;
   background-color: #02a054;
   padding: 15px 13px;
   border-radius: 8px;
@@ -338,10 +341,6 @@ s ::-webkit-input-placeholder {
 
   .contact .left-content .lower {
     width: 80%;
-  }
-
-  .send-message {
-    bottom: 546px;
   }
 }
 
