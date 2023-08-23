@@ -8,7 +8,7 @@
   margin-left: 8.5%;
   top: 5%;
   height: 78%;
-  margin-block-start: -155px;
+  margin-top: -183px;
 }
 
 .stripe1 {
@@ -130,9 +130,15 @@
   }
 }
 
+@media (width < 2500px) {
+  .about-me {
+    margin-top: -140px;
+  }
+}
+
 @media (width <= 2000px) {
   .about-me {
-    margin-block-start: -340px;
+    margin-top: -340px;
   }
 }
 
@@ -212,13 +218,6 @@
   }
 }
 
-@media (width <= 1400px) {
-  .about-me {
-    padding-top: 0vh;
-    margin-block-start: -445px;
-  }
-}
-
 @media (width <= 1300px) {
   .about-me-section {
     margin-top: 20%;
@@ -256,6 +255,9 @@
   .about-me-section .rightside .about-me-face img {
     height: 608px;
   }
+  .about-me {
+    margin-top: 16px;
+  }
 }
 
 @media (width <= 1024px) {
@@ -264,7 +266,7 @@
     flex-direction: column;
     width: 100%;
     height: 500px;
-    margin-block-start: -345px;
+    margin-block-start: -213px;
     margin-left: 0;
   }
 
@@ -323,7 +325,7 @@
 
 @media (width <= 650px) {
   .about-me {
-    margin-block-start: 55px;
+    margin-block-start: -145px;
   }
 }
 
@@ -353,9 +355,7 @@
   }
 
   .about-me {
-    height: inherit;
-    margin-bottom: 150px;
-    margin-block-start: 0;
+    margin-bottom: -141px;
   }
 
   .about-me-section .leftside h1 {
