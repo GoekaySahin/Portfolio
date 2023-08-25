@@ -11,7 +11,7 @@ app-introduce-myself {
   height: 100vh;
 }
  */
-@media (width < 1920px) {
+@media (width <= 1920px) {
   app-about-me {
     padding-top: 0.5%;
   }
@@ -26,15 +26,5 @@ app-introduce-myself {
 @media (width <= 650px) {
   app-about-me {
     padding-top: 0px;
-  }
-}
-@media (width <= 575px) {
-  app-about-me {
-    padding-top: 20px;
-  }
-}
-@media (width <= 575px) {
-  app-about-me {
-    padding-top: 40px;
   }
 }

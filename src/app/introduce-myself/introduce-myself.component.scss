@@ -353,7 +353,7 @@ app-introduce-myself {
   }
 }
 
-@media (width < 1400px) {
+@media (width <= 1400px) {
   .left-section {
     padding-left: 7%;
   }
@@ -521,11 +521,21 @@ app-introduce-myself {
   .text-vertical {
     width: 12%;
   }
+  .image {
+    img {
+      object-fit: inherit;
+      width: 100vw;
+    }
+  }
+
+  .hello {
+    margin-bottom: 27%;
+  }
 }
 
 @media (width <= 621px) {
   .right-section {
-    margin-block-start: -47px;
+    margin-block-start: -100px;
   }
   .right-section .name-calling {
     width: inherit;
@@ -566,21 +576,9 @@ app-introduce-myself {
   }
 }
 
-@media (width<= 650px) {
-  .left-section {
-    margin-top: 183px;
-  }
-  .image {
-    img {
-      object-fit: inherit;
-      width: 100vw;
-      height: 421px;
-    }
-  }
-
-  .hello {
-    height: 715px;
-    margin-bottom: 27%;
+@media (width <= 550px) {
+  .right-section {
+    margin-block-start: -119px;
   }
 }
 
@@ -591,8 +589,10 @@ app-introduce-myself {
 }
 
 @media (width <= 460px) {
-  .right-section[_ngcontent-ng-c143395893]
-    .text-vertical[_ngcontent-ng-c143395893] {
+  .text-vertical {
     width: 29px;
+  }
+  .right-section {
+    margin-block-start: -136px;
   }
 }
