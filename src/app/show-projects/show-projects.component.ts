@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { HostListener } from "@angular/core";
+import { NgClass } from "@angular/common";
 
 @Component({
   selector: "app-show-projects",
@@ -7,8 +8,8 @@ import { HostListener } from "@angular/core";
   styleUrls: ["./show-projects.component.scss"],
 })
 export class ShowProjectsComponent {
-  laptops: string[] = ["join.png", "loco.png", "firebase.png"];
-  headlines: string[] = ["Join", "El Pollo Loco", "Ring of fire"];
+  laptops: string[] = ["join.png", "loco.png", "simple-crm.png"];
+  headlines: string[] = ["Join", "El Pollo Loco", "Simple-CRM"];
   technologies: string[] = [
     "JavaSctipt | HTML | CSS",
     "JavaScript | HTML | CSS",
@@ -17,15 +18,14 @@ export class ShowProjectsComponent {
   descriptions: string[] = [
     "Aufgabenverwaltung, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Hilfe der Drap-and-Drop-Funktion und ordnen Sie Benutzer und Kategorien zu.",
     "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert.",
-    "Ein sehr einfaches Spiel mit Firestore Echtzeit-Datensynchronisierung zwischen verschiedenen Clients und lokales Caching.",
+    "Ein sehr Simples CRM System mit einem Dashboar, möglichkeiten User und Costumer anzulegen und zu bearbeiten.",
   ];
 
   openLink(index: number) {
     const links = [
       this.openGitHubJoin,
       this.openGitHubLocco,
-      this.openGitHubFire,
-      // Weitere Links hier...
+      this.openGitHubCRM,
     ];
 
     if (links[index]) {
@@ -37,7 +37,7 @@ export class ShowProjectsComponent {
     const links = [
       this.openProjectJoin,
       this.openProjectloco,
-      this.openProjectFire,
+      this.openProjectCRM,
     ];
 
     if (links[i]) {
@@ -46,26 +46,23 @@ export class ShowProjectsComponent {
   }
 
   openProjectJoin() {
-    window.open("https://join.gökay-sahin.de/login", "blank");
+    window.open("https://join.gökay-sahin.de/login", "_self");
   }
   openProjectloco() {
-    window.open("https://el-pollo-loco.gökay-sahin.de", "blank");
+    window.open("https://el-pollo-loco.gökay-sahin.de", "_self");
   }
-  openProjectFire() {
-    window.open("https://ring-of-fire.gökay-sahin.de", "blank");
+  openProjectCRM() {
+    window.open("https://simple-crm.gökay-sahin.de", "_self");
   }
 
   openGitHubLocco() {
-    window.open("https://github.com/HydraCoding/El-Pollio-Loco-", "_blank");
+    window.open("https://github.com/HydraCoding/El-Pollio-Loco-", "_self");
   }
 
   openGitHubJoin() {
-    window.open(
-      "https://github.com/HydraCoding/Join-Management-Tool",
-      "_blank"
-    );
+    window.open("https://github.com/HydraCoding/Join-Management-Tool", "_self");
   }
-  openGitHubFire() {
-    window.open("https://github.com/HydraCoding/RingOfFire", "_blank");
+  openGitHubCRM() {
+    window.open("https://github.com/GoekaySahin/simple-crm", "_self");
   }
 }

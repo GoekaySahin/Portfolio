@@ -24,11 +24,15 @@ export class IntroduceMyselfComponent {
       window.scrollTo({ top: 4800, behavior: "smooth" });
     } else if (this.windowSize <= 1300 && this.windowSize > 1024) {
       window.scrollTo({ top: 4000, behavior: "smooth" });
-    } else if (this.windowSize <= 1024 /*  && this.windowSize > 600 */) {
+    } else if (
+      this.windowSize <= 1024 &&
+      this.windowSize > 600 /*  && this.windowSize > 600 */
+    ) {
       window.scrollTo({ top: 5100, behavior: "smooth" });
-    } /*  else if (this.windowSize <= 600) {
-      window.scrollTo({ top: 5100, behavior: "smooth" });
-    } */
+    } else if (this.windowSize <= 600) {
+      window.scrollTo({ top: 4500, behavior: "smooth" });
+      //meine bedinung beisst nicht
+    }
   }
 
   refreshWindowSize() {
