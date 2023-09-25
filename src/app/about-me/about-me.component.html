@@ -19,7 +19,13 @@
   </div>
 
   <div [ngClass]="{ 'about-me-section': true }">
-    <div [ngClass]="{ leftside: true }">
+    <div
+      [ngClass]="{
+        leftside: true,
+        'slide-in-right': comeDown && !mobileView,
+        dnone: !comeDown && !mobileView
+      }"
+    >
       <h1>Über mich</h1>
       <div [ngClass]="{ 'upper-part': true }">
         <span>
@@ -50,7 +56,13 @@
       </div>
       <div [ngClass]="{ 'lower-part': true }"></div>
     </div>
-    <div [ngClass]="{ rightside: true, dnone: mobileView }">
+    <div
+      [ngClass]="{
+        rightside: true,
+        dnone: mobileView || !comeDown,
+        'slide-in-left': !mobileView && comeDown
+      }"
+    >
       <div class="about-me-face">
         <img src="assets/img/icons/goekay2.png" />
       </div>

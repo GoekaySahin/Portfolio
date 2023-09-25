@@ -12,8 +12,10 @@
     <div class="content-overlay">
       <div class="i-am">
         <div class="name-calling">
-          <span [ngClass]="{ 'text-vertical': true }">I am</span>
-          <div class="namebox">
+          <span [ngClass]="{ 'text-vertical': true }" *ngIf="waitMore"
+            >I am</span
+          >
+          <div class="namebox scale-up-hor-center" *ngIf="wait">
             <h1>Gökay Sahin</h1>
             <h2>FRONTEND DEVELOPER</h2>
           </div>

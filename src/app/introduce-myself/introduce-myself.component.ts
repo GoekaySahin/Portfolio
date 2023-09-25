@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
 import { HeaderComponent } from "../header/header.component";
+import { Component, NgModule } from "@angular/core";
+import { APP_BASE_HREF } from "@angular/common";
 
 @Component({
   selector: "app-introduce-myself",
@@ -9,7 +10,21 @@ import { HeaderComponent } from "../header/header.component";
 export class IntroduceMyselfComponent {
   /*   headerComponent = new HeaderComponent();
   toContact = this.headerComponent.scrollToContact; */
+  wait = false;
+  waitMore = false;
+  constructor() {
+    setTimeout(() => {
+      this.wait = true;
+    }, 320);
 
+    setTimeout(() => {
+      this.waitMore = true;
+    }, 680);
+  }
+
+  @NgModule({
+    providers: [{ provide: APP_BASE_HREF, useValue: "/my/app" }],
+  })
   windowSize = window.innerWidth;
 
   toContact() {

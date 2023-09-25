@@ -14,6 +14,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { ImpressumComponent } from "./impressum/impressum.component";
 import { RouterModule, Routes } from "@angular/router";
+import { NgClass } from "@angular/common";
 
 const routes: Routes = [
   // Andere Routen hier...
@@ -39,11 +40,11 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
+    NgClass,
   ],
-  providers: [],
+  providers: [AppRoutingModule],
   bootstrap: [AppComponent],
   exports: [RouterModule, HeaderComponent],
 })

@@ -403,7 +403,7 @@
 
   .skills {
     height: initial;
-    margin-top: 13%;
+    margin-top: 100px;
 
     .rightside img {
       top: 111px;
@@ -413,7 +413,8 @@
 
 @media (width <= 380px) {
   .skills {
-    height: 1138px;
+    height: 1024px;
+    margin-top: 150px;
     .rightside h1 {
       font-size: 32px;
     }
