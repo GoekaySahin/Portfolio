@@ -37,6 +37,7 @@ const routes: Routes = [
     FooterComponent,
     ImpressumComponent,
     HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
