@@ -138,7 +138,7 @@ export class ContactComponent {
     let div = document.getElementById("message-div");
 
     div.classList.add("scale-in-ver-center");
-    div.classList.remove("  ");
+    div.classList.remove("scale-out-center");
   }
 
   setFalse() {
