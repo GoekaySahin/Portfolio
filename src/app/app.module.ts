@@ -11,10 +11,10 @@ import { MySkillsComponent } from "./my-skills/my-skills.component";
 import { ShowProjectsComponent } from "./show-projects/show-projects.component";
 import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "./footer/footer.component";
-import { ReactiveFormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ImpressumComponent } from "./impressum/impressum.component";
 import { RouterModule, Routes } from "@angular/router";
-import { NgClass } from "@angular/common";
+import { NgClass, NgStyle } from "@angular/common";
 
 const routes: Routes = [
   // Andere Routen hier...
@@ -36,16 +36,16 @@ const routes: Routes = [
     ContactComponent,
     FooterComponent,
     ImpressumComponent,
-    HeaderComponent,
     FooterComponent,
   ],
   imports: [
-    BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
     NgClass,
+    FormsModule,
+    NgStyle,
   ],
-  providers: [AppRoutingModule],
+  providers: [AppRoutingModule, BrowserModule],
   bootstrap: [AppComponent],
   exports: [RouterModule, HeaderComponent],
 })

@@ -1,4 +1,4 @@
-import { Component, HostListener } from "@angular/core";
+import { Component, HostListener, NgModule } from "@angular/core";
 import { Routes } from "@angular/router";
 
 @Component({
