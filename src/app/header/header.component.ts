@@ -130,7 +130,7 @@ export class HeaderComponent implements OnInit {
     } else if (window.innerWidth > 1024) {
       window.scrollTo({ top: 1500, behavior: "smooth" });
     } else if (window.innerWidth > 400) {
-      window.scrollTo({ top: 1400, behavior: "smooth" });
+      window.scrollTo({ top: 1380, behavior: "smooth" });
     } else if (window.innerWidth < 400) {
       window.scrollTo({ top: 1300, behavior: "smooth" });
     }
@@ -145,8 +145,8 @@ export class HeaderComponent implements OnInit {
       window.scrollTo({ top: 2500, behavior: "smooth" });
     } else if (window.innerWidth > 560) {
       window.scrollTo({ top: 2400, behavior: "smooth" });
-    } else if (window.innerWidth > 0) {
-      window.scrollTo({ top: 3000, behavior: "smooth" });
+    } else if (window.innerWidth < 560) {
+      window.scrollTo({ top: 2300, behavior: "smooth" });
     }
   }
 

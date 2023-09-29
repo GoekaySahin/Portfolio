@@ -10,16 +10,16 @@ export class AboutMeComponent {
   mobileView: any;
   actualSize = window.innerWidth;
   comeDown = false;
-  scrollY = window.scrollY;
+  scrollYPosition = window.scrollY;
 
   constructor() {
     this.checkSizeAboutMe(this.actualSize);
-    this.checkScroll(this.scrollY);
+    this.checkScroll(this.scrollYPosition);
   }
 
   checkScrollY() {
-    scrollY = window.scrollY;
-    this.checkScroll(scrollY);
+    this.scrollYPosition = window.scrollY;
+    this.checkScroll(this.scrollYPosition);
   }
 
   checkScroll(scrollY) {

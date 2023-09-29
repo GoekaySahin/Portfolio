@@ -15,9 +15,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ImpressumComponent } from "./impressum/impressum.component";
 import { RouterModule, Routes } from "@angular/router";
 import { NgClass, NgStyle } from "@angular/common";
-
 const routes: Routes = [
-  // Andere Routen hier...
+  { path: "", component: StartscreenComponent },
   {
     path: "src/app/impressum/impressum.component.html",
     component: ImpressumComponent,
@@ -44,8 +43,9 @@ const routes: Routes = [
     NgClass,
     FormsModule,
     NgStyle,
+    BrowserModule,
   ],
-  providers: [AppRoutingModule, BrowserModule],
+  providers: [AppRoutingModule],
   bootstrap: [AppComponent],
   exports: [RouterModule, HeaderComponent],
 })
