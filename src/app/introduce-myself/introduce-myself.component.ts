@@ -1,6 +1,7 @@
 import { HeaderComponent } from "../header/header.component";
 import { Component, NgModule } from "@angular/core";
 import { APP_BASE_HREF } from "@angular/common";
+import { CommonModule } from "@angular/common";
 
 @Component({
   selector: "app-introduce-myself",
@@ -15,11 +16,11 @@ export class IntroduceMyselfComponent {
   constructor() {
     setTimeout(() => {
       this.wait = true;
-    }, 320);
+    }, 750);
 
     setTimeout(() => {
       this.waitMore = true;
-    }, 680);
+    }, 1100);
   }
 
   @NgModule({

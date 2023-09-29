@@ -14,7 +14,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ImpressumComponent } from "./impressum/impressum.component";
 import { RouterModule, Routes } from "@angular/router";
-import { NgClass, NgStyle } from "@angular/common";
+import { CommonModule, NgClass, NgStyle } from "@angular/common";
 const routes: Routes = [
   { path: "", component: StartscreenComponent },
   {
@@ -44,6 +44,7 @@ const routes: Routes = [
     FormsModule,
     NgStyle,
     BrowserModule,
+    CommonModule,
   ],
   providers: [AppRoutingModule],
   bootstrap: [AppComponent],

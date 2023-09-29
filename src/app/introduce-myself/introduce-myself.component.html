@@ -3,8 +3,9 @@
     <div class="image">
       <img class="bg1" src="assets/img/shadows/double-shadow.png" />
       <img
-        [ngStyle]="{ 'object-fit': 'cover' }"
+        *ngIf="waitMore"
         src="assets/img/icons/goekay1.png"
+        class="scale-in-center profil-img"
       />
     </div>
   </div>
@@ -12,9 +13,7 @@
     <div class="content-overlay">
       <div class="i-am">
         <div class="name-calling">
-          <span [ngClass]="{ 'text-vertical': true }" *ngIf="waitMore"
-            >I am</span
-          >
+          <span *ngIf="waitMore" class="text-vertical">I am</span>
           <div class="namebox scale-up-hor-center" *ngIf="wait">
             <h1>Gökay Sahin</h1>
             <h2>FRONTEND DEVELOPER</h2>
