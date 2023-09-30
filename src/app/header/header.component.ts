@@ -115,8 +115,8 @@ export class HeaderComponent implements OnInit {
       window.scrollTo({ top: 720, behavior: "smooth" });
     } else if (window.innerWidth > 1300) {
       window.scrollTo({ top: 720, behavior: "smooth" });
-    } else {
-      window.scrollTo({ top: 800, behavior: "smooth" });
+    } else if (window.innerWidth < 610) {
+      window.scrollTo({ top: 680, behavior: "smooth" });
     }
   }
 
@@ -129,34 +129,36 @@ export class HeaderComponent implements OnInit {
       window.scrollTo({ top: 1678, behavior: "smooth" });
     } else if (window.innerWidth > 1024) {
       window.scrollTo({ top: 1500, behavior: "smooth" });
-    } else if (window.innerWidth > 400) {
+    } else if (window.innerWidth > 460) {
       window.scrollTo({ top: 1380, behavior: "smooth" });
-    } else if (window.innerWidth < 400) {
-      window.scrollTo({ top: 1300, behavior: "smooth" });
+    } else if (window.innerWidth <= 460) {
+      window.scrollTo({ top: 1170, behavior: "smooth" });
     }
   }
 
   scrollToProjects() {
     if (window.innerWidth > 2300) {
       window.scrollTo({ top: 3000, behavior: "smooth" });
-    } else if (window.innerWidth < 2300 && window.innerWidth > 2000) {
+    } else if (window.innerWidth <= 2300 && window.innerWidth > 2000) {
       window.scrollTo({ top: 2800, behavior: "smooth" });
-    } else if (window.innerWidth < 2000 && window.innerWidth > 1800) {
+    } else if (window.innerWidth <= 2000 && window.innerWidth > 1800) {
       window.scrollTo({ top: 2800, behavior: "smooth" });
-    } else if (window.innerWidth < 2000 && window.innerWidth > 1500) {
+    } else if (window.innerWidth <= 2000 && window.innerWidth > 1500) {
       window.scrollTo({ top: 2400, behavior: "smooth" });
-    } else if (window.innerWidth < 1500 && window.innerWidth > 1400) {
+    } else if (window.innerWidth <= 1500 && window.innerWidth > 1400) {
       window.scrollTo({ top: 2700, behavior: "smooth" });
-    } else if (window.innerWidth < 1400 && window.innerWidth > 1300) {
+    } else if (window.innerWidth <= 1400 && window.innerWidth > 1300) {
       window.scrollTo({ top: 2500, behavior: "smooth" });
-    } else if (window.innerWidth < 1300 && window.innerWidth > 1100) {
+    } else if (window.innerWidth <= 1300 && window.innerWidth > 1100) {
       window.scrollTo({ top: 2450, behavior: "smooth" });
-    } else if (window.innerWidth > 1024) {
-      window.scrollTo({ top: 2500, behavior: "smooth" });
-    } else if (window.innerWidth > 560) {
-      window.scrollTo({ top: 2400, behavior: "smooth" });
-    } else if (window.innerWidth < 560) {
-      window.scrollTo({ top: 2300, behavior: "smooth" });
+    } else if (window.innerWidth <= 1024 && window.innerWidth > 800) {
+      window.scrollTo({ top: 2370, behavior: "smooth" });
+    } else if (window.innerWidth <= 800 && window.innerWidth > 625) {
+      window.scrollTo({ top: 2330, behavior: "smooth" });
+    } else if (window.innerWidth <= 625 && window.innerWidth > 560) {
+      window.scrollTo({ top: 2600, behavior: "smooth" });
+    } else if (window.innerWidth <= 560) {
+      window.scrollTo({ top: 2200, behavior: "smooth" });
     }
   }
 
