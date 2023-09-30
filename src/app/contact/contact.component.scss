@@ -354,6 +354,7 @@ s ::-webkit-input-placeholder {
   .contact {
     margin-top: 200px;
     padding-bottom: 0;
+    height: 800px;
   }
 }
 @media (width <= 1700px) {
@@ -426,7 +427,7 @@ s ::-webkit-input-placeholder {
 @media (width < 1024px) {
   .contact {
     flex-direction: column;
-
+    height: 1000px;
     align-items: center;
   }
 

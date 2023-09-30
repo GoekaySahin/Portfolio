@@ -44,12 +44,13 @@ export class IntroduceMyselfComponent {
       window.scrollTo({ top: 4000, behavior: "smooth" });
     } else if (
       this.windowSize <= 1024 &&
-      this.windowSize > 600 /*  && this.windowSize > 600 */
+      this.windowSize > 700 /*  && this.windowSize > 600 */
     ) {
-      window.scrollTo({ top: 5100, behavior: "smooth" });
-    } else if (this.windowSize <= 600) {
-      window.scrollTo({ top: 4500, behavior: "smooth" });
-      //meine bedinung beisst nicht
+      window.scrollTo({ top: 5270, behavior: "smooth" });
+    } else if (this.windowSize <= 700 && this.windowSize > 390) {
+      window.scrollTo({ top: 5270, behavior: "smooth" });
+    } else if (this.windowSize <= 390) {
+      window.scrollTo({ top: 4320, behavior: "smooth" });
     }
   }
 
