@@ -32,6 +32,8 @@ export class IntroduceMyselfComponent {
     this.refreshWindowSize();
     if (this.windowSize > 2400) {
       window.scrollTo({ top: 5200, behavior: "smooth" });
+    } else if (this.windowSize < 2300 && this.windowSize > 2000) {
+      window.scrollTo({ top: 5000, behavior: "smooth" });
     } else if (this.windowSize > 1800) {
       window.scrollTo({ top: 5100, behavior: "smooth" });
     } else if (this.windowSize <= 1800 && this.windowSize > 1550) {

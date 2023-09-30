@@ -112,9 +112,9 @@ export class HeaderComponent implements OnInit {
     } else if (window.innerWidth > 1800) {
       window.scrollTo({ top: 900, behavior: "smooth" });
     } else if (window.innerWidth > 1550) {
-      window.scrollTo({ top: 700, behavior: "smooth" });
+      window.scrollTo({ top: 720, behavior: "smooth" });
     } else if (window.innerWidth > 1300) {
-      window.scrollTo({ top: 700, behavior: "smooth" });
+      window.scrollTo({ top: 720, behavior: "smooth" });
     } else {
       window.scrollTo({ top: 800, behavior: "smooth" });
     }
@@ -126,7 +126,7 @@ export class HeaderComponent implements OnInit {
     } else if (window.innerWidth > 1800) {
       window.scrollTo({ top: 1800, behavior: "smooth" });
     } else if (window.innerWidth > 1300) {
-      window.scrollTo({ top: 1600, behavior: "smooth" });
+      window.scrollTo({ top: 1678, behavior: "smooth" });
     } else if (window.innerWidth > 1024) {
       window.scrollTo({ top: 1500, behavior: "smooth" });
     } else if (window.innerWidth > 400) {
@@ -139,8 +139,18 @@ export class HeaderComponent implements OnInit {
   scrollToProjects() {
     if (window.innerWidth > 2300) {
       window.scrollTo({ top: 3000, behavior: "smooth" });
-    } else if (window.innerWidth > 1800) {
-      window.scrollTo({ top: 2900, behavior: "smooth" });
+    } else if (window.innerWidth < 2300 && window.innerWidth > 2000) {
+      window.scrollTo({ top: 2800, behavior: "smooth" });
+    } else if (window.innerWidth < 2000 && window.innerWidth > 1800) {
+      window.scrollTo({ top: 2800, behavior: "smooth" });
+    } else if (window.innerWidth < 2000 && window.innerWidth > 1500) {
+      window.scrollTo({ top: 2400, behavior: "smooth" });
+    } else if (window.innerWidth < 1500 && window.innerWidth > 1400) {
+      window.scrollTo({ top: 2700, behavior: "smooth" });
+    } else if (window.innerWidth < 1400 && window.innerWidth > 1300) {
+      window.scrollTo({ top: 2500, behavior: "smooth" });
+    } else if (window.innerWidth < 1300 && window.innerWidth > 1100) {
+      window.scrollTo({ top: 2450, behavior: "smooth" });
     } else if (window.innerWidth > 1024) {
       window.scrollTo({ top: 2500, behavior: "smooth" });
     } else if (window.innerWidth > 560) {
