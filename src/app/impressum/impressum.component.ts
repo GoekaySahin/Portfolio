@@ -13,5 +13,6 @@ export class ImpressumComponent {
     if (footer) {
       this.renderer.setStyle(footer, "height", "21%");
     }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 }

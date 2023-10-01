@@ -1,6 +1,6 @@
 <footer id="footer">
   <div class="stripe-footer"></div>
-  <div class="name">
+  <div class="name" (click)="srcollTop()">
     <h1>
       G<span [ngStyle]="{ color: '#00bee8' }">ö</span>ka<span
         [ngStyle]="{ color: '#4b47ff' }"
@@ -12,11 +12,18 @@
   <div class="copyright"><span>© Gökay Sahin 2023</span></div>
   <div class="sozial">
     <div class="links">
-      <a href="https://github.com/GoekaySahin" class="fotter-git">
+      <a
+        href="https://github.com/GoekaySahin"
+        class="fotter-git"
+        target="_self"
+      >
         <img src="assets/img/icons/git-small.png" />
       </a>
       <!-- <img src="assets/img/icons/email.png" /> -->
-      <a href="https://www.linkedin.com/in/g%C3%B6kay-sahin-344837288/">
+      <a
+        href="https://www.linkedin.com/in/g%C3%B6kay-sahin-344837288/"
+        target="_self"
+      >
         <img src="assets/img/icons/linkedin.png" />
       </a>
     </div>
