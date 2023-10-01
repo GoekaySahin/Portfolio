@@ -7,12 +7,11 @@
   .left-content {
     display: flex;
     flex-direction: column;
-    width: 42%;
+    width: 800px;
 
     .head {
       display: flex;
       align-items: center;
-      width: 70%;
       justify-content: space-between;
       font-size: 44px;
 
@@ -30,7 +29,7 @@
 
     .lower {
       width: 100%;
-      margin-left: 191px;
+      margin-left: 40%;
       padding-bottom: 4vh;
       caret-color: transparent;
 
@@ -324,7 +323,6 @@ s ::-webkit-input-placeholder {
     flex-direction: column;
     position: relative;
     width: 40%;
-    height: 75vh;
     padding-top: 16vh;
     padding-bottom: 5vh;
     padding-left: 18.5%;
@@ -353,7 +351,6 @@ s ::-webkit-input-placeholder {
 
   .contact {
     margin-top: 200px;
-    padding-bottom: 0;
     height: 800px;
   }
 }

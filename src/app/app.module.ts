@@ -19,7 +19,7 @@ import { MobileService } from "./shared/mobile.service";
 const routes: Routes = [
   { path: "", component: StartscreenComponent },
   {
-    path: "src/app/impressum/impressum.component.html",
+    path: "imprint",
     component: ImpressumComponent,
   },
 ];
@@ -47,7 +47,7 @@ const routes: Routes = [
     BrowserModule,
     CommonModule,
   ],
-  providers: [AppRoutingModule, MobileService],
+  providers: [MobileService],
   bootstrap: [AppComponent],
   exports: [RouterModule, HeaderComponent],
 })
