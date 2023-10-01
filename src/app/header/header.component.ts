@@ -1,6 +1,7 @@
 import { Component, HostListener, Injectable, OnInit } from "@angular/core";
 import { AboutMeComponent } from "../about-me/about-me.component";
 import { Router } from "@angular/router";
+import { MobileService } from "../shared/mobile.service";
 
 @Injectable({
   providedIn: "root",
@@ -11,12 +12,23 @@ import { Router } from "@angular/router";
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent implements OnInit {
-  mobileView: any;
+  mobileView: boolean;
   aboutMe: AboutMeComponent;
   openend = true;
   close = false;
   hoverClassAdded = false;
   inImprint = false;
+
+  constructor(mobileview: MobileService) {
+    this.mobileView = mobileview.mobileView;
+
+    /*     this.aboutMe = new AboutMeComponent();
+    this.mobileView = this.aboutMe.mobileView; */
+  }
+
+  ngOnInit(): void {
+    this.checkLink();
+  }
 
   @HostListener("window:resize", ["$event"])
   onResize(event: { target: { innerWidth: any } }) {
@@ -25,15 +37,6 @@ export class HeaderComponent implements OnInit {
     } else {
       this.mobileView = false;
     }
-  }
-
-  constructor() {
-    this.aboutMe = new AboutMeComponent();
-    this.mobileView = this.aboutMe.mobileView;
-  }
-
-  ngOnInit(): void {
-    this.checkLink();
   }
 
   setButton(): void {
@@ -131,8 +134,10 @@ export class HeaderComponent implements OnInit {
       window.scrollTo({ top: 1500, behavior: "smooth" });
     } else if (window.innerWidth > 460) {
       window.scrollTo({ top: 1380, behavior: "smooth" });
-    } else if (window.innerWidth <= 460) {
+    } else if (window.innerWidth <= 460 && window.innerWidth > 390) {
       window.scrollTo({ top: 1170, behavior: "smooth" });
+    } else if (window.innerWidth <= 390) {
+      window.scrollTo({ top: 1220, behavior: "smooth" });
     }
   }
 
@@ -160,7 +165,7 @@ export class HeaderComponent implements OnInit {
     } else if (window.innerWidth <= 560 && window.innerWidth > 390) {
       window.scrollTo({ top: 2200, behavior: "smooth" });
     } else if (window.innerWidth <= 390) {
-      window.scrollTo({ top: 2100, behavior: "smooth" });
+      window.scrollTo({ top: 2150, behavior: "smooth" });
     }
   }
 

@@ -1,5 +1,6 @@
-import { Component, HostListener, NgModule } from "@angular/core";
+import { Component, HostListener, Input, NgModule } from "@angular/core";
 import { Routes } from "@angular/router";
+import { MobileService } from "../shared/mobile.service";
 
 @Component({
   selector: "app-about-me",
@@ -12,9 +13,10 @@ export class AboutMeComponent {
   comeDown = false;
   scrollYPosition = window.scrollY;
 
-  constructor() {
+  constructor(mobileview: MobileService) {
     this.checkSizeAboutMe(this.actualSize);
     this.checkScroll(this.scrollYPosition);
+    this.mobileView = mobileview.mobileView;
   }
 
   checkScrollY() {
