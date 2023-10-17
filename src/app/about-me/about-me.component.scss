@@ -203,9 +203,9 @@
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@media (width < 2500px) {
+@media (width = 2500px) {
   .about-me {
-    margin-top: -140px;
+    margin-top: -100px;
   }
 }
 

@@ -229,6 +229,12 @@ app-introduce-myself {
 
 /* RESPONSIV WIDTH START */
 
+@media (width = 2500px) {
+  .hello {
+    height: 1245px;
+  }
+}
+
 @media (width < 2500px) {
   .left-section {
     height: 900px;
