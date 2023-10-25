@@ -8,7 +8,7 @@ import { NgClass } from "@angular/common";
   styleUrls: ["./show-projects.component.scss"],
 })
 export class ShowProjectsComponent {
-  laptops: string[] = ["join.png", "loco.png", "simple-crm.png"];
+  laptops: string[] = ["join.webp", "loco.webp", "simple-crm.webp"];
   headlines: string[] = ["Join", "El Pollo Loco", "Simple-CRM"];
   technologies: string[] = [
     "JavaSctipt | HTML | CSS",

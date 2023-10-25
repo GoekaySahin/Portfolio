@@ -268,17 +268,20 @@ app-introduce-myself {
 }
 
 @media (width < 2000px) {
+  .hello {
+    height: 1136px;
+  }
   .curve-img {
     position: absolute;
     width: 100%;
     height: 1031px;
-    top: 398px;
+    top: 356px;
   }
 
   .left-section {
     width: 35%;
     height: 700px;
-    margin-top: 124px;
+    margin-top: 86px;
     padding-left: 68px;
   }
   .right-section {
@@ -452,10 +455,6 @@ app-introduce-myself {
     width: 59px;
   }
 
-  .curve-img {
-    top: 310px;
-  }
-
   .namebox {
     width: 94%;
   }
@@ -481,7 +480,7 @@ app-introduce-myself {
     position: absolute;
     width: 100%;
     height: 831px;
-    top: 390px;
+    top: 353px;
   }
 }
 

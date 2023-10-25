@@ -1,16 +1,20 @@
 <div class="hello">
   <div class="left-section">
     <div class="image">
-      <img class="bg1" src="assets/img/shadows/double-shadow.png" />
       <img
-        *ngIf="waitMore"
-        src="assets/img/icons/goekay1.png"
-        class="scale-in-center profil-img"
+        class="bg1"
+        src="assets/img/shadows/double-shadow.webp"
+        loading="lazy"
+      />
+      <img
+        src="assets/img/icons/goekay1.webp"
+        loading="lazy"
+        class="profil-img"
       />
     </div>
   </div>
   <div class="right-section">
-    <div class="content-overlay scale-up-hor-center" *ngIf="wait">
+    <div class="content-overlay">
       <div class="i-am">
         <div class="name-calling">
           <span class="text-vertical">I am</span>
@@ -26,9 +30,14 @@
 </div>
 
 <div [ngClass]="{ curve: true }">
-  <img src="assets/img/icons/mobile-curve.png" [ngClass]="{ mobile: true }" />
+  <img
+    src="assets/img/icons/mobile-curve.webp"
+    loading="lazy"
+    [ngClass]="{ mobile: true }"
+  />
   <img
     [ngClass]="{ 'curve-img': true }"
-    src="assets/img/curve-background.png"
+    src="assets/img/curve-background.webp"
+    loading="lazy"
   />
 </div>

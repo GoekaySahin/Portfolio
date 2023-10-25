@@ -35,16 +35,16 @@ export class MySkillsComponent {
   }
 
   icons: string[] = [
-    "angular.png",
-    "ts.png",
-    "js.png",
-    "html.png",
-    "firebase.png",
-    "git.png",
-    "css.png",
-    "api.png",
-    "scrum.png",
-    "md.png",
+    "angular.webp",
+    "ts.webp",
+    "js.webp",
+    "html.webp",
+    "firebase.webp",
+    "git.webp",
+    "css.webp",
+    "api.webp",
+    "scrum.webp",
+    "md.webp",
   ];
 
   icons_name: string[] = [
