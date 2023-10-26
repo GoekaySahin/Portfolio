@@ -10,7 +10,11 @@
         src="assets/img/icons/goekay1.webp"
         loading="lazy"
         class="profil-img"
-        [ngClass]="{ 'profil-img': true, fire_profil: firefox }"
+        [ngClass]="{
+          'profil-img': true,
+          fire_profil: firefox,
+          safari_image: safari
+        }"
       />
     </div>
   </div>
