@@ -33,7 +33,7 @@
           Applikationen basierend auf JavaScript und Angular.</span
         >
         <br />
-        <div class="blub">
+        <div [ngClass]="{ blub: true, fire_blub: firefox }">
           <img
             [ngClass]="{ fire_icons: firefox }"
             src="assets/img/icons/bulb-desktop.webp"
@@ -44,7 +44,7 @@
           >
         </div>
 
-        <div class="blub">
+        <div [ngClass]="{ blub: true, fire_blub: firefox }">
           <img
             [ngStyle]="{
               'padding-left.px': '4'

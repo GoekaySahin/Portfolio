@@ -77,57 +77,57 @@
       margin-top: 0;
     }
 
-    .blub {
-      display: flex;
-      justify-content: space-between;
-      width: 377px;
-      padding-top: 2vh;
-      padding-bottom: 2vh;
-      padding-left: 3vw;
+    span {
+      width: 77%;
+    }
 
-      span {
-        width: 77%;
-      }
+    img {
+      object-fit: contain;
+    }
+  }
+}
 
-      img {
-        object-fit: contain;
-      }
+.blub {
+  display: flex;
+  justify-content: space-between;
+  width: 377px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 3vw;
+}
+
+.rightside {
+  position: absolute;
+  right: 0;
+  height: 652px;
+  display: flex;
+  align-items: center;
+  padding-top: 2%;
+
+  .about-me-face {
+    border-radius: 100%;
+    border-radius: 100%;
+    width: 650px;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    border: 4px solid #00bee8;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    background-color: #6f90ff00;
+
+    img {
+      width: 500px;
+      height: 699px;
+      object-fit: cover;
     }
   }
 
-  .rightside {
-    position: absolute;
-    right: 0;
-    height: 652px;
-    display: flex;
-    align-items: center;
-    padding-top: 2%;
-
-    .about-me-face {
-      border-radius: 100%;
-      border-radius: 100%;
-      width: 650px;
-      height: 98%;
-      display: flex;
-      justify-content: center;
-      border: 4px solid #00bee8;
-      overflow: hidden;
-      position: relative;
-      z-index: 2;
-      background-color: #6f90ff00;
-
-      img {
-        width: 500px;
-        height: 699px;
-        object-fit: cover;
-      }
-    }
-
-    .stripe2 {
-      width: 20vw;
-      z-index: 1;
-      height: 4px;
-    }
+  .stripe2 {
+    width: 20vw;
+    z-index: 1;
+    height: 4px;
   }
 }
 
@@ -135,6 +135,15 @@
   -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.fire_blub {
+  width: 588px;
+  padding-left: 0;
+}
+
+.fire_icons {
+  width: 80px;
 }
 
 /**
