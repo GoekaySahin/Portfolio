@@ -1,5 +1,5 @@
 <div class="hello">
-  <div class="left-section">
+  <div [ngClass]="{ 'left-section': true, fire_left: firefox }">
     <div class="image">
       <img
         class="bg1"
@@ -13,7 +13,7 @@
       />
     </div>
   </div>
-  <div class="right-section">
+  <div [ngClass]="{ 'right-section': true, fire_right: firefox }">
     <div class="content-overlay">
       <div class="i-am">
         <div class="name-calling">

@@ -1,6 +1,7 @@
 import { Component, HostListener, Input, NgModule } from "@angular/core";
 import { Routes } from "@angular/router";
 import { MobileService } from "../shared/mobile.service";
+import { CheckBrowserService } from "../shared/check-browser.service";
 
 @Component({
   selector: "app-about-me",
@@ -12,11 +13,13 @@ export class AboutMeComponent {
   actualSize = window.innerWidth;
   comeDown = false;
   scrollYPosition = window.scrollY;
+  firefox = false;
 
-  constructor(mobileview: MobileService) {
+  constructor(mobileview: MobileService, private brwoser: CheckBrowserService) {
     this.checkSizeAboutMe(this.actualSize);
     this.checkScroll(this.scrollYPosition);
     this.mobileView = mobileview.mobileView;
+    this.firefox = this.brwoser.firefox;
   }
 
   checkScrollY() {

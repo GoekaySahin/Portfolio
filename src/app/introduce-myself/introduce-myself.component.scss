@@ -251,6 +251,13 @@ app-introduce-myself {
     height: 1213px;
     top: 508px;
   }
+
+  .fire_right {
+    width: 47%;
+    margin-inline-start: -1%;
+    scale: 0.9;
+    top: 260px;
+  }
 }
 
 @media (width <= 2300px) {
@@ -326,6 +333,16 @@ app-introduce-myself {
     height: 765px;
     top: 177px;
   }
+
+  .fire_right {
+    width: 54%;
+    top: 195px;
+    display: flex;
+  }
+
+  .fire_left {
+    width: 603px;
+  }
 }
 
 @media (width <= 1705px) {
@@ -395,6 +412,13 @@ app-introduce-myself {
     top: 170px;
     margin-right: 0;
     right: 260px;
+  }
+  .right-section {
+    width: 48%;
+  }
+
+  .fire_left {
+    padding-left: 44px;
   }
 }
 
@@ -482,11 +506,30 @@ app-introduce-myself {
     height: 831px;
     top: 353px;
   }
+
+  .fire_right {
+    top: 202px;
+    width: 28% !important;
+    justify-content: inherit;
+    position: relative;
+    z-index: 300;
+    margin-inline-start: -101px;
+  }
+
+  .fire_left {
+    width: 46%;
+  }
 }
 
 @media (width <= 1300px) {
   .left-section {
     height: 600px;
+  }
+  .fire_left {
+    width: 54%;
+  }
+  .fire_right {
+    margin-inline-start: -182px;
   }
 }
 
@@ -521,7 +564,7 @@ app-introduce-myself {
     position: relative;
     z-index: 100;
     top: 0;
-    width: 100% !important;
+    width: 100%;
     justify-content: center;
     margin-inline-start: 0;
     margin-block-start: -9px;

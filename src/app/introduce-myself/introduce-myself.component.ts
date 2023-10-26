@@ -2,6 +2,7 @@ import { HeaderComponent } from "../header/header.component";
 import { Component, NgModule } from "@angular/core";
 import { APP_BASE_HREF } from "@angular/common";
 import { CommonModule } from "@angular/common";
+import { CheckBrowserService } from "../shared/check-browser.service";
 
 @Component({
   selector: "app-introduce-myself",
@@ -13,7 +14,8 @@ export class IntroduceMyselfComponent {
   toContact = this.headerComponent.scrollToContact; */
   wait = false;
   waitMore = false;
-  constructor() {
+  firefox = false;
+  constructor(private browser: CheckBrowserService) {
     setTimeout(() => {
       this.wait = true;
     }, 750);
@@ -21,6 +23,8 @@ export class IntroduceMyselfComponent {
     setTimeout(() => {
       this.waitMore = true;
     }, 1100);
+
+    this.firefox = this.browser.firefox;
   }
 
   @NgModule({

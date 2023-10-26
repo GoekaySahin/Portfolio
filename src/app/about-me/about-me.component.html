@@ -22,7 +22,7 @@
     <div
       [ngClass]="{
         leftside: true,
-      
+        fire_me: firefox
       }"
     >
       <h1>Über mich</h1>
@@ -58,8 +58,8 @@
     <div
       [ngClass]="{
         rightside: true,
-        dnone: mobileView || !comeDown,
-        'slide-in-left': !mobileView && comeDown
+        dnone: mobileView || !comeDown || !firefox,
+        'slide-in-left': !mobileView && comeDown && !firefox
       }"
     >
       <div class="about-me-face">
