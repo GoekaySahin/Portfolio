@@ -13,13 +13,13 @@ export class AboutMeComponent {
   actualSize = window.innerWidth;
   comeDown = false;
   scrollYPosition = window.scrollY;
-  firefox = false;
+  firefox;
 
-  constructor(mobileview: MobileService, private brwoser: CheckBrowserService) {
+  constructor(mobileview: MobileService, private browser: CheckBrowserService) {
     this.checkSizeAboutMe(this.actualSize);
     this.checkScroll(this.scrollYPosition);
     this.mobileView = mobileview.mobileView;
-    this.firefox = this.brwoser.firefox;
+    this.firefox = this.browser.firefox;
   }
 
   checkScrollY() {

@@ -25,7 +25,7 @@
         fire_me: firefox
       }"
     >
-      <h1>Über mich</h1>
+      <h1 [ngClass]="{ fire_h1: firefox }">Über mich</h1>
       <div [ngClass]="{ 'upper-part': true }">
         <span>
           Hallo, schön das Sie hier sind!<br />
@@ -34,7 +34,10 @@
         >
         <br />
         <div class="blub">
-          <img src="assets/img/icons/bulb-desktop.webp" />
+          <img
+            [ngClass]="{ fire_icons: firefox }"
+            src="assets/img/icons/bulb-desktop.webp"
+          />
           <span
             >Gerne würde ich Sie und Ihr Team dabei ünterstützen Optimierte
             Font-End Lösungen für Sie oder für Ihre Kunden zu entwickeln.</span
@@ -43,8 +46,11 @@
 
         <div class="blub">
           <img
-            [ngStyle]="{ 'padding-left.px': '4' }"
+            [ngStyle]="{
+              'padding-left.px': '4'
+            }"
             src="assets/img/icons/puzzle.webp"
+            [ngClass]="{ fire_icons: firefox }"
           />
           <span
             >Mit einer Strukturierten Arbeitsweise und einer hohen Anforderung
@@ -59,7 +65,7 @@
       [ngClass]="{
         rightside: true,
         dnone: mobileView || !comeDown || !firefox,
-        'slide-in-left': !mobileView && comeDown && !firefox
+        'slide-in-left': !mobileView && comeDown
       }"
     >
       <div class="about-me-face">

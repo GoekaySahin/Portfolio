@@ -380,7 +380,7 @@ app-introduce-myself {
 
 @media (width <= 1600px) {
   .right-section {
-    width: 50% !important;
+    width: 50%;
     margin-right: 0;
 
     .name-calling {
@@ -485,7 +485,7 @@ app-introduce-myself {
 
   .right-section {
     top: 282px;
-    width: 46% !important;
+    width: 46%;
     justify-content: inherit;
     position: relative;
     z-index: 300;
@@ -509,7 +509,7 @@ app-introduce-myself {
 
   .fire_right {
     top: 202px;
-    width: 28% !important;
+    width: 28%;
     justify-content: inherit;
     position: relative;
     z-index: 300;
@@ -518,6 +518,23 @@ app-introduce-myself {
 
   .fire_left {
     width: 46%;
+  }
+
+  .fire_myself {
+    width: 1px;
+  }
+
+  .fire_left {
+    width: 33%;
+  }
+
+  .fire_right {
+    top: 202px;
+    width: 55%;
+  }
+
+  .fire_overlay {
+    height: 63%;
   }
 }
 
@@ -632,6 +649,19 @@ app-introduce-myself {
 
   .namebox {
     width: initial;
+  }
+
+  .fire_right {
+    margin-top: -118px;
+  }
+
+  .fire_hello {
+    height: 970px;
+    min-height: 75vh;
+  }
+
+  .fire_profil {
+    width: 278px;
   }
 }
 
