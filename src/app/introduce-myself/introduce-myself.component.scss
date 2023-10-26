@@ -558,12 +558,13 @@ app-introduce-myself {
 
 @media (width <= 1024px) {
   .bg1 {
-    width: 100%;
+    width: 401px;
     height: 499px;
-    top: 157px;
+    top: 110px;
     margin-inline-start: -26px;
     max-width: 542px;
   }
+
   .hello {
     flex-direction: column;
     align-items: center;
@@ -682,7 +683,7 @@ app-introduce-myself {
     }
 
     .bg1 {
-      width: 100vw;
+      width: 401px;
     }
   }
 
