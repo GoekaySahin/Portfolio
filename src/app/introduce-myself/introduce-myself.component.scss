@@ -732,6 +732,18 @@ app-introduce-myself {
   .namebox {
     width: initial;
   }
+  .image .profil-img {
+    object-fit: cover;
+    width: initial;
+    margin-top: 3px;
+    height: 30vh;
+    min-height: 364px;
+  }
+
+  .hello {
+    height: 1035px;
+    min-height: 91vh;
+  }
 
   .fire_right {
     margin-top: -118px;
@@ -742,11 +754,9 @@ app-introduce-myself {
     min-height: 75vh;
   }
 
-  .image .profil-img {
-    object-fit: cover;
-    width: initial;
-    margin-top: 3px;
-    height: 28vh;
+  .opera_hello {
+    height: 970px;
+    min-height: 77vh;
   }
 }
 

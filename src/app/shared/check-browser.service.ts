@@ -6,6 +6,7 @@ import { Injectable } from "@angular/core";
 export class CheckBrowserService {
   firefox = false;
   safari = false;
+  opera = false;
 
   constructor() {
     if (window.navigator.userAgent.includes("Firefox")) {
@@ -16,6 +17,9 @@ export class CheckBrowserService {
       !window.navigator.userAgent.includes("Chrome")
     ) {
       this.safari = true;
+    }
+    if (window.navigator.userAgent.includes("OPR")) {
+      this.opera = true;
     }
   }
 }

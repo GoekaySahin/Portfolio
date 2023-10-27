@@ -16,6 +16,8 @@ export class IntroduceMyselfComponent {
   waitMore = false;
   firefox = false;
   safari = false;
+  opera = false;
+
   constructor(private browser: CheckBrowserService) {
     setTimeout(() => {
       this.wait = true;
@@ -27,6 +29,7 @@ export class IntroduceMyselfComponent {
 
     this.firefox = this.browser.firefox;
     this.safari = this.browser.safari;
+    this.opera = this.browser.opera;
   }
 
   @NgModule({
