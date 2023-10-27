@@ -7,19 +7,20 @@ export class CheckBrowserService {
   firefox = false;
   safari = false;
   opera = false;
+  edge = false;
 
   constructor() {
     if (window.navigator.userAgent.includes("Firefox")) {
       this.firefox = true;
-    }
-    if (
+    } else if (
       window.navigator.userAgent.includes("Safari") &&
       !window.navigator.userAgent.includes("Chrome")
     ) {
       this.safari = true;
-    }
-    if (window.navigator.userAgent.includes("OPR")) {
+    } else if (window.navigator.userAgent.includes("OPR")) {
       this.opera = true;
+    } else if (window.navigator.userAgent.includes("Edg")) {
+      this.edge = true;
     }
   }
 }

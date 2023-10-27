@@ -1,7 +1,11 @@
-<div class="hello" [ngClass]="{ fire_hello: firefox, opera_hello: opera }">
+<div
+  class="hello"
+  [ngClass]="{ fire_hello: firefox, opera_hello: opera, edge_hello: edge }"
+>
   <div [ngClass]="{ 'left-section': true, fire_left: firefox }">
     <div [ngClass]="{ image: true, fire_myself: firefox }">
       <img
+        alt="curve-background"
         [ngClass]="{ bg1: true, fire_bg1: firefox }"
         src="assets/img/shadows/double-shadow.webp"
         loading="lazy"
@@ -15,6 +19,7 @@
           fire_profil: firefox,
           safari_image: safari
         }"
+        alt="profil-img"
       />
     </div>
   </div>
@@ -49,7 +54,7 @@
   <img
     src="assets/img/icons/mobile-curve.webp"
     loading="lazy"
-    [ngClass]="{ mobile: true }"
+    [ngClass]="{ mobile: true, fire_curve_mobile: firefox }"
   />
   <img
     [ngClass]="{ 'curve-img': true }"

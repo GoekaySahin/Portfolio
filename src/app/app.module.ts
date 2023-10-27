@@ -45,7 +45,6 @@ const routes: Routes = [
     NgClass,
     FormsModule,
     BrowserModule,
-    CommonModule,
   ],
   providers: [MobileService],
   bootstrap: [AppComponent],

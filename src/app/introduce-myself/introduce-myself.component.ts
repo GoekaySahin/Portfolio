@@ -17,6 +17,7 @@ export class IntroduceMyselfComponent {
   firefox = false;
   safari = false;
   opera = false;
+  edge = false;
 
   constructor(private browser: CheckBrowserService) {
     setTimeout(() => {
@@ -30,6 +31,7 @@ export class IntroduceMyselfComponent {
     this.firefox = this.browser.firefox;
     this.safari = this.browser.safari;
     this.opera = this.browser.opera;
+    this.edge = this.browser.edge;
   }
 
   @NgModule({
