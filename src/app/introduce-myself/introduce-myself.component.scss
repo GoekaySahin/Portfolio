@@ -7,8 +7,7 @@ app-introduce-myself {
 .hello {
   display: flex;
   width: 99.6%;
-  min-height: 100vh;
-  height: 1412px;
+  height: 1234px;
 }
 
 .bg1 {
@@ -346,7 +345,7 @@ app-introduce-myself {
   }
 }
 
-@media (width < 2000px) {
+@media (width <= 2000px) {
   .hello {
     height: 1136px;
   }

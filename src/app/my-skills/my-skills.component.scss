@@ -234,7 +234,7 @@
 
 @media (width <= 1800px) {
   .skills {
-    margin-top: 10%;
+    margin-top: 100px;
   }
 }
 
@@ -297,7 +297,7 @@
 @media (width <= 1024px) {
   .skills {
     flex-direction: column-reverse;
-
+    margin-top: 100px;
     font-size: 80px;
   }
 
@@ -349,7 +349,7 @@
 @media (width <= 885px) {
   .skills {
     height: initial;
-    margin-top: 10%;
+    margin-top: 120px;
   }
 }
 
@@ -382,6 +382,21 @@
 
   .skills .rightside img {
     top: 129px;
+  }
+
+  .about-me-section .leftside .blub {
+    width: initial;
+    min-width: initial;
+    margin-inline-start: initial;
+  }
+
+  .about-me-section .leftside img {
+    margin-right: 10px;
+  }
+
+  .about-me-section .leftside .blub span {
+    min-width: inherit;
+    width: initial;
   }
 }
 
@@ -422,7 +437,7 @@
   }
 }
 
-@media (width <= 300px) {
+@media (width <= 320px) {
   .skills {
     height: 880px;
     margin-top: 337px;

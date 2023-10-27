@@ -90,10 +90,12 @@
 .blub {
   display: flex;
   justify-content: space-between;
-  width: 377px;
+  width: 26vw;
   padding-top: 2vh;
   padding-bottom: 2vh;
   padding-left: 3vw;
+  margin-inline-start: -48px;
+  min-width: 384px;
 }
 
 .rightside {
@@ -107,8 +109,9 @@
   .about-me-face {
     border-radius: 100%;
     border-radius: 100%;
-    width: 650px;
-    height: 98%;
+    width: 75%;
+    height: 61vh;
+    min-height: 800px;
     display: flex;
     justify-content: center;
     border: 4px solid #00bee8;
@@ -118,14 +121,14 @@
     background-color: #6f90ff00;
 
     img {
-      width: 500px;
-      height: 699px;
+      width: 700px;
+      height: 899px;
       object-fit: cover;
     }
   }
 
   .stripe2 {
-    width: 20vw;
+    width: 26vw;
     z-index: 1;
     height: 4px;
   }
@@ -230,6 +233,20 @@
   .hello {
     height: 1136px;
   }
+
+  .rightside {
+    position: absolute;
+    right: 0;
+    height: 652px;
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+    width: 60%;
+  }
+
+  .rightside .stripe2 {
+    width: 16vw;
+  }
 }
 
 @media (width <= 1920px) {
@@ -244,7 +261,7 @@
 
   .about-me-section .rightside {
     overflow: inherit;
-    margin-block-start: 0;
+    margin-block-start: 41px;
     padding-top: 0;
   }
   .about-me-section .rightside .stripe2 {
@@ -266,6 +283,23 @@
 
   .about-me-section {
     margin-top: 12%;
+  }
+
+  .rightside .about-me-face {
+    border-radius: 100%;
+    border-radius: 100%;
+    width: 700px;
+    height: 500px;
+    min-height: 733px;
+    background-color: #141d2f;
+  }
+
+  .about-me-section .rightside .stripe2 {
+    width: 500px;
+    z-index: 1;
+    height: 4px;
+    position: absolute;
+    right: 0;
   }
 }
 
@@ -290,6 +324,10 @@
   }
 }
 @media (width <= 1550px) {
+  .rightside .about-me-face img {
+    width: 700px;
+    height: 799px;
+  }
   .about-me-section {
     margin-top: 14%;
   }
@@ -302,13 +340,15 @@
     width: 441px;
   }
   .about-me-section .rightside .about-me-face {
-    height: 74%;
-    width: 488px;
+    height: 600px;
+    width: 588px;
+    min-height: 512px;
   }
   .about-me-section .rightside {
-    margin-block-start: 0;
+    margin-block-start: 5px;
     padding-top: 0;
     padding-bottom: 15%;
+    width: 56%;
   }
 }
 
@@ -331,15 +371,14 @@
     font-size: 63.5px;
   }
 
-  .about-me-section .rightside {
-    padding-bottom: 19%;
+  /*   .about-me-section .rightside {
     width: 59%;
     height: 89%;
     margin-block-start: 0;
     padding-top: 0;
     display: flex;
     justify-content: flex-end;
-  }
+  } */
 
   .about-me-section .leftside .upper-part {
     width: 337px;
@@ -352,8 +391,9 @@
     padding-left: 0vw;
   }
   .about-me-section .rightside .about-me-face {
-    height: 435px;
-    width: 440px;
+    height: 411px;
+    width: 453px;
+    min-height: 442px;
   }
 
   .about-me-section .rightside .about-me-face img {
@@ -413,11 +453,13 @@
 
   .about-me-section .leftside .blub span {
     min-width: inherit;
-    width: 67%;
+    width: 400px;
   }
 
   .about-me-section .leftside .blub {
-    width: initial;
+    width: 500px;
+    min-width: initial;
+    margin-inline-start: initial;
   }
 
   .fire_h1 {
@@ -448,11 +490,26 @@
 
   .about-me-section .leftside .upper-part {
     font-size: 15px;
-    height: 460px;
+    height: 390px;
   }
 
   .about-me-section {
-    margin-top: 86px;
+    margin-top: 100px;
+  }
+
+  .about-me-section .leftside .blub {
+    width: initial;
+    min-width: initial;
+    margin-inline-start: initial;
+  }
+
+  .about-me-section .leftside img {
+    margin-right: 10px;
+  }
+
+  .about-me-section .leftside .blub span {
+    min-width: inherit;
+    width: initial;
   }
 }
 
