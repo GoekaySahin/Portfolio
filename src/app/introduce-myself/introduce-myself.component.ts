@@ -22,7 +22,7 @@ export class IntroduceMyselfComponent {
   constructor(private browser: CheckBrowserService) {
     setTimeout(() => {
       this.wait = true;
-    }, 250);
+    }, 350);
 
     setTimeout(() => {
       this.waitMore = true;

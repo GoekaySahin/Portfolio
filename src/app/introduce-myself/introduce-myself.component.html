@@ -27,11 +27,18 @@
     [ngClass]="{
       'right-section': true,
       fire_right: firefox,
-      'scale-in-center': true,
+
       'd-none': !wait
     }"
   >
-    <div [ngClass]="{ 'content-overlay': true, fire_overlay: firefox }">
+    <div
+      *ngIf="wait"
+      [ngClass]="{
+        'content-overlay': true,
+        'scale-in-center': true,
+        fire_overlay: firefox
+      }"
+    >
       <div class="i-am">
         <div class="name-calling">
           <span
