@@ -309,15 +309,6 @@ app-introduce-myself {
     scale: 0.9;
     top: 260px;
   }
-
-  .fire_vertical {
-    font-size: 101px;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    transform: scale(-1);
-    text-align: left;
-    width: 8%;
-  }
 }
 
 @media (width <= 2300px) {
@@ -349,6 +340,12 @@ app-introduce-myself {
     width: 100%;
     height: 1383px;
     top: 404px;
+  }
+
+  .fire_profil {
+    object-fit: cover;
+    height: 63vh;
+    margin-top: 90px;
   }
 }
 
@@ -419,13 +416,19 @@ app-introduce-myself {
   }
 
   .fire_left {
-    width: 603px;
+    width: 40%;
+  }
+
+  .fire_profil {
+    object-fit: cover;
+    height: 53vh;
+    margin-top: 0px;
   }
 }
 
 @media (width <= 1705px) {
   .right-section {
-    width: 60%;
+    width: 55%;
     top: 204px;
 
     .name-calling h1 {
@@ -458,7 +461,6 @@ app-introduce-myself {
 
 @media (width <= 1600px) {
   .right-section {
-    width: 58%;
     .name-calling {
       width: 100%;
       height: 94.5%;
@@ -577,15 +579,6 @@ app-introduce-myself {
     top: 353px;
   }
 
-  .fire_right {
-    top: 202px;
-    width: 28%;
-    justify-content: inherit;
-    position: relative;
-    z-index: 300;
-    margin-inline-start: -101px;
-  }
-
   .fire_left {
     width: 46%;
   }
@@ -595,28 +588,28 @@ app-introduce-myself {
   }
 
   .fire_left {
-    width: 33%;
+    width: 38%;
   }
 
   .fire_right {
     top: 202px;
-    width: 55%;
+    width: 50%;
   }
 
   .fire_overlay {
     height: 63%;
+  }
+
+  .fire_profil {
+    object-fit: cover;
+    height: 44vh;
+    margin-top: 33px;
   }
 }
 
 @media (width <= 1300px) {
   .left-section {
     height: 600px;
-  }
-  .fire_left {
-    width: 54%;
-  }
-  .fire_right {
-    margin-inline-start: -182px;
   }
 }
 
@@ -749,8 +742,11 @@ app-introduce-myself {
     min-height: 75vh;
   }
 
-  .fire_profil {
-    width: 278px;
+  .image .profil-img {
+    object-fit: cover;
+    width: initial;
+    margin-top: 3px;
+    height: 28vh;
   }
 }
 
