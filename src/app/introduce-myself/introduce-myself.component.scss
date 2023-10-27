@@ -49,10 +49,10 @@ app-introduce-myself {
   align-items: center;
   flex-direction: column;
   margin-inline-start: -3%;
-
+  z-index: 200 !important;
   button {
-    width: 220px;
-    height: 70px;
+    width: 250px;
+    height: 75px;
     border-radius: 12px;
     background-color: #00bee8;
     border: none;
@@ -64,7 +64,7 @@ app-introduce-myself {
     margin-inline-start: 6vw;
     position: absolute;
     right: 484px;
-    top: 237px;
+    top: 254px;
     z-index: 10;
     cursor: pointer;
     transition: background-color 0.2s ease-out;
@@ -139,12 +139,6 @@ app-introduce-myself {
 
 .i-am {
   width: 100%;
-}
-
-.fire_bg1 {
-  width: 47%;
-  height: 961px;
-  top: 330px;
 }
 
 .safari_image {
@@ -368,7 +362,7 @@ app-introduce-myself {
     padding-left: 68px;
   }
   .right-section {
-    width: 60%;
+    width: 59.5%;
     top: 224px;
     display: flex;
     align-items: flex end;

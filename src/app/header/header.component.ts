@@ -1,8 +1,6 @@
 import { Component, HostListener, Injectable, OnInit } from "@angular/core";
 import { AboutMeComponent } from "../about-me/about-me.component";
-import { Router } from "@angular/router";
 import { MobileService } from "../shared/mobile.service";
-import { CommonModule, NgClass, NgStyle } from "@angular/common";
 
 @Injectable({
   providedIn: "root",
@@ -22,9 +20,6 @@ export class HeaderComponent implements OnInit {
 
   constructor(mobileview: MobileService) {
     this.mobileView = mobileview.mobileView;
-
-    /*     this.aboutMe = new AboutMeComponent();
-    this.mobileView = this.aboutMe.mobileView; */
   }
 
   ngOnInit(): void {
@@ -112,7 +107,7 @@ export class HeaderComponent implements OnInit {
 
   scrollToAboutMe() {
     if (window.innerWidth > 2000) {
-      window.scrollTo({ top: 1000, behavior: "smooth" });
+      window.scrollTo({ top: 1100, behavior: "smooth" });
     } else if (window.innerWidth > 1800) {
       window.scrollTo({ top: 900, behavior: "smooth" });
     } else if (window.innerWidth > 1550) {
