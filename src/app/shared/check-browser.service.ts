@@ -11,7 +11,10 @@ export class CheckBrowserService {
     if (window.navigator.userAgent.includes("Firefox")) {
       this.firefox = true;
     }
-    if (window.navigator.userAgent.includes("Safari")) {
+    if (
+      window.navigator.userAgent.includes("Safari") &&
+      !window.navigator.userAgent.includes("Chrome")
+    ) {
       this.safari = true;
     }
   }

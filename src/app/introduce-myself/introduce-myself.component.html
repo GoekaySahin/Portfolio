@@ -18,11 +18,22 @@
       />
     </div>
   </div>
-  <div [ngClass]="{ 'right-section': true, fire_right: firefox }">
+  <div
+    [ngClass]="{
+      'right-section': true,
+      fire_right: firefox,
+      'scale-in-center': true,
+      'd-none': !wait
+    }"
+  >
     <div [ngClass]="{ 'content-overlay': true, fire_overlay: firefox }">
       <div class="i-am">
         <div class="name-calling">
-          <span class="text-vertical">I am</span>
+          <span
+            class="text-vertical"
+            [ngClass]="{ 'text-vertical': true, fire_vertical: firefox }"
+            >I am</span
+          >
           <div class="namebox">
             <h1>Gökay Sahin</h1>
             <h2>FRONTEND DEVELOPER</h2>

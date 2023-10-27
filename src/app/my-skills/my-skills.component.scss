@@ -118,9 +118,9 @@
 .Scrum,
 .Material-design {
   &:hover {
-    -webkit-animation: icons-skills 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    -webkit-animation: icons-skills 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
-    animation: icons-skills 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: icons-skills 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
   @-webkit-keyframes icons-skills {
@@ -418,6 +418,16 @@
     margin-top: 150px;
     .rightside h1 {
       font-size: 32px;
+    }
+  }
+}
+
+@media (width <= 300px) {
+  .skills {
+    height: 880px;
+    margin-top: 337px;
+    .leftside .images {
+      width: 270px;
     }
   }
 }

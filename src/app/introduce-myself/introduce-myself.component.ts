@@ -1,7 +1,7 @@
 import { HeaderComponent } from "../header/header.component";
 import { Component, NgModule } from "@angular/core";
 import { APP_BASE_HREF } from "@angular/common";
-import { CommonModule } from "@angular/common";
+import { CommonModule, NgClass, NgStyle } from "@angular/common";
 import { CheckBrowserService } from "../shared/check-browser.service";
 
 @Component({
@@ -15,16 +15,18 @@ export class IntroduceMyselfComponent {
   wait = false;
   waitMore = false;
   firefox = false;
+  safari = false;
   constructor(private browser: CheckBrowserService) {
     setTimeout(() => {
       this.wait = true;
-    }, 750);
+    }, 250);
 
     setTimeout(() => {
       this.waitMore = true;
     }, 1100);
 
     this.firefox = this.browser.firefox;
+    this.safari = this.browser.safari;
   }
 
   @NgModule({

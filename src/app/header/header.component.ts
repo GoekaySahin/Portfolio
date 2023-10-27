@@ -2,6 +2,7 @@ import { Component, HostListener, Injectable, OnInit } from "@angular/core";
 import { AboutMeComponent } from "../about-me/about-me.component";
 import { Router } from "@angular/router";
 import { MobileService } from "../shared/mobile.service";
+import { CommonModule, NgClass, NgStyle } from "@angular/common";
 
 @Injectable({
   providedIn: "root",

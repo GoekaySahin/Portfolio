@@ -39,11 +39,11 @@ const routes: Routes = [
     FooterComponent,
   ],
   imports: [
+    NgStyle,
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
     NgClass,
     FormsModule,
-    NgStyle,
     BrowserModule,
     CommonModule,
   ],
