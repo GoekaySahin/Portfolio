@@ -17,7 +17,8 @@
         [ngClass]="{
           'profil-img': true,
           fire_profil: firefox,
-          safari_image: safari
+          safari_image: safari,
+          opera_profil: opera
         }"
         alt="profil-img"
       />
@@ -27,7 +28,7 @@
     [ngClass]="{
       'right-section': true,
       fire_right: firefox,
-
+      opera_right: opera,
       'd-none': !wait
     }"
   >
@@ -61,7 +62,12 @@
   <img
     src="assets/img/icons/mobile-curve.webp"
     loading="lazy"
-    [ngClass]="{ mobile: true, fire_curve_mobile: firefox }"
+    [ngClass]="{
+      mobile: true,
+      fire_curve_mobile: firefox,
+      opera_curve_mobile: opera,
+      edge_mobile: edge
+    }"
   />
   <img
     [ngClass]="{ 'curve-img': true }"

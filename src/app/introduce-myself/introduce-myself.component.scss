@@ -730,7 +730,7 @@ app-introduce-myself {
     width: initial;
   }
 
-  .image .profil-img {
+  .profil-img {
     object-fit: cover;
     width: initial;
     margin-top: 3px;
@@ -762,6 +762,18 @@ app-introduce-myself {
   .fire_curve_mobile {
     top: 379px;
   }
+
+  .opera_curve_mobile {
+    top: 358px;
+  }
+
+  .opera_right {
+    margin-block-start: 13px;
+  }
+
+  .edge_mobile {
+    top: 358px;
+  }
 }
 
 @media (width <= 650px) {
@@ -769,11 +781,6 @@ app-introduce-myself {
     width: 12%;
   }
   .image {
-    img {
-      object-fit: inherit;
-      width: 70vw;
-    }
-
     .bg1 {
       width: 100vw;
     }
@@ -845,6 +852,19 @@ app-introduce-myself {
     height: 216px;
     margin-top: 30px;
     position: relative;
+  }
+
+  .fire_curve_mobile {
+    top: 341px;
+  }
+
+  .opera_profil {
+    object-fit: cover;
+    width: 81vw;
+    margin-top: -1px;
+    height: 28vh;
+    min-height: 364px;
+    max-width: 95vw;
   }
 }
 
