@@ -1,12 +1,4 @@
-import {
-  Component,
-  ElementRef,
-  HostListener,
-  Input,
-  NgModule,
-  ViewChild,
-} from "@angular/core";
-import { Routes } from "@angular/router";
+import { Component, ElementRef, HostListener, ViewChild } from "@angular/core";
 import { MobileService } from "../shared/mobile.service";
 import { CheckBrowserService } from "../shared/check-browser.service";
 

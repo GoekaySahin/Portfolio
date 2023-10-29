@@ -32,6 +32,7 @@ export class IntroduceMyselfComponent {
     this.safari = this.browser.safari;
     this.opera = this.browser.opera;
     this.edge = this.browser.edge;
+    console.log(this.opera);
   }
 
   @NgModule({

@@ -309,6 +309,11 @@ app-introduce-myself {
     scale: 0.9;
     top: 260px;
   }
+
+  .fire_profil {
+    width: 800px;
+    object-fit: cover;
+  }
 }
 
 @media (width <= 2300px) {
@@ -340,12 +345,6 @@ app-introduce-myself {
     width: 100%;
     height: 1383px;
     top: 404px;
-  }
-
-  .fire_profil {
-    object-fit: cover;
-    height: 63vh;
-    margin-top: 90px;
   }
 }
 
@@ -417,12 +416,6 @@ app-introduce-myself {
 
   .fire_left {
     width: 40%;
-  }
-
-  .fire_profil {
-    object-fit: cover;
-    height: 53vh;
-    margin-top: 0px;
   }
 }
 
@@ -597,12 +590,6 @@ app-introduce-myself {
   .fire_overlay {
     height: 63%;
   }
-
-  .fire_profil {
-    object-fit: cover;
-    height: 44vh;
-    margin-top: 33px;
-  }
 }
 
 @media (width <= 1300px) {
@@ -743,9 +730,9 @@ app-introduce-myself {
   .profil-img {
     object-fit: cover;
     width: initial;
-    margin-top: 3px;
-    height: 30vh;
-    min-height: 364px;
+    margin-top: 19px;
+    height: 16vh;
+    min-height: 351px;
     max-width: 100vw;
   }
 
@@ -754,14 +741,9 @@ app-introduce-myself {
   }
 
   .fire_hello {
-    height: 970px;
+    height: 1073.7px;
     min-height: 79vh;
     margin-top: 23px;
-  }
-
-  .opera_hello {
-    height: 970px;
-    min-height: 77vh;
   }
 
   .edge_hello {
@@ -784,6 +766,17 @@ app-introduce-myself {
   .edge_mobile {
     top: 358px;
   }
+
+  .fire_profil {
+    height: 405px;
+  }
+  .opera_profil {
+    margin-top: 3px;
+  }
+
+  .opera_hello {
+    min-height: 85vh;
+  }
 }
 
 @media (width <= 650px) {
@@ -798,6 +791,11 @@ app-introduce-myself {
 
   .hello {
     margin-bottom: 27%;
+  }
+
+  .fire_profil {
+    height: 380px;
+    margin-top: 11px;
   }
 }
 
@@ -897,5 +895,10 @@ app-introduce-myself {
 
   .image img {
     width: 100vw;
+  }
+
+  .fire_profil {
+    height: 384px;
+    margin-top: 6px;
   }
 }
