@@ -1,4 +1,11 @@
-import { Component, HostListener, Input, NgModule } from "@angular/core";
+import {
+  Component,
+  ElementRef,
+  HostListener,
+  Input,
+  NgModule,
+  ViewChild,
+} from "@angular/core";
 import { Routes } from "@angular/router";
 import { MobileService } from "../shared/mobile.service";
 import { CheckBrowserService } from "../shared/check-browser.service";
@@ -14,6 +21,7 @@ export class AboutMeComponent {
   comeDown = false;
   scrollYPosition = window.scrollY;
   firefox;
+  @ViewChild("about_me") aboutMeSection: ElementRef;
 
   constructor(mobileview: MobileService, private browser: CheckBrowserService) {
     this.checkSizeAboutMe(this.actualSize);

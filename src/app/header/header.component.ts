@@ -1,4 +1,13 @@
-import { Component, HostListener, Injectable, OnInit } from "@angular/core";
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  HostListener,
+  Injectable,
+  OnInit,
+  Output,
+  ViewChild,
+} from "@angular/core";
 import { AboutMeComponent } from "../about-me/about-me.component";
 import { MobileService } from "../shared/mobile.service";
 
@@ -12,18 +21,27 @@ import { MobileService } from "../shared/mobile.service";
 })
 export class HeaderComponent implements OnInit {
   mobileView: boolean;
-  aboutMe: AboutMeComponent;
   openend = true;
   close = false;
   hoverClassAdded = false;
   inImprint = false;
 
-  constructor(mobileview: MobileService) {
+  @ViewChild("aboutMeSection") aboutMeSection: ElementRef;
+  @Output() aboutMeElement = new EventEmitter<ElementRef>();
+
+  @ViewChild("skills") mySkills: ElementRef;
+  @ViewChild("projects") projects: ElementRef;
+
+  constructor(mobileview: MobileService, private elementRef: ElementRef) {
     this.mobileView = mobileview.mobileView;
   }
 
   ngOnInit(): void {
     this.checkLink();
+  }
+
+  ngAfterViewInit(): void {
+    this.aboutMeElement.emit(this.aboutMeSection);
   }
 
   @HostListener("window:resize", ["$event"])
@@ -85,90 +103,20 @@ export class HeaderComponent implements OnInit {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  scrollToAboutMeMobile() {
-    this.scrollToAboutMe();
-    this.setButton();
-  }
-
-  scrollToSkillsMobile() {
-    this.scrollToSkills();
-    this.setButton();
-  }
-
-  scrollToProjectsMobile() {
-    this.scrollToProjects();
-    this.setButton();
-  }
-
-  scrollToContactMobile() {
-    this.scrollToContact();
-    this.setButton();
-  }
-
   scrollToAboutMe() {
-    if (window.innerWidth >= 2000) {
-      window.scrollTo({ top: 1100, behavior: "smooth" });
-    } else if (window.innerWidth >= 1800) {
-      window.scrollTo({ top: 900, behavior: "smooth" });
-    } else if (window.innerWidth >= 1550) {
-      window.scrollTo({ top: 720, behavior: "smooth" });
-    } else if (window.innerWidth >= 1300) {
-      window.scrollTo({ top: 720, behavior: "smooth" });
-    } else if (window.innerWidth <= 1300 && window.innerWidth > 610) {
-      window.scrollTo({ top: 720, behavior: "smooth" });
-    } else if (window.innerWidth <= 610) {
-      window.scrollTo({ top: 680, behavior: "smooth" });
-    }
+    this.setButton();
   }
 
   scrollToSkills() {
-    /*     if (window.innerWidth <= 2500 && window.innerWidth > 2000) {
-      window.scrollTo({ top: 1800, behavior: "smooth" });
-    } else if (window.innerWidth <= 2000 && window.innerWidth >= 1800) {
-      window.scrollTo({ top: 1700, behavior: "smooth" });
-    } else if (window.innerWidth <= 1800 && window.innerWidth >= 1400) {
-      window.scrollTo({ top: 1700, behavior: "smooth" });
-    } else if (window.innerWidth <= 1400 && window.innerWidth >= 1024) {
-      window.scrollTo({ top: 1500, behavior: "smooth" });
-    } else if (window.innerWidth <= 1024 && window.innerWidth >= 460) {
-      window.scrollTo({ top: 1350, behavior: "smooth" });
-    } else if (window.innerWidth <= 460 && window.innerWidth > 390) {
-      window.scrollTo({ top: 1170, behavior: "smooth" });
-    } else if (window.innerWidth <= 390) {
-      window.scrollTo({ top: 1220, behavior: "smooth" });
-    } */
+    this.setButton();
   }
 
   scrollToProjects() {
-    if (window.innerWidth >= 2300) {
-      window.scrollTo({ top: 3000, behavior: "smooth" });
-    } else if (window.innerWidth <= 2300 && window.innerWidth > 2000) {
-      window.scrollTo({ top: 2800, behavior: "smooth" });
-    } else if (window.innerWidth <= 2000 && window.innerWidth > 1800) {
-      window.scrollTo({ top: 2800, behavior: "smooth" });
-    } else if (window.innerWidth <= 2000 && window.innerWidth > 1500) {
-      window.scrollTo({ top: 2400, behavior: "smooth" });
-    } else if (window.innerWidth <= 1500 && window.innerWidth > 1400) {
-      window.scrollTo({ top: 2700, behavior: "smooth" });
-    } else if (window.innerWidth <= 1400 && window.innerWidth > 1300) {
-      window.scrollTo({ top: 2500, behavior: "smooth" });
-    } else if (window.innerWidth <= 1300 && window.innerWidth > 1100) {
-      window.scrollTo({ top: 2450, behavior: "smooth" });
-    } else if (window.innerWidth <= 1024 && window.innerWidth > 800) {
-      window.scrollTo({ top: 2370, behavior: "smooth" });
-    } else if (window.innerWidth <= 800 && window.innerWidth > 625) {
-      window.scrollTo({ top: 2330, behavior: "smooth" });
-    } else if (window.innerWidth <= 625 && window.innerWidth > 560) {
-      window.scrollTo({ top: 2600, behavior: "smooth" });
-    } else if (window.innerWidth <= 560 && window.innerWidth > 390) {
-      window.scrollTo({ top: 2200, behavior: "smooth" });
-    } else if (window.innerWidth <= 390) {
-      window.scrollTo({ top: 2150, behavior: "smooth" });
-    }
+    this.setButton();
   }
 
   scrollToContact() {
-    window.scrollTo({ top: 4850, behavior: "smooth" });
+    this.setButton();
   }
 
   addHoverClass() {

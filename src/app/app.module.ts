@@ -36,7 +36,6 @@ const routes: Routes = [
     ContactComponent,
     FooterComponent,
     ImpressumComponent,
-    FooterComponent,
   ],
   imports: [
     NgStyle,

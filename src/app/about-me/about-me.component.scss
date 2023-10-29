@@ -61,6 +61,7 @@
     justify-content: flex-start;
     margin-block: -40px;
     margin-inline: 1vw;
+    padding-left: 100px;
 
     .upper-part {
       display: flex;
@@ -102,15 +103,15 @@
 .rightside {
   position: absolute;
   right: 0;
+  width: 48%;
   height: 652px;
   display: flex;
   align-items: center;
   margin-block-start: -63px;
-  margin-inline-end: -129px;
 
   .about-me-face {
     border-radius: 100%;
-    width: 700px;
+    width: 1200px;
     height: 700px;
     min-height: 700px;
     display: flex;
@@ -379,6 +380,10 @@
     height: 440px;
     width: 440px;
   }
+
+  .about-me-section .leftside {
+    padding-left: 35px;
+  }
 }
 
 @media (width <= 1401px) {
@@ -439,6 +444,10 @@
 
   .about-me-section .rightside .about-me-face img {
     height: 542px;
+  }
+
+  .about-me-section .leftside {
+    padding-left: 0px;
   }
 }
 

@@ -33,7 +33,7 @@
 
     <div [ngClass]="{ links: true, 'd-none': mobileView, jce: inImprint }">
       <div [ngClass]="{ links: !inImprint, 'd-none': inImprint }">
-        <a href="#about_me">About me</a>
+        <a href="#about_me">Über mich</a>
         <a href="#my_skills">Skills</a>
         <a href="#projects">Projekte</a>
       </div>
@@ -56,8 +56,8 @@
   }"
 >
   <div [ngClass]="{ 'menu-inner': true, 'd-none': inImprint }">
-    <a href="#Über mich">Über mich</a>
-    <a href="#Meine skills">Skills</a>
-    <a href="#Projekte">Projekte</a>
+    <a href="#about_me" (click)="scrollToAboutMe()">Über mich</a>
+    <a href="#my_skills" (click)="scrollToSkills()">Skills</a>
+    <a href="#projects" (click)="scrollToSkills()">Projekte</a>
   </div>
 </div>
