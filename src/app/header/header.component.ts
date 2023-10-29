@@ -134,9 +134,4 @@ export class HeaderComponent implements OnInit {
       this.inImprint = false;
     }
   }
-
-  @HostListener("window:scroll", ["$event"]) // for window scroll events
-  onScroll(e) {
-    console.log("mog");
-  }
 }
