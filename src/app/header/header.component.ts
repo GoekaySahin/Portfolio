@@ -106,39 +106,41 @@ export class HeaderComponent implements OnInit {
   }
 
   scrollToAboutMe() {
-    if (window.innerWidth > 2000) {
+    if (window.innerWidth >= 2000) {
       window.scrollTo({ top: 1100, behavior: "smooth" });
-    } else if (window.innerWidth > 1800) {
+    } else if (window.innerWidth >= 1800) {
       window.scrollTo({ top: 900, behavior: "smooth" });
-    } else if (window.innerWidth > 1550) {
+    } else if (window.innerWidth >= 1550) {
       window.scrollTo({ top: 720, behavior: "smooth" });
-    } else if (window.innerWidth > 1300) {
+    } else if (window.innerWidth >= 1300) {
       window.scrollTo({ top: 720, behavior: "smooth" });
-    } else if (window.innerWidth < 610) {
+    } else if (window.innerWidth <= 1300 && window.innerWidth > 610) {
+      window.scrollTo({ top: 720, behavior: "smooth" });
+    } else if (window.innerWidth <= 610) {
       window.scrollTo({ top: 680, behavior: "smooth" });
     }
   }
 
   scrollToSkills() {
-    if (window.innerWidth > 2000) {
-      window.scrollTo({ top: 2000, behavior: "smooth" });
-    } else if (window.innerWidth > 1800) {
+    /*     if (window.innerWidth <= 2500 && window.innerWidth > 2000) {
       window.scrollTo({ top: 1800, behavior: "smooth" });
-    } else if (window.innerWidth > 1300) {
-      window.scrollTo({ top: 1678, behavior: "smooth" });
-    } else if (window.innerWidth > 1024) {
+    } else if (window.innerWidth <= 2000 && window.innerWidth >= 1800) {
+      window.scrollTo({ top: 1700, behavior: "smooth" });
+    } else if (window.innerWidth <= 1800 && window.innerWidth >= 1400) {
+      window.scrollTo({ top: 1700, behavior: "smooth" });
+    } else if (window.innerWidth <= 1400 && window.innerWidth >= 1024) {
       window.scrollTo({ top: 1500, behavior: "smooth" });
-    } else if (window.innerWidth > 460) {
-      window.scrollTo({ top: 1380, behavior: "smooth" });
+    } else if (window.innerWidth <= 1024 && window.innerWidth >= 460) {
+      window.scrollTo({ top: 1350, behavior: "smooth" });
     } else if (window.innerWidth <= 460 && window.innerWidth > 390) {
       window.scrollTo({ top: 1170, behavior: "smooth" });
     } else if (window.innerWidth <= 390) {
       window.scrollTo({ top: 1220, behavior: "smooth" });
-    }
+    } */
   }
 
   scrollToProjects() {
-    if (window.innerWidth > 2300) {
+    if (window.innerWidth >= 2300) {
       window.scrollTo({ top: 3000, behavior: "smooth" });
     } else if (window.innerWidth <= 2300 && window.innerWidth > 2000) {
       window.scrollTo({ top: 2800, behavior: "smooth" });
@@ -183,5 +185,10 @@ export class HeaderComponent implements OnInit {
     } else {
       this.inImprint = false;
     }
+  }
+
+  @HostListener("window:scroll", ["$event"]) // for window scroll events
+  onScroll(e) {
+    console.log("mog");
   }
 }

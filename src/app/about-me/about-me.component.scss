@@ -5,7 +5,7 @@
 .about-me {
   position: relative;
   width: 92%;
-  margin-left: 8.5%;
+  margin-left: 14.5%;
   top: 5%;
   height: 78%;
   margin-top: -183px;
@@ -14,7 +14,7 @@
 
 .stripe1 {
   position: absolute;
-  left: -12vw;
+  left: -17vw;
   width: 12vw;
   height: 5px;
 }
@@ -121,8 +121,8 @@
     background-color: rgba(111, 144, 255, 0);
 
     img {
-      width: 700px;
-      height: 899px;
+      width: 500px;
+      height: 699px;
       object-fit: cover;
     }
   }
@@ -228,13 +228,13 @@
   .rightside {
     height: 552px;
     padding-top: 0%;
-    width: 55%;
+    width: 1000px;
     margin-block-start: -88px;
   }
 
   .rightside .about-me-face {
-    width: 75%;
-    height: 56vh;
+    width: 1300px;
+    height: 700px;
     min-height: 600px;
   }
 }
@@ -273,11 +273,6 @@
     padding-top: 1%;
   }
 
-  .about-me-section .rightside .about-me-face {
-    border-radius: 100%;
-    border-radius: 100%;
-  }
-
   .about-me-section .rightside {
     overflow: inherit;
     margin-block-start: 41px;
@@ -306,10 +301,9 @@
 
   .rightside .about-me-face {
     border-radius: 100%;
-    border-radius: 100%;
-    width: 700px;
-    height: 500px;
-    min-height: 733px;
+    width: 600px;
+    height: 200px;
+    min-height: 633px;
     background-color: #141d2f;
   }
 
@@ -344,8 +338,8 @@
 }
 @media (width <= 1550px) {
   .rightside .about-me-face img {
-    width: 700px;
-    height: 799px;
+    width: 400px;
+    height: 599px;
   }
   .about-me-section {
     margin-top: 14%;
@@ -359,15 +353,25 @@
     width: 441px;
   }
   .about-me-section .rightside .about-me-face {
-    height: 600px;
-    width: 588px;
-    min-height: 512px;
+    height: 500px;
+    width: 509px;
+    min-height: 412px;
+    margin-top: 49px;
   }
   .about-me-section .rightside {
     margin-block-start: 5px;
     padding-top: 0;
-    padding-bottom: 15%;
-    width: 56%;
+    padding-bottom: 17%;
+    width: 50%;
+  }
+
+  .about-me-section .rightside .stripe2 {
+    width: 200px;
+    z-index: 1;
+    height: 4px;
+    position: absolute;
+    right: 0;
+    top: 356px;
   }
 }
 
@@ -378,6 +382,18 @@
 
   .fire_me {
     margin-left: 589px;
+  }
+
+  .about-me-section .rightside {
+    margin-block-start: 5px;
+    padding-top: 0;
+    padding-bottom: 21%;
+    width: 54%;
+  }
+
+  .about-me-section .rightside .about-me-face {
+    height: 440px;
+    width: 440px;
   }
 }
 
@@ -416,7 +432,27 @@
   }
 
   .about-me-section .rightside .about-me-face img {
-    height: 608px;
+    height: 542px;
+  }
+}
+
+@media (width <= 1281px) {
+  .about-me-section .rightside .about-me-face {
+    height: 300px;
+    width: 401px;
+    min-height: 403px;
+  }
+
+  .about-me {
+    margin-left: 13.5%;
+  }
+}
+
+@media (width <= 1200px) {
+  .about-me-section .rightside {
+    margin-block-start: 5px;
+    padding-top: 0;
+    padding-bottom: 25%;
   }
 }
 

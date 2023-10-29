@@ -33,9 +33,9 @@
 
     <div [ngClass]="{ links: true, 'd-none': mobileView, jce: inImprint }">
       <div [ngClass]="{ links: !inImprint, 'd-none': inImprint }">
-        <a (click)="scrollToAboutMe()">About me</a>
-        <a (click)="scrollToSkills()">Skills</a>
-        <a (click)="scrollToProjects()">Projekte</a>
+        <a href="#about_me">About me</a>
+        <a href="#my_skills">Skills</a>
+        <a href="#projects">Projekte</a>
       </div>
       <a href="https://gökay-sahin.de" [ngClass]="{ 'd-none': !inImprint }"
         >Home</a
@@ -56,8 +56,8 @@
   }"
 >
   <div [ngClass]="{ 'menu-inner': true, 'd-none': inImprint }">
-    <a (click)="scrollToAboutMeMobile()">Über mich</a>
-    <a (click)="scrollToSkillsMobile()">Skills</a>
-    <a (click)="scrollToProjectsMobile()">Projekte</a>
+    <a href="#Über mich">Über mich</a>
+    <a href="#Meine skills">Skills</a>
+    <a href="#Projekte">Projekte</a>
   </div>
 </div>

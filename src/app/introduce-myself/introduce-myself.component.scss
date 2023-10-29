@@ -39,6 +39,11 @@ app-introduce-myself {
   caret-color: transparent;
 }
 
+.deco-none {
+  text-decoration: none;
+  color: white;
+}
+
 .right-section {
   display: flex;
   position: relative;
@@ -49,7 +54,7 @@ app-introduce-myself {
   align-items: center;
   flex-direction: column;
   margin-inline-start: -3%;
-  z-index: 200 !important;
+  z-index: 100 !important;
   button {
     width: 250px;
     height: 75px;
@@ -423,6 +428,7 @@ app-introduce-myself {
 
 @media (width <= 1705px) {
   .right-section {
+    width: 58.5%;
     .name-calling h1 {
       font-size: 104.5px;
     }
