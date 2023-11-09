@@ -19,7 +19,7 @@
 
   <form (ngSubmit)="send()" [formGroup]="form">
     <div class="right-content" [formGroup]="form">
-      <span>Ihr Name</span>
+      <label for="name">Ihr Name</label>
       <!-- placeholder="Ihr Name" -->
       <input
         type="text"
@@ -29,7 +29,7 @@
         [ngClass]="{ 'empty-color': signalName, 'standart-color': !signalName }"
         [ngClass]="{ 'empty-color': signalName, 'standart-color': !signalName }"
       />
-      <span>Ihre Email</span>
+      <label for="email">Ihre Email</label>
       <!--  placeholder="Ihre Email" -->
       <input
         type="email"
@@ -42,7 +42,7 @@
         }"
       />
 
-      <span>Ihre Nachricht</span>
+      <label for="message">Ihre Nachricht</label>
       <!-- placeholder="Ihre Nachricht" -->
       <textarea
         cols="50"
@@ -50,6 +50,7 @@
         class="message"
         required
         formControlName="message"
+        id="message"
         [ngClass]="{
           'empty-color': signalMessage,
           'standart-color': !signalMessage
